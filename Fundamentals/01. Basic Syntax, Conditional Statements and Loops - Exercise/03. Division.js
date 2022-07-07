@@ -1,4 +1,5 @@
 function division(number) {
+    
     if (number % 10 === 0) {
         console.log("The number is divisible by 10");
     } else if (number % 7 === 0) {
