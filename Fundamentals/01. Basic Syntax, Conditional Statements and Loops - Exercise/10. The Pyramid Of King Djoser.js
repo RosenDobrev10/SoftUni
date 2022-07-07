@@ -1,4 +1,5 @@
 function thePyramidOfKingDjoser(base, increment) {
+    
     base = Number(base);
     increment = Number(increment);
     let stone = 0;
@@ -6,6 +7,7 @@ function thePyramidOfKingDjoser(base, increment) {
     let lapisLazuli = 0;
     let gold = 0;
     let pyramidHeight = 0;
+    
     while (base >= 1) {
         pyramidHeight++;
         let outerLayer = 0;
