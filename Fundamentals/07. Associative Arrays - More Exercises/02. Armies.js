@@ -3,9 +3,10 @@ function armies(input) {
     let armyLeaders = [];
  
     for (let line of input) {
-        if (line.includes('arrives')) {
-            let indexOfArrives = line.indexOf('arrives');
-            let leader = line.slice(0, indexOfArrives).trim();
+
+        if (line.includes(' arrives')) {
+            let indexOfArrives = line.indexOf(' arrives');
+            let leader = line.slice(0, indexOfArrives);
             if (!armies.hasOwnProperty(leader)) {
                 armies[leader] = {
                     armiesName: {},
@@ -13,14 +14,16 @@ function armies(input) {
                 };
             }
             armyLeaders.push(leader);
-        } else if (line.includes('defeated')) {
-            let indexOfDefeated = line.indexOf('defeated');
-            let leader = line.slice(0, indexOfDefeated).trim();
+
+        } else if (line.includes(' defeated')) {
+            let indexOfDefeated = line.indexOf(' defeated');
+            let leader = line.slice(0, indexOfDefeated);
             let indexOfLeader = armyLeaders.indexOf(leader);
             if (armies.hasOwnProperty(leader)) {
                 delete armies[leader];
                 armyLeaders.splice(indexOfLeader, 1);
             }
+
         } else if (line.includes(':')) {
             let [leader, army] = line.split(': ');
             let [armyName, armyCount] = army.split(', ');
@@ -30,15 +33,14 @@ function armies(input) {
                     armies[leader].totalArmyCount += Number(armyCount);
                 }
             }
+
         } else if (line.includes('+')) {
             let [armyName, armyCount] = line.split(' + ');
             armyLeaders.forEach(leader => {
 
                 for (let army in armies[leader]) {
                     if (armies[leader][army].hasOwnProperty(armyName)) {
-                        armies[leader].armiesName[armyName] += Number(
-                            armyCount
-                        );
+                        armies[leader].armiesName[armyName] += Number(armyCount);
                         armies[leader].totalArmyCount += Number(armyCount);
                     }
                 }

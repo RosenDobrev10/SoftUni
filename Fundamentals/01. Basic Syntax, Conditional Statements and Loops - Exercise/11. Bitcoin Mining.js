@@ -1,4 +1,5 @@
 function bitcoinMining(input) {
+    
     let days = 0;
     let countBitcoins = 0;
     let totalMoney = 0;
@@ -6,6 +7,7 @@ function bitcoinMining(input) {
     let bitcoinCounter = 0;
     const bitcoin = 11949.16;
     const gramGold = 67.51;
+    
     for (let i = 0; i < input.length; i++) {
         days++;
         let element = input[i];
@@ -24,6 +26,7 @@ function bitcoinMining(input) {
             firstDayBuy = days;
         }
     }
+    
     console.log(`Bought bitcoins: ${countBitcoins}`);
     if (countBitcoins > 0) {
         console.log(`Day of the first purchased bitcoin: ${firstDayBuy}`);

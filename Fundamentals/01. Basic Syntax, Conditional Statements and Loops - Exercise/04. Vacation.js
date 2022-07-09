@@ -1,6 +1,8 @@
 function vacation(numberOfGroup, typeOfGroup, dayOfWeek) {
+    
     let price = 0;
     switch (dayOfWeek) {
+            
         case "Friday":
             if (typeOfGroup === "Students") {
                 price = 8.45;
@@ -10,6 +12,7 @@ function vacation(numberOfGroup, typeOfGroup, dayOfWeek) {
                 price = 15;
             }
             break;
+            
         case "Saturday":
             if (typeOfGroup === "Students") {
                 price = 9.8;
@@ -19,6 +22,7 @@ function vacation(numberOfGroup, typeOfGroup, dayOfWeek) {
                 price = 20;
             }
             break;
+            
         case "Sunday":
             if (typeOfGroup === "Students") {
                 price = 10.46;

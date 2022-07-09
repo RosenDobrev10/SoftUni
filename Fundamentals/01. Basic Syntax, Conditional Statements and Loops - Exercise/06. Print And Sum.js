@@ -1,4 +1,5 @@
 function printAndSum(start, end) {
+    
     let sum = 0;
     let printLine = "";
     for (let i = start; i <= end; i++) {

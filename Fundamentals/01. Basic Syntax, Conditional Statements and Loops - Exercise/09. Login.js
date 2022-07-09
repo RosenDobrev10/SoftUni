@@ -1,4 +1,5 @@
 function login(input) {
+    
     // SPLIT = Разделя стринг на символи ; REVERSE = обръща обратно символите; JOIN = събира символите обратно в стринг
     let username = input[0];
     let password = username.split("").reverse().join("");
