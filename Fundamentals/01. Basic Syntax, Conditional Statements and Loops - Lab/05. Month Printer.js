@@ -1,4 +1,5 @@
 function monthPrinter(number){
+    
     if (number === 1){
         console.log('January')
     } else if (number === 2){
@@ -26,6 +27,7 @@ function monthPrinter(number){
     } else {
         console.log('Error!')
     }
+    
 }
 monthPrinter(3)
 monthPrinter(13)
