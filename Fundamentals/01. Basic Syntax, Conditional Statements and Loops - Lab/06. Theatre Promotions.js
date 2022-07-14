@@ -1,4 +1,5 @@
 function theatrePromotions(typeOfDay, age) {
+    
     let price = 0;
     switch (typeOfDay) {
         case "Weekday":
@@ -10,6 +11,7 @@ function theatrePromotions(typeOfDay, age) {
                 price = 12;
             }
             break;
+            
         case "Weekend":
             if (age >= 0 && age <= 18) {
                 price = 15;
@@ -19,6 +21,7 @@ function theatrePromotions(typeOfDay, age) {
                 price = 15;
             }
             break;
+            
         case "Holiday":
             if (age >= 0 && age <= 18) {
                 price = 5;
@@ -29,11 +32,13 @@ function theatrePromotions(typeOfDay, age) {
             }
             break;
     }
+    
     if (age >= 0 && age <= 122) {
         console.log(price + "$");
     } else {
         console.log("Error!");
     }
+    
 }
 theatrePromotions("Weekday", 42);
 theatrePromotions("Holiday", -12);
