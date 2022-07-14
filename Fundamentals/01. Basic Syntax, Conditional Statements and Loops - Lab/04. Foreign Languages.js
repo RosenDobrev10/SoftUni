@@ -1,4 +1,4 @@
-function foreignLangugages(country) {
+function foreignLanguages(country) {
 
     if ( country === "USA" || country === "England") {
         console.log("English");
@@ -7,6 +7,7 @@ function foreignLangugages(country) {
     } else {
         console.log("unknown");
     }
+    
 }
-foreignLangugages('USA');
-foreignLangugages('Germany');
+foreignLanguages('USA');
+foreignLanguages('Germany');
