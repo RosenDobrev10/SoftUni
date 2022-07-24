@@ -35,4 +35,4 @@ function theLift(input) {
     console.log(wagons.join(" "));
 }
 theLift(["15", "0 0 0 0"])
-//theLift(["20", "0 2 0"])
+theLift(["20", "0 2 0"])
