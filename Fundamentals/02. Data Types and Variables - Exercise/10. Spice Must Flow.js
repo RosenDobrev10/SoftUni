@@ -1,4 +1,5 @@
 function spiceMustFlow(startingYield) {
+    
     let days = 0;
     let totalAmount = 0;
     while (startingYield >= 100) {
