@@ -1,4 +1,5 @@
 function sumDigits(number) {
+    
     let numbearAsString = String(number);               // Превръщаме числото в стринг.
     let sum = 0;                                                                                     
     for (let i = 0; i < numbearAsString.length; i++) {  // Обхождаме го чрез цикъла.

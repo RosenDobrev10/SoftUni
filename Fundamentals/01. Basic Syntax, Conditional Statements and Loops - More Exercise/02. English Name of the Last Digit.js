@@ -1,7 +1,9 @@
 function englishNameOfTheLastDigit(number) {
+    
     let numbertoString = number.toString();
     let lastDigitString = numbertoString.slice(-1);
     let lastDigitNumber = Number(lastDigitString);
+    
     switch (lastDigitNumber) {
         case 0:console.log("zero");break;
         case 1:console.log("one");break;

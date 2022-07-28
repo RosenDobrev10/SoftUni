@@ -1,4 +1,5 @@
 function lowerOrUpper(symbol) {
+    
     if (symbol === symbol.toLowerCase() ) {
         console.log("lower-case");
     } else {

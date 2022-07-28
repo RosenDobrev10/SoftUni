@@ -9,7 +9,7 @@ function thePianist(input) {
     }
 
     while (input[0] !== "Stop") {                               // Минаваме по останалите елементи от инпута 
-        let line = input.shift().split("|");                    // Вадим всяка линията и е делим по |
+        let line = input.shift().split("|");                    // Вадим всяка линия и я делим по |
         let command = line[0];                                  // Командата е на нулев индекс от линията 
         let piece = line[1];                                    // Песента е на първи индекс от линията
 

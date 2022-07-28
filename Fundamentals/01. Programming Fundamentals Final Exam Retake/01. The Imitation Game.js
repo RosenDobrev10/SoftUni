@@ -1,6 +1,6 @@
 function theImitationGame(input) {
 
-    let message = input.shift();                        // Изваждаме криптираното съобщеное от нулевия индекс на масива 
+    let message = input.shift();                        // Изваждаме криптираното съобщение от нулевия индекс на масива 
 
     while (input[0] !== "Decode") {                     // Докато получим на нулев индекс Decode, въртим цикъла 
         let line = input.shift().split("|");            // Изваждаме линията на нулев индекс и я сплитваме по пайп 

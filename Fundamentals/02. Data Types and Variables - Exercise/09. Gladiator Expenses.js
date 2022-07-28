@@ -1,4 +1,5 @@
 function gladiatorExpenses(lostFights, helmet, sword, shield, armor) {
+    
     let expenses = 0;
 
     for (let i = 1; i <= lostFights; i++) {

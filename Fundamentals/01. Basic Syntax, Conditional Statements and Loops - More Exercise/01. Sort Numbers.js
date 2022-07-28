@@ -1,7 +1,9 @@
 function sortNumbers(firstNumber, secondNumber, thirdNumber){
+    
     let biggest = 0
     let bigger = 0
     let big = 0
+    
     if (firstNumber >= secondNumber && secondNumber >= thirdNumber){
         biggest = firstNumber
         bigger = secondNumber
