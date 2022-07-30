@@ -1,9 +1,10 @@
 function rightPlace(str, char, result) {
+    
     let replace = str.replace("_", char);
     if (replace === result){
-        console.log('Matched')
+        console.log('Matched');
     } else {
-        console.log('Not Matched')
+        console.log('Not Matched');
     }
 }
 rightPlace("Str_ng", "I", "Strong");
