@@ -1,4 +1,5 @@
 function digitsWithWords(digitAsString) {
+    
     switch (digitAsString) {
         case "zero":console.log(0);break;
         case "one":console.log(1);break;
