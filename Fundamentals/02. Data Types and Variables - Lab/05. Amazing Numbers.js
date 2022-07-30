@@ -1,4 +1,5 @@
 function amazingNumbers(number) {
+    
     let numberToString = String(number);
     let sum = 0;
     for (let i = 0; i < numberToString.length; i++) {
