@@ -1,4 +1,5 @@
 function biggestOf3Numbers(num1, num2, num3) {
+    
     let biggestNumber = Number.MIN_SAFE_INTEGER
     if (num1 > biggestNumber){
         biggestNumber = num1
