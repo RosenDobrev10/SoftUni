@@ -1,4 +1,5 @@
 function triplesOfLatinLetters(n) {
+    
     let number = Number(n);
     for (let a = 0; a < number; a++) {
         let firstLetter = String.fromCharCode(97 + a);

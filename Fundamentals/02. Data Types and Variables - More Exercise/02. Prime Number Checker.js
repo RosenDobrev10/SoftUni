@@ -1,4 +1,5 @@
 function primeNumberChecker(number) {
+  
   if (number === 0 || number === 1) {
     return false;
   }

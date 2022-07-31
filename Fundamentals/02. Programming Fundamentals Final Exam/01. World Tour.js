@@ -25,7 +25,7 @@ function worldTour(input) {
                 let end = tourList.substring(endIndex + 1);     // Краят ни е от индекса + 1 до края
                 tourList = start + end;                         // Новия ни списък е от началото + края 
             }
-            console.log(tourList);                          // Печатаме списъка 
+            console.log(tourList);                           // Печатаме списъка 
 
         } else if (command === "Switch") {                  // Ако командата е Switch
             let oldString = line[1];                        // Стария стринг ни е на първи индекс от линията 

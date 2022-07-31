@@ -1,4 +1,5 @@
 function centuriesToMinutes(century) {
+    
     let years = century * 100;
     let days = Math.trunc(century * 100 * 365.2422);
     let hours = days * 24;

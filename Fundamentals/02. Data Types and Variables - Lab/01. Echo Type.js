@@ -1,4 +1,5 @@
 function echoType(text) {
+    
     let type = typeof text;
     console.log(type);
     if (type === "string" || type === "number") {

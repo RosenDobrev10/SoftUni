@@ -1,4 +1,5 @@
 function requiredReading(numberPages, pagesInHour, days) {
+    
     let hoursToReadADay = numberPages / pagesInHour / days;
     console.log(hoursToReadADay);
     // Делим общия брой на страниците, на страниците за един час и получаваме колко часа трябва да чете.

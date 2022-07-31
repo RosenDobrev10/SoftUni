@@ -1,4 +1,5 @@
 function chessBoard(number) {
+    
     let size = Number(number)
     let currentColour = 'black'
     let previousColour = ''

@@ -1,4 +1,5 @@
 function specialNumbers(number) {
+    
     for (let j = 1; j <= number; j++) {
         let jToString = String(j);
         let sum = 0;
