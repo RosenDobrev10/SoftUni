@@ -1,0 +1,156 @@
+body {
+    font-family: Tahoma;
+}
+
+/* declare a 7 column grid on the table */
+
+.daysCalendar table {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.daysCalendar table tr, .daysCalendar table tbody {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+}
+
+.monthCalendar table {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.monthCalendar table tr, .monthCalendar table tbody {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.yearsCalendar table {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yearsCalendar table tr, .yearsCalendar table tbody {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+caption {
+    text-align: center;
+    grid-column: 1 / -1;
+    font-size: 130%;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.calendar a {
+    color: #8e352e;
+    text-decoration: none;
+}
+
+.calendar .months {
+    background: #8e352e;
+}
+
+.calendar td {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.calendar .weekdays {
+    background: #8e352e;
+}
+
+.month {
+    margin-bottom: 41px;
+}
+
+.calendar .weekdays th {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 10px;
+}
+
+.calendar td {
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar .days li:hover {
+    background: #d3d3d3;
+}
+
+.calendar .date {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    background: #333;
+    color: #fff;
+    width: 35px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    align-self: flex-end;
+}
+
+.calendar .other-month {
+    background: #f5f5f5;
+    color: #666;
+}
+
+.day:not(.other-month):hover {
+    background-color: #666;
+    cursor: pointer;
+}
+
+.monthCalendar caption:hover, .daysCalendar caption:hover {
+    background-color: #666;
+    cursor: pointer;
+    color: white;
+}
+
+/* ============================
+                  Mobile Responsiveness
+     ============================*/
+
+@media (max-width: 768px) {
+    .calendar .weekdays, .calendar .other-month {
+        display: none;
+    }
+    .calendar li {
+        height: auto !important;
+        border: 1px solid #ededed;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+    .calendar, .calendar tr, .calendar tbody {
+        grid-template-columns: 1fr;
+    }
+    .calendar tr {
+        grid-column: 1 / 2;
+    }
+    .calendar .date {
+        align-self: flex-start;
+    }
+}
