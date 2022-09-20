@@ -9,8 +9,8 @@ function spiceMustFlow(startingYield) {
         startingYield -= 10;
     }
 
-    if (totalAmount >= 26){      // Дори и да нямат достатъчно количество добита подправка,
-    totalAmount -= 26;          // Те пак ще изядат 26 след края на работния ден.
+    if (totalAmount >= 26){      // Ако в склада има наличност от поне 26 подправки
+    totalAmount -= 26;          // Работниците ще изядат 26 след края на работния ден.
     }
 
     console.log(days);

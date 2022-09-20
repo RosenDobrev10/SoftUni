@@ -1,6 +1,5 @@
 function binaryToDecimals(numberAsString) {
     
-    numberAsString = numberAsString.split("");
     let decimal = 0;
     let power = numberAsString.length - 1;
     for (let i = 0; i < numberAsString.length; i++) {
