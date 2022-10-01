@@ -5,8 +5,7 @@ function mergeArrays(array1, array2) {
             newArray.push(Number(array1[i]) + Number(array2[i]));   // Към новия масив добавяме сумата на двете числа от четните индекси
         } else {
             newArray.push(array1[i] + array2[i]);       // към новия масив добавяме конкатенираните стрингове от нечетните индекси 
-        }
-        
+        }  
     }
     console.log(newArray.join(" - "));
 }
