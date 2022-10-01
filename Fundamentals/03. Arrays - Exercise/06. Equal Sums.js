@@ -1,33 +1,22 @@
-function equalSums(array){
-
-    for (let index = 0; index < array.length; index++){
-        let rightSum = 0
-        let leftSum = 0
+function equalSums(arr) {
+    
+    for (let i = 0; i < arr.length; i++) {
+        let leftSum = 0;
+        let rightSum = 0;
         
-        for (let k = index - 1; k < index; k++){
-            if (k >=0){
-            leftSum += array[k]
-            } else {
-                leftSum = 0
-            }
+        for (let j = i - 1; j > -1; j--) {
+            leftSum += arr[j];
         }
-        for (let j = index + 1; j < array.length; j++){
-            if (j >= 0){
-            rightSum += array[j]
-            } else {
-                rightSum = 0
-            }
-            
+        
+        for (let k = i + 1; k < arr.length; k++) {
+            rightSum += arr[k];
         }
-        if (leftSum === rightSum){
-            console.log(index)
-            return
+        
+        if (leftSum === rightSum) {
+            return console.log(i);
         }
     }
-        console.log("no")
-    
-    
-
+    console.log(`no`);
 }
 equalSums([1, 2, 3, 3])
 //equalSums([1, 2])
