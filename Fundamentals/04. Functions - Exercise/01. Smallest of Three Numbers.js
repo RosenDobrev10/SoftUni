@@ -1,5 +1,5 @@
 function smallestOfThreeNumbers(numOne, numTwo, numThree){
-    let min = Number.MAX_SAFE_INTEGER   // Правим си число, което е много малко
+    let min = Number.MAX_SAFE_INTEGER   // Правим си число, което е много голямо
     if (numOne < min){                  // Първото число, винаги ще е по-малко от min
         min = numOne                    // Присвояваме стойността на първото число на минималното 
     }
