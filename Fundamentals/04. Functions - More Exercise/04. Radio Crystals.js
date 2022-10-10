@@ -2,7 +2,7 @@ function radioCrystals(array){
     let targetThickness = array.shift()
     for (let currentThickness of array) {
         console.log(`Processing chunk ${currentThickness} microns`)
-        while (currentThickness > targetThickness){
+        while (currentThickness !== targetThickness){
             
 
             let cuts = 0
