@@ -18,7 +18,7 @@ function cardGame(input){
 
     }
 
-    for (let [player, cards] of players){       // Минаваме по играчите и техните карти 
+    for (let [player, cards] of Object.entries(players)){       // Минаваме по играчите и техните карти 
         let cardsPower = 0                       // Правим променлива, в която ще изчисляваме силата на картите му 
 
         for (let card of cards){                    // минаваме по всяка карта от картите му 
@@ -29,7 +29,7 @@ function cardGame(input){
 
         console.log(`${player}: ${cardsPower}`)     // Накрая печатаме името и силата на картите 
     }
-    
+
 }
 cardGame([
 'Peter: 2C, 4H, 9H, AS, QS',
