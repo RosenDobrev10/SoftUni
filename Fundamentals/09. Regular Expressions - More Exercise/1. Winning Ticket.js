@@ -1,14 +1,21 @@
-function winningTicket(input) {
-    
-    let series = input[0].split(/[0-9]+/).filter((x) => x != '');
-    let repeaters = input[0].split(/[^0-9]+/).filter((x) => x != '');
-    let result = '';
-    for (let i = 0; i < series.length; i++) {
-        result += series[i].toUpperCase().repeat(repeaters[i]);
+function winningTicket(tickets){
+    const pattern = /(?=.{20}).*?(?=(?<ch>[@#$^]))(?<match>\k<ch>{6,}).*(?<=.{10})\k<match>.*/;
+    const ticketsArr = tickets.split(/\s*,\s*/g);
+    for (let ticket of ticketsArr){
+        let match = pattern.exec(ticket);
+        if (match){
+            if (match.groups.match.length >= 6 && match.groups.match.length <= 9){
+                console.log(`ticket "${ticket}" - ${match.groups.match.length}${match.groups.ch}`);
+            } else if (match.groups.match.length === 10){
+                console.log(`ticket "${ticket}" - ${match.groups.match.length}${match.groups.ch} Jackpot!`) ;                               
+            }          
+        } else if (ticket.length !== 20){
+            console.log('invalid ticket');
+        } else {
+            console.log(`ticket "${ticket}" - no match`);
+        }
     }
-    console.log(`Unique symbols used: ${[...new Set(result)].length}`);
-    console.log(result);
 }
-//winningTicket('Cash$$$$$$Ca$$$$$$sh')
+winningTicket('Cash$$$$$$Ca$$$$$$sh')
 winningTicket('$$$$$$$$$$$$$$$$$$$$, aabb , th@@@@@@eemo@@@@@@ey')
-//winningTicket('validticketnomatch:(')
+winningTicket('validticketnomatch:(')
