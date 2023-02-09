@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/site.css">
+    <link rel="stylesheet" href="./static/layout.css">
+    <link rel="stylesheet" href="./static/modal.css">
+    <title>Team Manager</title>
+</head>
+
+<body>
+    <div id="content">
+        <header id="titlebar" class="layout">
+            <a href="#" class="site-logo">Team Manager</a>
+            <nav>
+                <a href="#" class="action">Browse Teams</a>
+                <a href="#" class="action">Login</a>
+                <a href="#" class="action">Register</a>
+                <a href="#" class="action">My Teams</a>
+                <a href="#" class="action">Logout</a>
+            </nav>
+        </header>
+        <main>
+
+            <section id="home">
+                <article class="hero layout">
+                    <img src="./assets/team.png" class="left-col pad-med">
+                    <div class="pad-med tm-hero-col">
+                        <h2>Welcome to Team Manager!</h2>
+                        <p>Want to organize your peers? Create and manage a team for free.</p>
+                        <p>Looking for a team to join? Browse our communities and find like-minded people!</p>
+                        <a href="#" class="action cta">Sign Up Now</a>
+                        <a href="#" class="action cta">Browse Teams</a>
+                    </div>
+                </article>
+            </section>
+
+            <section id="login">
+                <article class="narrow">
+                    <header class="pad-med">
+                        <h1>Login</h1>
+                    </header>
+                    <form id="login-form" class="main-form pad-large">
+                        <div class="error">Error message.</div>
+                        <label>E-mail: <input type="text" name="email"></label>
+                        <label>Password: <input type="password" name="password"></label>
+                        <input class="action cta" type="submit" value="Sign In">
+                    </form>
+                    <footer class="pad-small">Don't have an account? <a href="#" class="invert">Sign up here</a>
+                    </footer>
+                </article>
+            </section>
+
+            <section id="register">
+                <article class="narrow">
+                    <header class="pad-med">
+                        <h1>Register</h1>
+                    </header>
+                    <form id="register-form" class="main-form pad-large">
+                        <div class="error">Error message.</div>
+                        <label>E-mail: <input type="text" name="email"></label>
+                        <label>Username: <input type="text" name="username"></label>
+                        <label>Password: <input type="password" name="password"></label>
+                        <label>Repeat: <input type="password" name="repass"></label>
+                        <input class="action cta" type="submit" value="Create Account">
+                    </form>
+                    <footer class="pad-small">Already have an account? <a href="#" class="invert">Sign in here</a>
+                    </footer>
+                </article>
+            </section>
+
+            <section id="create">
+                <article class="narrow">
+                    <header class="pad-med">
+                        <h1>New Team</h1>
+                    </header>
+                    <form id="create-form" class="main-form pad-large">
+                        <div class="error">Error message.</div>
+                        <label>Team name: <input type="text" name="name"></label>
+                        <label>Logo URL: <input type="text" name="logoUrl"></label>
+                        <label>Description: <textarea name="description"></textarea></label>
+                        <input class="action cta" type="submit" value="Create Team">
+                    </form>
+                </article>
+            </section>
+
+            <section id="edit">
+                <article class="narrow">
+                    <header class="pad-med">
+                        <h1>Edit Team</h1>
+                    </header>
+                    <form id="edit-form" class="main-form pad-large">
+                        <div class="error">Error message.</div>
+                        <label>Team name: <input type="text" name="name"></label>
+                        <label>Logo URL: <input type="text" name="logoUrl"></label>
+                        <label>Description: <textarea name="description"></textarea></label>
+                        <input class="action cta" type="submit" value="Save Changes">
+                    </form>
+                </article>
+            </section>
+
+            <section id="browse">
+
+                <article class="pad-med">
+                    <h1>Team Browser</h1>
+                </article>
+
+                <article class="layout narrow">
+                    <div class="pad-small"><a href="#" class="action cta">Create Team</a></div>
+                </article>
+
+                <article class="layout">
+                    <img src="./assets/atat.png" class="team-logo left-col">
+                    <div class="tm-preview">
+                        <h2>Storm Troopers</h2>
+                        <p>These ARE the droids we're looking for</p>
+                        <span class="details">5000 Members</span>
+                        <div><a href="#" class="action">See details</a></div>
+                    </div>
+                </article>
+
+                <article class="layout">
+                    <img src="./assets/rocket.png" class="team-logo left-col">
+                    <div class="tm-preview">
+                        <h2>Team Rocket</h2>
+                        <p>Gotta catch 'em all!</p>
+                        <span class="details">3 Members</span>
+                        <div><a href="#" class="action">See details</a></div>
+                    </div>
+                </article>
+
+                <article class="layout">
+                    <img src="./assets/hydrant.png" class="team-logo left-col">
+                    <div class="tm-preview">
+                        <h2>Minions</h2>
+                        <p>Friendly neighbourhood jelly beans, helping evil-doers succeed.</p>
+                        <span class="details">150 Members</span>
+                        <div><a href="#" class="action">See details</a></div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section id="my-teams">
+
+                <article class="pad-med">
+                    <h1>My Teams</h1>
+                </article>
+
+                <article class="layout narrow">
+                    <div class="pad-med">
+                        <p>You are not a member of any team yet.</p>
+                        <p><a href="#">Browse all teams</a> to join one, or use the button bellow to cerate your own
+                            team.</p>
+                    </div>
+                    <div class=""><a href="#" class="action cta">Create Team</a></div>
+                </article>
+
+                <article class="layout">
+                    <img src="./assets/rocket.png" class="team-logo left-col">
+                    <div class="tm-preview">
+                        <h2>Team Rocket</h2>
+                        <p>Gotta catch 'em all!</p>
+                        <span class="details">3 Members</span>
+                        <div><a href="#" class="action">See details</a></div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section id="team-home">
+                <article class="layout">
+                    <img src="./assets/rocket.png" class="team-logo left-col">
+                    <div class="tm-preview">
+                        <h2>Team Rocket</h2>
+                        <p>Gotta catch 'em all!</p>
+                        <span class="details">3 Members</span>
+                        <div>
+                            <a href="#" class="action">Edit team</a>
+                            <a href="#" class="action">Join team</a>
+                            <a href="#" class="action invert">Leave team</a>
+                            Membership pending. <a href="#">Cancel request</a>
+                        </div>
+                    </div>
+                    <div class="pad-large">
+                        <h3>Members</h3>
+                        <ul class="tm-members">
+                            <li>My Username</li>
+                            <li>James<a href="#" class="tm-control action">Remove from team</a></li>
+                            <li>Meowth<a href="#" class="tm-control action">Remove from team</a></li>
+                        </ul>
+                    </div>
+                    <div class="pad-large">
+                        <h3>Membership Requests</h3>
+                        <ul class="tm-members">
+                            <li>John<a href="#" class="tm-control action">Approve</a><a href="#"
+                                    class="tm-control action">Decline</a></li>
+                            <li>Preya<a href="#" class="tm-control action">Approve</a><a href="#"
+                                    class="tm-control action">Decline</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+        <footer id="footer">
+            SoftUni &copy; 2014-2021
+        </footer>
+    </div>
+    <div class="overlay">
+        <div class="modal">
+            <p>Overlay message</p>
+            <a href="#" class="action">Action</a>
+        </div>
+    </div>
+</body>
+
+</html>
