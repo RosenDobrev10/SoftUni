@@ -1,3 +1,5 @@
+window.addEventListener("load", solve);
+
 function solve() {
     const inputs = {
         firstNameElement: document.querySelector('#first-name'),
