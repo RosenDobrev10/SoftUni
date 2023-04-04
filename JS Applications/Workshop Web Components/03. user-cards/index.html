@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card - Component</title>
+</head>
+
+<body>
+    <h1>User Cards</h1>
+
+    <template id="user-card-template">
+        <style>
+            .user-card {
+                display: flex;
+                font-family: 'Arial', sans-serif;
+                background-color: #EEE;
+                border-bottom: 5px solid darkorchid;
+                width: 100%;
+            }
+
+            .user-card img {
+                width: 200px;
+                height: 200px;
+                border: 1px solid darkorchid;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .info h3 {
+                font-weight: bold;
+                margin-top: 1em;
+                text-align: center;
+            }
+
+            .info button {
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-color: darkorchid;
+                color: white;
+                padding: 0.5em 1em;
+            }
+
+            @media only screen and (max-width: 500px) {
+                .user-card {
+                    flex-direction: column;
+                    margin-bottom: 1em;
+                }
+
+                .user-card figure,
+                .info button {
+                    align-self: center;
+                }
+
+                .info button {
+                    margin-bottom: 1em;
+                }
+
+                .info p {
+                    padding-left: 1em;
+                }
+            }
+        </style>
+        <div class="user-card">
+            <figure>
+                <img src="AVATAR IMAGE" />
+            </figure>
+            <div class="info">
+                <h3>USER NAMES</h3>
+                <div>
+                    <p>
+                        <slot name="email" />
+                    </p>
+                    <p>
+                        <slot name="phone" />
+                    </p>
+                </div>
+
+                <button class="toggle-info-btn">Toggle Info</button>
+            </div>
+        </div>
+    </template>
+    
+</body>
+
+</html>
