@@ -1,0 +1,5 @@
+body {
+    background-image: radial-gradient(mintcream 0%, gray 100%);
+    font-family: "Trebuchet MS";
+    user-select: none;
+}
