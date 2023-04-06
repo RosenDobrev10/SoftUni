@@ -1,0 +1,103 @@
+#welcomeMessage, #events {
+    background-color: rgba(255, 255, 255, 0.904) 10%;
+    margin: 1em 3em;
+    padding: 1em;
+    border-radius: 1rem;
+    box-shadow: 2px 10px 1.5em 5px black;
+    color: rgba(245, 234, 234, 0.842);
+    font-size: 18px;
+}
+
+#event>h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+#welcomeMessage > p {
+    margin-top: 20px;
+}
+
+.info h6 {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 12px;
+}
+
+#welcomeMessage {
+    font-weight: bold;
+}
+
+.theaters-container {
+    background-color: rgba(128, 128, 128, 0.301);
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.theaters-container>div {
+    flex: 0 0 5em;
+    margin: 1em;
+    background-color: gray;
+    position: relative;
+    box-shadow: 2px 2px 1.5em 2px black;
+    color: black;
+}
+
+.theaters-container>div>.info {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 2px 2px 1.5em 2px black;
+}
+
+h4 {
+    margin: 1em 1em;
+    
+}
+
+img {
+    margin: 0 auto;
+}
+
+.home-image{
+    max-height: 40em;
+}
+
+.home-image>img{
+    max-height: 20em;
+    max-width: 20em;
+}
+
+.home-buttons {
+    margin: 0 0 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.411); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #918181; 
+  }
+
+.btn-details:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+}
