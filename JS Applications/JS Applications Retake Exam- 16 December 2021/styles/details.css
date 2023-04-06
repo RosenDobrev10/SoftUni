@@ -1,0 +1,72 @@
+div.details {
+    width: 60em;
+    margin: 3em auto;
+}
+
+.details {
+    display: block;
+    margin: 1em 2em 0 auto;
+}
+
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+    background-color: red;
+}
+
+.btn-edit:hover {
+    color: white;
+    background-color: blue;
+}
+
+.btn-like:hover {
+    color: white;
+    background-color: green;
+}
+
+#detailsBox {
+    background-color: rgba(255, 255, 255, 0.904);
+    box-shadow: 2px 10px 1.5em 5px black;
+    text-align:center;
+    display: flex;
+    max-width: 40em;
+    min-width: 15em;
+    background-color: rgba(255, 255, 255, 0.904);
+    border-radius: 1rem;
+    margin: 3em auto;
+    padding: 1em;
+}
+
+#detailsBox > h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    display: flex;
+}
+
+.detailsInfo img {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+
+    margin-right: 10px;
+}
+
+.details > h4 {
+    font-size: 12px;
+    display: flex;
+}
+
+.btn-delete, .btn-edit, .btn-like {
+    margin: 1em 0.5em;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.329);
+    color: black;
+}
+
+.likes {
+    margin-top: 30px;
+}
