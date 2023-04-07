@@ -1,0 +1,52 @@
+.create-theater {
+    margin: 1em 3em;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+}
+
+.create-form > h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+input:placeholder-shown, textarea:placeholder-shown {
+    font-family: Verdana,Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.create-theater a {
+    color: black;
+    margin: 0;
+}
+
+textarea {
+    height: 5em;
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 1em 2em;
+    font-family: Verdana,Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+input {
+    font-family: Verdana,Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.theater-form>h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.info-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.image {
+    display: block;
+    max-height: 25em;
+}
