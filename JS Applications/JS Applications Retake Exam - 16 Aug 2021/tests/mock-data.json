@@ -1,0 +1,66 @@
+{
+    "users": [
+        {
+            "_id": "0001",
+            "email": "peter@abv.bg",
+            "password": "123456",
+            "accessToken": "AAAA"
+        },
+        {
+            "_id": "0002",
+            "email": "john@abv.bg",
+            "password": "123456",
+            "accessToken": "BBBB"
+        }
+    ],
+    "catalog": [
+        {
+            "_id": "1001",
+            "_ownerId": "0001",
+            "title": "Name_1",
+            "category": "caterory1",
+            "maxLevel": "100",
+            "imageUrl": "./images/ZombieLang.png",
+            "summary": "summary1"
+        },
+        {
+            "_id": "1002",
+            "_ownerId": "0001",
+            "title": "Name_2",
+            "category": "category2",
+            "maxLevel": "250",
+            "imageUrl": "./images/MineCraft.png",
+            "summary": "summary2"
+        },
+        {
+            "_id": "1003",
+            "_ownerId": "0002",
+            "title": "Name_3",
+            "category": "category3",
+            "maxLevel": "70",
+            "imageUrl": "./images/CoverFire.png",
+            "summary": "summary3"
+        },
+        {
+            "_id": "1004",
+            "_ownerId": "0002",
+            "title": "Game_4",
+            "category": "category4",
+            "maxLevel": "71",
+            "imageUrl": "./images/CoverFire.png",
+            "summary": "summary_4"
+        }
+    ],
+    "comments": [
+        {
+            "_id": "2001",
+            "gameId": "1003",
+            "comment": "Best game!"
+        },
+        {
+            "_id": "2002",
+            "gameId": "1001",
+            "comment": "test_comment"
+        }
+    ]
+}
