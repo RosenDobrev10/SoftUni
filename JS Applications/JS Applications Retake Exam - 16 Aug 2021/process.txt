@@ -1,0 +1,38 @@
+- Unpack project and install dependencies => npm i
+- Create app entry point with placeholder handlers 
+- Implement rendering dependency injection and create placeholder views
+
+Implement views:
+
+--- Home ---
+- Reading functionality in data service
+- Template and view control
+
+--- Catalog ---
+- Extend reading functionality in data service
+- Template and view control
+
+--- Login, Register and Logout ---
+- Create user service
+- Template and view control
+- Submitting form and error handling
+- Logout from navbar
+
+--- Navigation header ---
+- Session middleware
+- Extend rendering middleware to include navbar
+- Template and view control
+
+--- Create ----
+- Writing functionality in data service 
+- Template and view control
+- Submitting form and error handling
+
+--- Details ---
+- Extend reading functionality in data service
+- Template and view control
+
+--- Edit and Delete ---
+- Extend writing functionality in data service
+- Template and view control
+- Submitting form and error handling
