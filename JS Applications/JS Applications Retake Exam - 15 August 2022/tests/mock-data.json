@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "_id": "0001",
+      "email": "peter@abv.bg",
+      "password": "123456",
+      "accessToken": "AAAA"
+    },
+    {
+      "_id": "0002",
+      "email": "john@abv.bg",
+      "password": "123456",
+      "accessToken": "BBBB"
+    }
+  ],
+  "catalog": [
+    {
+      "_id": "1002",
+      "_ownerId": "0001",
+      "brand": "Air Jordan",
+      "model": "1 Retro High",
+      "imageUrl": "./images/travis.jpg",
+      "release": "2019",
+      "designer": "Travis Scott",
+      "value": "2000"
+    },
+    {
+      "_id": "1002",
+      "_ownerId": "0002",
+      "brand": "Nike",
+      "model": "Back to the Future II",
+      "imageUrl": "./images/eminem.jpg",
+      "release": "2015",
+      "designer": "Tinker Hatfield",
+      "value": "92100"
+    },
+    {
+      "_id": "1002",
+      "_ownerId": "0002",
+      "brand": "Air Jordan",
+      "model": "4 Retro CARHARTT X EMINEM",
+      "imageUrl": "./images/back2future.webp",
+      "release": "2015",
+      "designer": "Eminem X Carhartt",
+      "value": "30000"
+    }
+  ],
+  "applications": [
+    {
+      "_ownerId": "0001",
+      "offerId": "1002",
+      "_id": "e2d43547-5f76-451c-93df-14a83cb042e7"
+    },
+    {
+      "_ownerId": "0002",
+      "offerId": "1001",
+      "_id": "9d709077-9bbb-417a-988e-87a0677b73d2"
+    },
+    {
+      "_ownerId": "0001",
+      "offerId": "1003",
+      "_id": "16fb2a96-29bd-46b0-82b6-125a962b03ef"
+    }
+  ]
+}
