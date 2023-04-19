@@ -1,0 +1,68 @@
+#dashboard {
+  margin-top: 50px;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.card img {
+  margin: auto;
+  height: 290px;
+  width: 95%;
+}
+
+.card-wrapper {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-wrapper h2 {
+  margin: auto;
+}
+
+.title,
+.salary {
+  font-size: 21px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 23%;
+  height: 500px;
+  margin: 25px auto;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px ridge rgb(210, 208, 208);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+}
+
+.details-btn {
+  text-decoration: none;
+  margin: auto 50px;
+  font-size: 21px;
+  width: 130px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background: #7c7e7e;
+}
+
+.card p {
+  min-width: 90% !important;
+  margin: auto;
+  font-size: 21px;
+  max-height: 50px;
+  max-width: 30%;
+  text-align: center;
+}
+
+.card span {
+  padding: 10px;
+  margin: auto;
+}
