@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Kaushan+Script&display=swap');
+
+
+body {
+  color: rgb(231, 103, 124);
+  background: rgb(245, 219, 223);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  width: 97vw;
+  font-family: 'Alkalami', serif;
+font-family: 'Kaushan Script', cursive;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3em 3em;
+  background: rgb(245, 219, 223);
+  border-bottom: 3px dotted  rgb(231, 103, 124);
+  width: 90vw;
+}
+
+nav {
+  height: 0px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#home {
+  background-color: rgb(245, 219, 223);
+}
+
+#logo-img {
+  height: 80px;
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: rgb(240, 14, 52);
+  font-weight: 400;
+}
+
+header a {
+  padding: 0 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgb(121, 13, 13);
+}
+
+footer {
+  background-color: #e0ecf1;
+  color:  rgb(240, 14, 52);
+  font-weight: bolder;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+}
+footer p {
+  margin-top:-1px;
+}
+
+
+
+#home img {
+  display: block;
+  margin: auto;
+  height: 48%;
+  width: 48%;
+  background-color: transparent;
+}
+
+#home h2,
+#home h3 {
+  font-style: italic;
+  font-size: 27px;
+  color: rgb(240, 14, 52);;
+  text-align: center;
+}
