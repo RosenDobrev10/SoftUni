@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "_id": "0001",
+      "email": "peter@abv.bg",
+      "password": "123456",
+      "accessToken": "AAAA"
+    },
+    {
+      "_id": "0002",
+      "email": "john@abv.bg",
+      "password": "123456",
+      "accessToken": "BBBB"
+    }
+  ],
+  "catalog": [
+    {
+      "_id": "1001",
+      "_ownerId": "0001",
+      "name": "Fond De Teint",
+      "imageUrl": "/images/product example 1.png",
+      "category": "Skin care, Makeup, Face",
+      "description": "Fond De Teint (Foundation) is a liquid, cream, or powder makeup applied to the face and neck to create an even, uniform color to the complexion, cover flaws and, sometimes, to change the natural skin tone. Some foundations also function as a moisturizer, sunscreen, astringent or base layer for more complex cosmetics. Foundation applied to the body is generally referred to as \"body painting\" or \"body makeup\".",
+      "price": "23.99"
+    },
+    {
+      "_id": "1002",
+      "_ownerId": "0001",
+      "name": "Eyeshadow Palette",
+      "imageUrl": "/images/product example 2.png",
+      "category": "Decorative cosmetics, Makeup, Eyes",
+      "description": "Eye shadow (or eyeshadow) is a cosmetic applied primarily to the eyelids to attract attention to the wearer eyes, making them stand out or look more attractive.Eye shadow can also be applied under the eyes, on the cheeks, or to brow bones.",
+      "price": "19.99"
+    },
+    {
+      "_id": "1003",
+      "_ownerId": "0002",
+      "name": "Lipstick",
+      "imageUrl": "/images/product example 3.png",
+      "category": "Decorative cosmetics, Makeup, Lips",
+      "description": "Lipstick is a cosmetic product containing pigments, oils, waxes, and emollients that applies color, texture, and protection to the lips.",
+      "price": "16.99"
+    }
+  ],
+  "bought": [
+    {
+      "_ownerId": "0001",
+      "productId": "1002",
+      "_id": "e2d43547-5f76-451c-93df-14a83cb042e7"
+    },
+    {
+      "_ownerId": "0002",
+      "productId": "1001",
+      "_id": "9d709077-9bbb-417a-988e-87a0677b73d2"
+    },
+    {
+      "_ownerId": "0001",
+      "productId": "1003",
+      "_id": "16fb2a96-29bd-46b0-82b6-125a962b03ef"
+    }
+  ]
+}
