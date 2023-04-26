@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    color: blue;
+}
+
+body {
+    background: #F2BCBC;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
