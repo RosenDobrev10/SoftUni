@@ -1,0 +1,32 @@
+body {
+    color: blue;
+    background: #E9CBCB;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 5em;
+    background: #DDDDDD;
+}
+
+.home {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    font-size: 1.25rem;
+}
+
+header a {
+    padding: 0 30px;
+    text-decoration: none;
+}
