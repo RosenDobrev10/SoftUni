@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "_id": "0001",
+      "email": "peter@abv.bg",
+      "password": "123456",
+      "accessToken": "AAAA"
+    },
+    {
+      "_id": "0002",
+      "email": "john@abv.bg",
+      "password": "123456",
+      "accessToken": "BBBB"
+    }
+  ],
+  "catalog": [
+    {
+      "_id": "1001",
+      "_ownerId": "0001",
+      "title": "Clothes",
+      "description": "We need warm winter clothes. The sizes are for children from 2 to 14 years old. If possible, made from cotton materials, no superficial ones.",
+      "address": "ul. Hristo Smirnenski 18, Sofia",
+      "phone": "0888222345",
+      "imageUrl": "/images/clothes.jpeg"
+    },
+    {
+      "_id": "1002",
+      "_ownerId": "0001",
+      "title": "Toys",
+      "description": "We need toys for babies under 1.5 years old, as well as some children books and puzzles for kids under 6 years old",
+      "address": "ul. Tsanko Tsankov 5",
+      "phone": "0878787878",
+      "imageUrl": "/images/toys.jpeg"
+    },
+    {
+      "_id": "1003",
+      "_ownerId": "0002",
+      "title": "School Supplies",
+      "description": "We need 20 striped notebooks and 10 squared notebooks, 5 backpacks, and other school supplies, such as pens, pencils, rulers, erasers, etc.",
+      "address": "ul. Manioka Tapioka 25",
+      "phone": "0888264871",
+      "imageUrl": "/images/school-supplies.jpeg"
+    }
+  ],
+  "donations": [
+    {
+      "_ownerId": "0001",
+      "postId": "1002",
+      "_id": "e2d43547-5f76-451c-93df-14a83cb042e7"
+    },
+    {
+      "_ownerId": "0001",
+      "postId": "1001",
+      "_id": "9d709077-9bbb-417a-988e-87a0677b73d2"
+    },
+    {
+      "_ownerId": "0002",
+      "postId": "1003",
+      "_id": "16fb2a96-29bd-46b0-82b6-125a962b03ef"
+    }
+  ]
+}
