@@ -1,0 +1,41 @@
+.post-image {
+    margin-top: 2em;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.all-posts,
+.my-posts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 70px;
+    margin-top: 2em;    
+}
+
+.no-posts-title {
+    margin-top: 3em;
+}
+
+.post {
+    padding: 1em 3em;
+    background: linear-gradient(to right, #F7ECEC, #878282);
+    border: 2px solid blue;
+    border-radius: 30px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.details-btn {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.7em 0;
+    width: 6vw;
+}
