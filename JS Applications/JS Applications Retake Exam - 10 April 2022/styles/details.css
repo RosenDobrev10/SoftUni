@@ -1,0 +1,64 @@
+#conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details {
+    display: flex;
+    width: 50vw;
+    margin: 2em auto 8em auto;
+    padding: 1em 0;
+    border: 2px solid blue;
+    border-radius: 30px;
+    background: linear-gradient(to right, #878282, #F7ECEC);
+}
+
+#details .post-image {
+    margin: 2em 0 2em 2em;
+}
+
+#details .title {
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.image-wrapper {
+    width: 45%;
+}
+
+.post-title {
+    font-size: 2.5rem;
+}
+
+.post-description {
+    font-size: 1.25rem;
+    margin: 0.7em 0;
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em auto;
+}
+
+.btns>.btn {
+    width: 8vw;
+    margin: 0 0.5em;
+}
+
+#donated-btn {
+    width: 15vw !important;
+}
+
+#donated-btn:hover {
+    background: white;
+}
