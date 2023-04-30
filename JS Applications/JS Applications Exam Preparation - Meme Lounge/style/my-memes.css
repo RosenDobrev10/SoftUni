@@ -1,0 +1,44 @@
+.meme-listings {
+    width: 86%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.my-meme {
+    width: 25%;
+}
+
+.my-meme>img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.meme-title {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.meme-title:hover {
+    color: #4438ea;
+}
+
+#container>div.my-memes>div>div>div {
+    padding-top: 20px;
+}
+
+.my-meme-btn {
+    margin-top: 15px;
+    background-color: blue;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
