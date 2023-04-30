@@ -1,0 +1,88 @@
+/* Add padding to containers */
+
+.container {
+    background-color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Full-width input fields */
+
+input[type=text], input[type=email], input[type=number], input[type=password] ,textarea{
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus ,textarea:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/register button */
+
+.registerbtn {
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#details {
+    margin-bottom: 30px;
+}
+
+#edit-meme>form>div>p:nth-child(2) {
+    border-bottom: 3px solid lightgrey;
+    margin: auto;
+    margin-bottom: 34px;
+    padding: 23px;
+    width: 60%;
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+#create-meme>form>div>h1 {
+    border-bottom: 3px solid lightgrey;
+    margin: auto;
+    margin-bottom: 34px;
+    padding: 23px;
+    width: 60%;
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.gender label:first-of-type {
+    margin-right: 60px;
+}
+
+.container > label{
+    display: block;
+}
