@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Lounge</title>
+    <link rel="stylesheet" href="/style/styles.css">
+    <script src="/src/app.js" type="module"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Notifications -->
+        <section id="notifications">
+            <div id="errorBox" class="notification">
+                <span>MESSAGE</span>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="/memes">All Memes</a>
+             <!-- Logged users -->
+            <div class="user">
+                <a href="/create">Create Meme</a>
+                <div class="profile">
+                    <span>Welcome, {email}</span>
+                    <a href="/profile">My Profile</a>
+                    <a id="logoutBtn" href="javascript:void(0)">Logout</a>
+                </div>
+            </div>
+            <!-- Guest users -->
+            <div class="guest">
+                <div class="profile">
+                    <a href="/login">Login</a>
+                    <a href="/register">Register</a>
+                </div>
+                <a class="active" href="/">Home Page</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main></main>
+
+        <!-- Footer  -->
+        <footer class="footer">
+            <p>Created by SoftUni Delivery Team</p>
+        </footer>
+    </div>
+</body>
+
+</html>
