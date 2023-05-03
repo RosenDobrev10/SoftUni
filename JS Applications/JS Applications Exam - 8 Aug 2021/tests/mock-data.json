@@ -1,0 +1,75 @@
+{
+    "users": [
+        {
+            "_id": "0001",
+            "email": "peter@abv.bg",
+            "password": "123456",
+            "accessToken": "AAAA"
+        },
+        {
+            "_id": "0002",
+            "email": "john@abv.bg",
+            "password": "123456",
+            "accessToken": "BBBB"
+        }
+    ],
+    "catalog": [
+        {
+            "_id": "1001",
+            "_ownerId": "0001",
+            "title": "Name_1",
+            "description": "Description_1",
+            "imageUrl": "./images/book2.jpg",
+            "type": "Fiction"
+        },
+        {
+            "_id": "1002",
+            "_ownerId": "0001",
+            "title": "Name_2",
+            "description": "Description_2",
+            "imageUrl": "./images/book2.jpg",
+            "type": "Classic"
+        },
+        {
+            "_id": "1003",
+            "_ownerId": "0002",
+            "title": "Name_3",
+            "description": "Description_3",
+            "imageUrl": "./images/book3.jpg",
+            "type": "Mistery"
+        },
+        {
+            "_id": "1004",
+            "_ownerId": "0002",
+            "title": "Name_4",
+            "description": "Description_4",
+            "imageUrl": "./images/book2.jpg",
+            "type": "Romance"
+        },
+        {
+            "_id": "1005",
+            "_ownerId": "0002",
+            "title": "Name_5",
+            "description": "Description_5",
+            "imageUrl": "./images/book1.jpg",
+            "type": "Other"
+        }
+    ],
+    "likes": [
+        {
+            "_ownerId": "0001",
+            "bookId": "1002",
+            "_id": "e2d43547-5f76-451c-93df-14a83cb042e7"
+        },
+        {
+            "_ownerId": "0001",
+            "bookId": "1001",
+            "_id": "9d709077-9bbb-417a-988e-87a0677b73d2"
+        },
+        {
+            "_ownerId": "0002",
+            "bookId": "1003",
+            "_id": "16fb2a96-29bd-46b0-82b6-125a962b03ef"
+        }
+    ]
+}
