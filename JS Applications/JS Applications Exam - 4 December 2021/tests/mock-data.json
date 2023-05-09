@@ -1,0 +1,51 @@
+{
+    "users": [
+        {
+            "_id": "0001",
+            "email": "peter@abv.bg",
+            "password": "123456",
+            "accessToken": "AAAA"
+        },
+        {
+            "_id": "0002",
+            "email": "john@abv.bg",
+            "password": "123456",
+            "accessToken": "BBBB"
+        }
+    ],
+    "catalog": [
+        {
+            "_id": "1001",
+            "_ownerId": "0001",
+            "name": "Name_1",
+            "imgUrl": "./images/Lorde.jpg",
+            "price": "1.00",
+            "releaseDate": "10.01",
+            "artist": "artist1",
+            "genre": "genre1",
+            "description": "description1"
+        },
+        {
+            "_id": "1002",
+            "_ownerId": "0001",
+            "name": "Name_2",
+            "imgUrl": "./images/Lorde.jpg",
+            "price": "2.00",
+            "releaseDate": "releaseDate2",
+            "artist": "artist2",
+            "genre": "genre2",
+            "description": "description2"
+        },
+        {
+            "_id": "1003",
+            "_ownerId": "0002",
+            "name": "Name_3",
+            "imgUrl": "./images/Lorde.jpg",
+            "price": "3.00",
+            "releaseDate": "releaseDate3",
+            "artist": "artist3",
+            "genre": "genre3",
+            "description": "description3"
+        }
+    ]
+}
