@@ -1,0 +1,11 @@
+1) Extract and examine project files
+2) Setup NPM project(package.json + libraries)
+3) Analyze HTML and determine template structure
+4) Create application entry module
+5) Setup routing and create view placeholders
+6) Implement request functions
+7) Implement views
+7.1) Create static template
+7.2) Implement requests
+7.3) Populate template with remote data
+7.4) Add event listeners( if any )
