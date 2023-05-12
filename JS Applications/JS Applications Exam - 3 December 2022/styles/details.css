@@ -1,0 +1,100 @@
+#details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  margin: 50px auto;
+  min-height: 400px;
+  max-width: 45%;
+  border: 2px ridge rgb(210, 208, 208);
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+    box-shadow: 10px 10px rgba(0, 0, 0, .15);
+}
+
+#img-wrapper {
+  max-width: 35%;
+}
+
+#img-wrapper img {
+  width: 100%;
+  min-height: 250px;
+  display: block;
+}
+
+#details-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 29px;
+  width: 100%;
+}
+
+#info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+  margin-left: 70px;
+  height: 250px;
+}
+
+#info-wrapper > p {
+  width: 90%;
+  margin: 25px 0px 0px 0px;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+#info-wrapper>p>strong {
+  float: left;
+}
+
+#info-wrapper > p > span {
+  float: right;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 19px;
+}
+
+span {
+  font-size: 17px;
+}
+
+#likes{
+  width: 95%;
+  text-align: center;
+  margin: 35px 0px 20px 0px;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+#action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+#action-buttons a {
+  text-decoration: none;
+  margin: auto 50px;
+  font-size: 21px;
+  width: 130px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+  background: #CBF6FF;
+  
+}
+
+#action-buttons a:hover {
+  transform: rotateX(15deg);
+  box-shadow: 0 15px 15px #7db9d7;
+}
