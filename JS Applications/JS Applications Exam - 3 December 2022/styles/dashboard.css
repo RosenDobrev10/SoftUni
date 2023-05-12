@@ -1,0 +1,105 @@
+#dashboard {
+  margin-top: 50px;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.card img {
+  margin: auto;
+  height: 290px;
+  width: 70%;
+  padding: 30px;
+}
+
+.card-wrapper {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-wrapper h2 {
+  margin: auto;
+}
+
+.title,
+.salary {
+  font-size: 21px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 23%;
+  height: 600px;
+  margin: 25px auto;
+  background-color: white;
+  /* border-radius: 5px;
+  border: 2px ridge rgb(210, 208, 208);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24); */
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+    color: white;
+    box-shadow: 20px 20px rgba(0, 0, 0, .15);
+    transition: all .4s ease;
+}
+
+.card:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+  box-shadow: 10px 10px rgba(0, 0, 0, .25);
+}
+
+.details-btn {
+  display: block;
+   
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #CBF6FF;
+    color: black;
+    font-size: 18px;
+    
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.details-btn:hover {
+  transform: rotateX(15deg);
+  box-shadow: 0 15px 15px #7db9d7;
+}
+
+.card p {
+  min-width: 90% !important;
+  width: 70%;
+  margin: auto;
+  padding: 5px;
+  font-size: 21px;
+  max-height: 50px;
+  max-width: 30%;
+  text-align: center;
+  color: black;
+}
+
+.card p strong{
+  float: left;
+}
+
+.card p span {
+ float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.card span {
+  padding: 10px;
+  margin: auto;
+}
