@@ -1,0 +1,105 @@
+body {
+  color: rgb(68, 67, 67);
+  background: #F3FFFF;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-style: italic;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3em 3em;
+  background: #CBF6FF;
+  box-shadow: 0 5px 5px #CBF6FF;
+  
+}
+
+nav {
+  background-color: #7a6e6e;
+  height: 0px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(14, 14, 15);
+}
+
+#logo {
+  font-style: italic;
+  font-size: 30px;
+}
+
+#logo-img {
+  height: 70px;
+  width: 210px;
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+header a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: rgb(18, 18, 19);
+}
+
+header a:hover {
+  color: rgb(84, 85, 85);
+}
+
+footer {
+  background-color: #CBF6FF;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  box-shadow:0 -5px 5px #CBF6FF;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+#home {
+  margin-top: 100px;
+}
+
+#home img {
+  display: block;
+  margin: auto;
+  height: 33%;
+  width: 33%;
+  background-color: transparent;
+}
+
+#landing-text span{
+  font-style: normal !important;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#home h1 {
+  font-style: italic;
+  font-size: 39px;
+  color: rgb(68, 67, 67);
+  text-align: center;
+}
+
+#home h2,
+#home h3 {
+  font-style: italic;
+  font-size: 27px;
+  color: rgb(68, 67, 67);
+  text-align: center;
+}
