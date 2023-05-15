@@ -1,0 +1,38 @@
+.createForm {
+  position: relative;
+  display: flex;
+  text-align: center;
+  height: 600px;
+  width: 800px;
+}
+
+#createPage {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+}
+
+.createForm img {
+  border-radius: 30px;
+  width: 60%;
+  height: 500px;
+  margin: 0px;
+  margin-right: 20px;
+}
+
+.createForm div {
+  width: 300px;
+  display: block;
+}
+
+.createForm h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+.createForm .btn {
+  width: 200px;
+  margin-left: 55px;
+}
