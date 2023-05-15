@@ -1,0 +1,71 @@
+{
+    "users": [
+        {
+            "_id": "0001",
+            "email": "peter@abv.bg",
+            "password": "123456",
+            "accessToken": "AAAA"
+        },
+        {
+            "_id": "0002",
+            "email": "john@abv.bg",
+            "password": "123456",
+            "accessToken": "BBBB"
+        }
+    ],
+    "catalog": [
+        {
+            "_id": "1001",
+            "_ownerId": "0001",
+            "name": "Max",
+            "breed": "Shiba Inu",
+            "age": "2 years",
+            "weight": "5 kg",
+            "image": "./images/Shiba-Inu.png"
+        },
+        {
+            "_id": "1002",
+            "_ownerId": "0001",
+            "name": "Athena",
+            "breed": "American Curl",
+            "age": "1 year",
+            "weight": "3kg",
+            "image": "./images/cat2.jpg"
+        },
+        {
+            "_id": "1003",
+            "_ownerId": "0002",
+            "name": "Apollo",
+            "breed": "Pug",
+            "age": "3 years",
+            "weight": "4kg",
+            "image": "./images/dog2.jpg"
+        },
+        {
+            "_id": "1004",
+            "_ownerId": "0002",
+            "name": "Chibi",
+            "breed": "Teddy guinea pig",
+            "age": "1 years",
+            "weight": "1kg",
+            "image": "./images/guinea-pig.jpg"
+        }
+    ],
+    "donation": [
+        {
+            "_ownerId": "0001",
+            "petId": "1002",
+            "_id": "e2d43547-5f76-451c-93df-14a83cb042e7"
+        },
+        {
+            "_ownerId": "0001",
+            "petId": "1001",
+            "_id": "9d709077-9bbb-417a-988e-87a0677b73d2"
+        },
+        {
+            "_ownerId": "0002",
+            "petId": "1003",
+            "_id": "16fb2a96-29bd-46b0-82b6-125a962b03ef"
+        }
+    ]
+}
