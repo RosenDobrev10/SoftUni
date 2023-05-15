@@ -1,0 +1,92 @@
+#detailsPage {
+  display: grid;
+  justify-items: center;
+}
+
+.details {
+  display: block;
+  position: relative;
+  width: 700px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #cf370991;
+  box-shadow: 14px 14px 30px #464a4e, -14px -14px 30px #464a4e;
+  justify-content: center;
+}
+
+.animalPic {
+  float: left;
+  height: 100%;
+  width: auto;
+  margin-right: 20px;
+}
+
+.animalPic img {
+  border-radius: 12px 12px 12px 12px;
+  height: 100%;
+}
+
+.animalInfo {
+  padding-left: 10px;
+  padding-top: -10px;
+}
+
+.animalInfo h1 {
+  color: black;
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.animalInfo h3 {
+  margin: 8px 0 47px 18px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+
+.animalInfo h4 {
+  margin: 8px 0 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.1em;
+}
+
+.actionBtn {
+  display: flex;
+  text-align: center;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.actionBtn > a {
+  width: 200%;
+  height: auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  background-color: #f34515;
+  transition: 500ms;
+  color: black;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  text-decoration: none;
+  margin-right: 50px;
+  box-shadow: 6px 6px 20px #464a4e62, -6px -6px 20px #464a4e62;
+}
+
+.actionBtn > a:hover {
+  box-shadow: none;
+}
