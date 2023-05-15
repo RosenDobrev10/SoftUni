@@ -1,0 +1,38 @@
+.editForm {
+  position: relative;
+  display: flex;
+  text-align: center;
+  height: 600px;
+  width: 800px;
+}
+
+#editPage {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+}
+
+.editForm img {
+  border-radius: 30px;
+  width: 60%;
+  height: 500px;
+  margin: 0px;
+  margin-right: 20px;
+}
+
+.editForm div {
+  width: 300px;
+  display: block;
+}
+
+.editForm h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+.editForm .btn {
+  width: 200px;
+  margin-left: 55px;
+}
