@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "_id": "0001",
+      "email": "peter@abv.bg",
+      "password": "123456",
+      "accessToken": "AAAA"
+    },
+    {
+      "_id": "0002",
+      "email": "john@abv.bg",
+      "password": "123456",
+      "accessToken": "BBBB"
+    }
+  ],
+  "catalog": [
+    {
+      "_id": "1001",
+      "_ownerId": "0001",
+      "title": "Sales Manager",
+      "imageUrl": "./images/example1.png",
+      "category": "Sales, Pricing, Marketing, Management",
+      "description": "Target the Right Buyers, Understand Key Insights, and Make Your Outreach Personalized.",
+      "requirements": "Strong communication skills. Creating and implementing a sales plan. Meeting sales goals by monitoring progress.",
+      "salary": "1900"
+    },
+    {
+      "_id": "1002",
+      "_ownerId": "0001",
+      "title": "Senior Frontend Software Engineer",
+      "imageUrl": "./images/example2.png",
+      "category": "IT, Developer, WEB",
+      "description": "We are looking for programmers with a keen eye for design for the position of front end developer.",
+      "requirements": "Degree in computer science or related field. Understanding of key design principles. Proficiency in HTML, CSS, JavaScript.",
+      "salary": "7000"
+    },
+    {
+      "_id": "1003",
+      "_ownerId": "0002",
+      "title": "Invoice Administrator",
+      "imageUrl": "./images/example3.png",
+      "category": "Finance, Administration, Invoices",
+      "description": "Accountable for ensuring invoices are paid and accurate and transactional commentary is up to date",
+      "requirements": "At least two years of clerical office or administration experience. An associate's degree in accounting is preferred.",
+      "salary": "7000"
+    }
+  ],
+  "applications": [
+    {
+      "_ownerId": "0001",
+      "offerId": "1002",
+      "_id": "e2d43547-5f76-451c-93df-14a83cb042e7"
+    },
+    {
+      "_ownerId": "0002",
+      "offerId": "1001",
+      "_id": "9d709077-9bbb-417a-988e-87a0677b73d2"
+    },
+    {
+      "_ownerId": "0001",
+      "offerId": "1003",
+      "_id": "16fb2a96-29bd-46b0-82b6-125a962b03ef"
+    }
+  ]
+}
