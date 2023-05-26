@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Car Shop</title>
+    <style>
+        #views {
+            display: none;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 4px 8px;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+    <script src="/src/app.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Car Shop</h1>
+
+    <nav>
+        <a id="home-link" href="javascript:void(0)">Home</a>
+        <a id="catalog-link" href="javascript:void(0)">Catalog</a>
+        <a id="login-link" href="javascript:void(0)">Login</a>
+    </nav>
+
+    <main></main>
+
+    <div id="views">
+        <section id="home">
+            <h2>Home Page</h2>
+            <p>Welcome to our site</p>
+        </section>
+
+        <section id="catalog">
+            <h2>Catalog</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Unit Price</th>
+                        <th>Controls</th>
+                    </tr>
+                </thead>
+                <tbody id="table"></tbody>
+            </table>
+        </section>
+
+        <section id="login">
+            <h2>Sign In</h2>
+
+            <form id="login-form">
+                <label>
+                    Email: <input type="text" name="email">
+                </label>
+                <label>
+                    Password: <input type="password" name="password">
+                </label>
+                <button>Sign In</button>
+            </form>
+        </section>
+
+        <section id="details">
+            <h2>Part Details</h2>
+            <p>Part ID: <span id="part-id"></span></p>
+            <p>Label: <span id="part-label"></span></p>
+            <p>Unit Price: <span id="part-price"></span></p>
+            <p>Available: <span id="part-qty"></span></p>
+        </section>
+    </div>
+</body>
+
+</html>
