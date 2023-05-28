@@ -1,0 +1,11 @@
+<form>
+	<input type="text" name="search">
+	<input class="search" type="submit" value="Search">
+</form>
+<section class="cats">
+	<ul>
+		{{#each cats}}
+			{{>cat}}
+		{{/each}}
+	</ul>
+</section>
