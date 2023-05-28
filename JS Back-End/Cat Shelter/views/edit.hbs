@@ -1,0 +1,12 @@
+<form method="post" class="cat-form">
+    <h2>Edit Cat</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="{{cat.name}}" />
+    <label for="description">Description</label>
+    <textarea name="description" id="description">{{cat.description}}</textarea>
+    <label for="image">Image</label>
+    <input type="text" id="image" name="imageUrl" value="{{cat.imageUrl}}" />
+    <label for="group">Breed</label>
+    <input type="text" id="group" name="breed" value="{{cat.breed}}">
+    <input type="submit" value="Edit Cat">
+</form>
