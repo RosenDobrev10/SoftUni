@@ -1,0 +1,12 @@
+<form method="post" class="cat-form">
+    <h2>Shelter the cat</h2>
+    <img src="{{cat.imageUrl}}" alt="{{cat.name}}">
+    <label for="name">Name</label>
+    <input type="text" id="name" value="{{cat.name}}" disabled>
+    <label for="description">Description</label>
+    <textarea id="description" disabled>{{cat.description}}</textarea>
+    <label for="group">Breed</label>
+    <input type="text" id="group" disabled name="breed" value="{{cat.breed}}">
+    <a class="shelter" href="/cats/{{cat._id}}/delete">New Home</a>
+
+</form>
