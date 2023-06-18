@@ -1,0 +1,16 @@
+body {
+    width: 980px;
+    margin: auto;
+    background-color: rgb(149, 149, 202);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 32px;
+    display: inline-block;
+}
