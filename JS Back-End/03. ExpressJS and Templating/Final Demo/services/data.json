@@ -1,0 +1,22 @@
+[
+  {
+    "id": "asdf1234",
+    "name": "Windshield Wiper",
+    "price": 22.5
+  },
+  {
+    "id": "asdf5555",
+    "name": "Headlight Bulb",
+    "price": 12.9
+  },
+  {
+    "id": "asdf4886",
+    "name": "Side Mirror(Left)",
+    "price": 80
+  },
+  {
+    "id": "asdf6286",
+    "name": "Side Mirror(Right)",
+    "price": 70
+  }
+]
