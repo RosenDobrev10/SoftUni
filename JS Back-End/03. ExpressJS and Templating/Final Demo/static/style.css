@@ -1,0 +1,46 @@
+body {
+    background-color: #ddd;
+}
+
+#content {
+    width: 980px;
+    background-color: white;
+    margin: auto;
+}
+
+nav {
+    background-color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: cadetblue;
+    padding: 4px 8px;
+    color: white;
+}
+
+nav a:hover {
+    background-color: darkblue;
+}
+
+main {
+    padding: 32px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label span {
+    display: inline-block;
+    width: 60px;
+}
