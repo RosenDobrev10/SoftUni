@@ -1,0 +1,14 @@
+{{#if username}}                        {{!-- УСЛОВНА КОНСТРУКЦИЯ !!! Ако има подаден username като свойство на render в контролера ще покаже заграденото в if. Ако няма ще покаже това в else  --}}
+    <span>Welcome, {{username}}!</span>
+{{else}}
+    <span>Welcome, Guest!</span>
+{{/if}}
+
+<h1>{{message}}{{name1}}</h1>
+<p>{{response}}{{name2}}</p>
+
+<ul>
+    {{#each contacts}}                  {{!-- ОБХОЖДАНЕ НА МАСИВ !!! Ако има подаден contacts като свойство на render в контролера ще покаже толкова пъти li, колкото са стойностите в масива --}}
+        {{>userCard}}                   {{!-- ПОЛЗВАНЕ НА partial !!! Проверява в папка partials, и рендерира написаното във файла userCard --}}
+    {{/each}}
+</ul>
