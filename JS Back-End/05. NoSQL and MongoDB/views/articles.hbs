@@ -1,0 +1,16 @@
+<h1>Articles</h1>
+<form action='/articles' method='post'>
+	<label>Author<input type='text' name='author' /></label>
+	<label>Title<input type='text' name='title' /></label>
+	<label>Content<textarea name='content'></textarea></label>
+	<button>Create Article</button>
+</form>
+<ul>
+	{{#each articles}}
+		<li>
+			<header>{{title}}</header>
+			<main>{{content}}</main>
+			<footer>{{author}}</footer>
+		</li>
+	{{/each}}
+</ul>
