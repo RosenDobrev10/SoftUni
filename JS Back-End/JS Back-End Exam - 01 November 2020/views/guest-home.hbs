@@ -1,0 +1,24 @@
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="display-4">Tutorials</h1>
+		<p class="lead">Start Self-Learning Today: Be the best Developer in the company</p>
+	</div>
+</div>
+
+<div>
+	<h1 class="text-center">Top Courses</h1>
+
+	<div class="container mt-3">
+		{{#if courses}}
+			<div class="row d-flex justify-content-center">
+				<div class="card-deck">
+					{{#each courses}}
+						{{>course}}
+					{{/each}}
+				</div>
+			</div>
+		{{else}}
+			<h4 class="text-center">No courses...</h4>
+		{{/if}}
+	</div>
+</div>
