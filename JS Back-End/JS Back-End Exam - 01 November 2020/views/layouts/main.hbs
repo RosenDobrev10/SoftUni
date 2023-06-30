@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+		<meta charset='UTF-8' />
+		<title>{{title}}</title>
+		<link href='/static/css/site.css' type='text/css' rel='stylesheet' />
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+			integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous' />
+	</head>
+
+	<body>
+		<div class='container'>
+			<nav class='navbar navbar-expand-lg navbar-light bg-primary'>
+				<a class='navbar-brand' href='/'>Tutorials</a>
+
+				<ul class='navbar-nav ml-auto'>
+					{{#if username}}
+						<li class='nav-item'>
+							<a class='nav-link' href='javascript:void(0)'>Welcome, {{username}}</a>
+						</li>
+						<li class='nav-item'>
+							<a class='nav-link' href='/auth/logout'>Logout</a>
+						</li>
+					{{else}}
+						<li class='nav-item'>
+							<a class='nav-link' href='/auth/login'>Login</a>
+						</li>
+						<li class='nav-item'>
+							<a class='nav-link' href='/auth/register'>Register</a>
+						</li>
+					{{/if}}
+				</ul>
+			</nav>
+
+			{{#if errors}}
+				<section class='notifications'>
+					{{#each errors}}
+						<p class='notification-message'>{{this}}</p>
+					{{/each}}
+				</section>
+			{{/if}}
+
+			<main>
+				{{{body}}}
+			</main>
+
+			<footer class='page-footer font-small'>
+				<div class='footer-copyright text-center py-3'>© 2020
+					<a href='https://softuni.bg/trainings/3048/js-back-end-september-2020'>JS Back-End</a>
+				</div>
+			</footer>
+
+		</div>
+	</body>
+
+</html>
