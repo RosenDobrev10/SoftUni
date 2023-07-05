@@ -1,0 +1,81 @@
+/* Section layout */
+
+section {
+    margin: 32px;
+}
+
+.spaced>* {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.full-width {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.full-width h1 {
+    padding: 16px;
+}
+
+.narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section elements */
+
+main {
+    padding-bottom: 32px;
+}
+
+.catalog {
+    list-style: none;
+    padding: 0;
+}
+
+.catalog.strips li {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.center-float {
+    text-align: center;
+}
+
+.center-float>* {
+    text-align: initial;
+}
+
+.catalog.cards {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.catalog.cards::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.catalog.cards li {
+    float: left;
+    width: 284px;
+    margin: 16px;
+    margin-top: 0;
+}
+
+.catalog.cards li>main {
+    height: 200px;
+    overflow: hidden;
+}
+
+.catalog.cards h2 {
+    height: 52px;
+    overflow: hidden;
+}
+
+.catalog.cards footer {
+    overflow: hidden;
+}
