@@ -1,0 +1,82 @@
+/* General */
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+  overflow: hidden;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.img-thumb {
+  display: block;
+  max-height: 200px;
+  margin: auto;
+  object-fit: contain;
+}
+
+.img-large {
+  display: block;
+  max-width: 400px;
+}
+
+.img-med {
+  display: block;
+  max-width: 300px;
+}
+
+.img-small {
+  display: block;
+  max-width: 200px;
+}
+
+.round {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Items */
+
+.item {
+  box-shadow: var(--shadow);
+  border-radius: var(--round);
+  overflow: hidden;
+}
+
+.padded > * {
+  padding: 8px 16px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* Action items */
+
+.action {
+  display: inline-block;
+  border: none;
+  padding: 8px 16px;
+  margin: 4px 8px;
+  text-decoration: none;
+}
+
+.cta {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
