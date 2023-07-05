@@ -1,0 +1,71 @@
+/* Content positioning */
+
+.pad-large {
+    padding: 32px;
+}
+
+.pad-med {
+    padding: 8px 16px;
+}
+
+.pad-small {
+    padding: 4px 8px;
+}
+
+.layout {
+    padding: 0;
+}
+
+.layout::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.layout.large .col {
+    width: 400px;
+}
+
+.layout.med .col {
+    width: 300px;
+}
+
+.layout.small .col {
+    width: 200px;
+}
+
+/* -- Left column */
+
+.layout.left .col {
+    float: left;
+}
+
+.layout.left.large .content {
+    margin-left: 400px;
+}
+
+.layout.left.med .content {
+    margin-left: 300px;
+}
+
+.layout.left.small .content {
+    margin-left: 200px;
+}
+
+/* -- Right column */
+
+.layout.right .col {
+    float: right;
+}
+
+.layout.right.large .content {
+    margin-right: 400px;
+}
+
+.layout.right.med .content {
+    margin-right: 300px;
+}
+
+.layout.right.small .content {
+    margin-right: 200px;
+}
