@@ -1,0 +1,35 @@
+/* Forms */
+
+form label {
+    display: block;
+}
+
+main label input,
+main label select {
+    width: 200px;
+}
+
+.aligned {
+    text-align: right;
+    display: inline-block;
+}
+
+.aligned label>* {
+    margin: 8px 16px;
+}
+
+.vertical label {
+    margin: 16px;
+    text-align: center;
+}
+
+.vertical label>span {
+    display: block;
+}
+
+textarea {
+    text-align: left;
+    display: block;
+    width: 100%;
+    resize: vertical;
+}
