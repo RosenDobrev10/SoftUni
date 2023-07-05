@@ -1,0 +1,72 @@
+@import url('./vars.css');
+@import url('./theme.css');
+@import url('./layout.css');
+@import url('./layout-header.css');
+@import url('./layout-section.css');
+@import url('./layout-position.css');
+@import url('./layout-forms.css');
+
+.style-divider {
+    background-color: red;
+    height: 8px;
+    border: none;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 150%;
+    padding: 16px;
+}
+
+h2 {
+    font-size: 125%;
+}
+
+html {
+    margin: 0;
+}
+
+#page-content {
+    position: relative;
+    max-width: 980px;
+    margin: auto;
+    min-height: 100vh;
+}
+
+#page-content>header {
+
+}
+
+#page-content>main {
+    padding-bottom: 48px;
+}
+
+#page-content>footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title-logo img {
+    height: 64px;
+}
+
+.error-box {
+    color: red;
+    padding: 16px 16px;
+    margin: 32px;
+    background-color: hsl(var(--action-color), var(--action-s), 25%);
+    box-shadow: var(--shadow);
+}
+
