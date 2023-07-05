@@ -1,0 +1,70 @@
+/* Header and navigation menu */
+
+#page-content>header {
+    position: relative;
+}
+
+#page-content>header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title-logo {
+    display: block;
+    float: left;
+    width: 170px;
+    text-decoration: none;
+    color: white;
+}
+
+.title-logo>img {
+    display: block;
+    float: left;
+    margin-right: 16px;
+}
+
+.title-logo>span {
+    font-size: 24px;
+    display: block;
+    padding: 4px;
+}
+
+.title-logo:hover {
+    background-color: hsl(var(--secondary-color), var(--secondary-s), var(--secondary-l));
+}
+
+.main-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.nav-left {
+    text-align: left;
+}
+
+.nav-mid {
+    text-align: center;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.main-nav li {
+    display: block;
+    float: left;
+}
+
+.main-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    margin: 4px;
+}
