@@ -1,0 +1,50 @@
+<section id="create-section">
+
+    <h1 class="item">Edit Auction</h1>
+
+    <div class="item padded align-center">
+
+        <form class="layout left large" method="post">
+
+            <div class="col aligned">
+                <label>
+                    <span>Title</span>
+                    <input type="text" name="title" value="{{auction.title}}"></label>
+                <label>
+                    <span>Category</span>
+                    <select name="category">
+                        {{#select auction.category}}
+                            <option value="estate">Real Estate</option>
+                            <option value="vehicles">Vehicles</option>
+                            <option value="furniture">Furniture</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="other">Other</option>
+                        {{/select}}
+                    </select>
+                </label>
+                <label>
+                    <span>Image URL</span>
+                    <input type="text" name="image" value="{{auction.image}}">
+                </label>
+                <label>
+                    <span>Starting price</span>
+                    <input {{#if auction.hasBidders}} disabled="true"{{/if}} type="number" name="price" value="{{auction.price}}">
+                </label>
+            </div>
+
+            <div class="content pad-med align-center vertical">
+                <label>
+                    <span>Description</span>
+                    <textarea name="description">{{auction.description}}</textarea>
+                </label>
+
+                <div class="align-center">
+                    <input class="action" type="submit" value="Update Listing">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
