@@ -1,0 +1,68 @@
+/* ### Page ### */
+
+#page-content,
+#page-content>main {
+    background-color: hsl(var(--primary-color), calc(var(--primary-s) - 35%), calc(var(--primary-l) + 35%));
+}
+
+html {
+    background-color: hsl(var(--primary-color), calc(var(--primary-s) - 30%), calc(var(--primary-l) + 15%));
+}
+
+#page-content>header,
+#page-content>footer {
+    background-color: hsl(var(--primary-color), calc(var(--primary-s) - 25%), calc(var(--primary-l) - 10%));
+}
+
+
+/* ### Content ### */
+
+main {
+    background-color: white;
+}
+
+h1,
+header {
+    background-color: hsl(var(--primary-color), var(--primary-s), var(--primary-l));
+}
+
+footer {
+    background-color: hsl(var(--primary-color), var(--primary-s), calc(var(--primary-l) - 20%));
+    color: white;
+}
+
+.hl header {
+    background-color: hsl(var(--action-color), var(--action-s), calc(var(--action-l)));
+}
+
+.hl main {
+    background-color: hsl(var(--action-color), calc(var(--action-s) - 30%), calc(var(--action-l) + 30%));
+}
+
+.hl footer {
+    background-color: hsl(var(--action-color), var(--action-s), calc(var(--action-l) - 20%));
+    color: white;
+}
+
+/* ### Action items ### */
+
+.main-nav a,
+.main-nav a:visited {
+    background-color: hsl(var(--secondary-color), var(--secondary-s), calc(var(--secondary-l) - 20%));
+    color: white;
+}
+
+.main-nav a:hover {
+    background-color: hsl(var(--secondary-color), var(--secondary-s), var(--secondary-l));
+}
+
+.action {
+    background-color: hsl(var(--action-color), var(--action-s), calc(var(--action-l) - 20%));
+    color: white;
+}
+
+.action:hover {
+    background-color: hsl(var(--action-color), var(--action-s), var(--action-l));
+    cursor: pointer;
+    color: white;
+}
