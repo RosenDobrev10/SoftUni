@@ -1,0 +1,40 @@
+<section id="catalog-section">
+
+    <h1 class="item">
+        {{auction.title}}
+        <div class="f-right">
+            <a class="action pad-small f-left" href="/auctions/{{auction._id}}/edit">Edit</a>
+            <a class="action pad-small f-left" href="/auctions/{{auction._id}}/delete">Delete</a>
+        </div>
+    </h1>
+    <div class="item padded">
+
+        <div class="layout right large">
+
+            <div class="col">
+                <img src="{{auction.image}}" class="img-large">
+            </div>
+
+            <div class="content pad-med">
+
+                <p>In category: <strong>{{auction.category}}</strong></p>
+                <p>{{auction.description}}</p>
+
+                <div class="align-center">
+                    <div>Current price: $<strong>{{auction.price}}</strong></div>
+                    <div>
+                        {{#if auction.hasBidder}}
+                            Bid by <strong>{{auction.bestBidder}}</strong>
+                            <a class="action pad-med cta" href="/auctions/{{auction._id}}/close">Close Auction</a>          
+                        {{else}}
+                            No bids
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>Listed by {{auction.owner.firstName}} {{auction.owner.lastName}}</footer>
+    </div>
+
+</section>
