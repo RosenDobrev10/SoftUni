@@ -1,0 +1,42 @@
+<section id="catalog-section">
+
+    <h1 class="item">
+        {{auction.title}}
+    </h1>
+    <div class="item padded">
+
+        <div class="layout right large">
+
+            <div class="col">
+                <img src="{{auction.image}}" class="img-large">
+            </div>
+
+            <div class="content pad-med">
+
+                <p>In category: <strong>{{auction.category}}</strong></p>
+                <p>{{auction.description}}</p>
+
+                <div class="align-center">
+                    <div>
+                        Current price: $<strong>{{auction.price}}</strong>
+                    </div>
+
+                    {{#if email}}    
+                        {{#if auction.isBidder}}
+                            <div> You are currently the <strong>highest bidder</strong> for this auction</div>
+                        {{else}}
+                            <form class="vertical" method="post">
+                                <label><span>Bid amount</span><input type="number" name="bid" value="{{newBid}}"></label>
+                                <input class="action" type="submit" value="Place bid">
+                            </form>
+                        {{/if}}
+                    {{/if}}
+                </div>
+
+            </div>
+        </div>
+
+        <footer>Listed by {{auction.owner.firstName}} {{auction.owner.lastName}}</footer>
+    </div>
+
+</section>
