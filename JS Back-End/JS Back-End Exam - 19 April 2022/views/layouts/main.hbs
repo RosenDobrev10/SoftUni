@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/site.css">
+    <title>{{title}}</title>
+</head>
+
+<body>
+
+    <div id="page-content">
+
+        <header>
+            <a href="/" class="title-logo">
+                <img src="/static/assets/logo.png">
+                <span>Auction House</span>
+            </a>
+            <nav class="main-nav nav-mid">
+                <ul>
+                    <li>
+                        <a>Welcome, {{#if email}} {{email}} {{else}} guest {{/if}}</a>
+                    </li>
+                    <li>
+                        <a href="/catalog">Browse</a>
+                    </li>
+                    {{#if email}}
+                        <li class="user">
+                            <a href="/auctions/create">Publish</a>
+                        </li>
+                        <li class="user">
+                            <a href="/auctions/profile">Closed Auctions</a>
+                        </li>
+                        <li class="user">
+                            <a href="/auth/logout">Logout</a>
+                        </li>
+                    {{else}}
+                        <li class="guest">
+                            <a href="/auth/register">Register</a>
+                        </li>
+                        <li class="guest">
+                            <a href="/auth/login">Login</a>
+                        </li>
+                    {{/if}}
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            {{#if errors}}
+                <div class="error-box">
+                    {{#each errors}}
+                        <p>{{this}}</p>
+                    {{/each}}
+                </div>
+            {{/if}}
+
+            {{{body}}}
+        </main>
+
+        <footer>SoftUni &copy; 2022 | Design by Viktor Kostadinov</footer>
+    </div>
+
+</body>
+
+</html>
