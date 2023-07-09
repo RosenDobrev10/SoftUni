@@ -1,0 +1,25 @@
+.not-found-page-container p a {
+    color: #ff960b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.not-found-page-container p a:hover {
+    text-decoration: underline;
+}
+
+.not-found-page-container h1 {
+    font-size: 100px;
+    margin-left: 200px;
+    margin-top: 10%;
+}
+
+.not-found-page-container h2 {
+    font-size: 30px;
+    margin-left: 170px;
+    margin-top: 1%;
+}
+
+.not-found-page-container>p {
+    margin-top: 2%;
+}
