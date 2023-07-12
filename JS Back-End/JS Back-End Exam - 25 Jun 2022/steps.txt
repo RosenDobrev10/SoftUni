@@ -1,0 +1,4 @@
+1) npm init -y => Инициализиране на проект, създаване на package.json
+2) npm i express express-handlebars bcrypt cookie-parser jsonwebtoken mongoose => Инсталираме нужните ни библиотеки за приложението
+3) Създаваме си структурата на папките
+4) Влизаме в package.json и пишем в scripts => "start": "nodemon index.js"
