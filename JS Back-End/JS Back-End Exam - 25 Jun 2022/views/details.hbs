@@ -1,0 +1,31 @@
+<section id="details-info">
+    <h1>Details</h1>
+    <div class="coin-image">
+        <img src="{{crypto.imageUrl}}">
+    </div>
+
+    <div class="coin-info">
+        <div class="coin-text">
+            <h1 id="name">{{crypto.name}}</h1>
+            <h3 id="payment">Payment method: {{crypto.payment}}</h3>
+            <p id="price"><span>Price: ${{crypto.price}}</span></p>
+            <p id="description">{{crypto.description}}</p>
+        </div>
+        {{#if email}}
+            <div class="product-btn">
+                {{#if crypto.isOwner}}
+                    <div class="author">
+                        <a href="/crypto/{{crypto._id}}/edit" class="btn-edit">Edit</a>
+                        <a href="/crypto/{{crypto._id}}/delete" class="btn-delete">Delete</a>
+                    </div>
+                {{else}}
+                    {{#if crypto.hasBuy}}
+                        <p class="buy-message">You already bought these crypto coins.</p>
+                    {{else}}
+                        <a href="/crypto/{{crypto._id}}/buy" class="btn-buy">Buy</a>
+                    {{/if}}
+                {{/if}}
+            </div>
+        {{/if}}
+    </div>
+</section>
