@@ -1,0 +1,31 @@
+<section id="edit-container">
+	<div class="edit-container-info">
+		<h1>Edit Announcement</h1>
+
+		<form method="POST">
+			<label>Name:</label>
+			<input type="text" id="name" name="name" value="{{crypto.name}}" />
+
+			<label>Image:</label>
+			<input type="text" id="image" name="imageUrl" value="{{crypto.imageUrl}}" />
+
+			<label>Price:</label>
+			<input type="number" id="price" name="price" value="{{crypto.price}}" />
+
+			<label>Description:</label>
+			<textarea name="description" id="description">{{crypto.description}}</textarea>
+
+			<label>Payment method:</label>
+			<select id="payment" name="payment">
+				{{#select crypto.payment}}
+					<option value="crypto-wallet">Crypto Wallet</option>
+					<option value="credit-card">Credit Card</option>
+					<option value="debit-card">Debit Card</option>
+					<option value="paypal">PayPal</option>
+				{{/select}}
+			</select>
+
+			<input type="submit" id="btn" value="EDIT" />
+		</form>
+	</div>
+</section>
