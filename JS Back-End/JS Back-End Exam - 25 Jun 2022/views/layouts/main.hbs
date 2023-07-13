@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="/static/css/styles.css" />
+	<link rel="shortcut icon" type="image/png" href="/static/images/favicon.png" />
+</head>
+
+<body>
+
+	<header class="header">
+		<nav>
+			<img src="/static/images/logo.png" class="logo">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/crypto/catalog">All Crypto</a></li>
+				{{#if username}}
+					<li><a href="/crypto/search">Search</a></li>
+					<li><a href="/crypto/create">Create Offer</a></li>
+					<li><a href="/auth/logout">Logout</a></li>
+				{{else}}
+					<li><a href="/auth/login">Login</a></li>
+					<li><a href="/auth/register">Register</a></li>
+				{{/if}}
+			</ul>
+			
+			{{#if username}}
+				<p>Welcome, {{email}}</p>
+			{{else}}
+				<p>Welcome, guest</p>
+			{{/if}}
+		</nav>
+	</header>
+
+	<main>
+		{{#if errors}}
+			<div>
+				<div class="errorContainer">
+					{{#each errors}}
+						<p>{{this}}</p>
+					{{/each}}
+				</div>
+			</div>
+		{{/if}}
+
+		{{{body}}}
+	</main>
+
+	<footer>
+		<p>Back-End 2022</p>
+	</footer>
+
+</body>
+
+</html>
