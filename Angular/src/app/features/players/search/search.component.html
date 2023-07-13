@@ -1,0 +1,71 @@
+<div [ngClass]="players ? 'h-fit' : 'h-screen'" class="relative bg-cover bg-no-repeat bg-cover bg-[url('/assets/field.jpg')]">
+
+  <!-- SEARCH FORM -->
+  <div class="flex justify-center">
+    <form #searchForm="ngForm" (submit)="onSearchHandler(searchForm)">
+      <div class="mb-4">
+        <div class="mt-2 mb-1 flex w-full items-stretch">
+          <input
+            ngModel
+            #search="ngModel"
+            type="search"
+            name="search"
+            class="mr-1 sm:text-sm rounded-lg block w-full px-4 dark:placeholder-gray-400 dark:text-black"
+            placeholder="Search"/>
+
+          <button class="cursor-pointer dark:md:hover:bg-green-600 bg-gray-800 rounded-lg px-6 py-2.5 text-sm font-medium uppercase leading-tight dark:text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg">
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- SERVER ERROR -->
+  <section class="ml-2 mb-5 flex list-none flex-col flex-wrap pl-0 md:flex-row gap-5 justify-around">
+    <div *ngIf="errorMessage" class="block text-sm font-medium text-gray-900 dark:text-white">
+      {{ errorMessage }} <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <ng-container *ngIf="players">
+      <ng-container *ngIf="players.length > 0; else noPlayers">
+        <ng-container *ngFor="let player of players">
+          <!-- PLAYER CARD -->
+          <div class="duration-500 hover:animate-[pulse_1s_ease-in-out] max-w-lg shadow-2xl hover:scale-105 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div class="relative overflow-hidden bg-cover bg-no-repeat">
+              <img class="object-cover object-center rounded-t-lg h-96 w-96" src="{{ player.image }}" alt="{{ player.name }}"/>
+            </div>
+            <div class="p-6">
+              <h5 class="mb-6 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Name: {{ player.name }}
+              </h5>
+              <p class="mb-10 text-base text-neutral-600 dark:text-neutral-200">
+                Age: {{ player.age }}
+              </p>
+              <a [routerLink]="['/players', 'details', player._id]"
+                class="cursor-pointer dark:md:hover:bg-green-600 border-2 border-neutral-50 rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-sm font-medium uppercase leading-tight dark:bg-neutral-700 dark:text-white">
+                More info
+              </a>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+
+    <!-- NO RESULTS -->
+    <ng-template #noPlayers>
+      <h1 class="px-10 text-white bg-opacity-20 bg-black mb-6 text-6xl font-medium leading-tight h-screen flex items-center justify-center">
+        There are no players matching your search.
+      </h1>
+    </ng-template>
+
+    <!-- LOADER -->
+    <ng-container *ngIf="isLoading">
+      <app-loader></app-loader>
+    </ng-container>
+
+  </section>
+</div>
