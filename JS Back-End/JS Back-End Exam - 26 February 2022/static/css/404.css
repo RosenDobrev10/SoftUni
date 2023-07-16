@@ -1,0 +1,65 @@
+#not-found-page {
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    text-align: center;
+    display: flex;
+}
+
+.not-found-page-content {
+    margin-left: 28em;
+}
+
+.not-found-page-content>h1 {
+    font-size: 100px;
+    padding-top: 0.8em;
+    font-weight: 700;
+    line-height: 60px;
+    color: #3c2064;
+    margin-top: 10px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9);
+    font-family: 'Poppins', sans-serif;
+}
+
+.not-found-page-content>p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.57143;
+    font-weight: 400;
+    color: #5d5d5d;
+    margin-top: -3.5em;
+    margin-bottom: 2em;
+}
+
+.not-found-page-content>a {
+    list-style: none;
+    background: rgb(255, 97, 88);
+    padding: 12px 18px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.not-found-page-contentent>a:hover {
+    background: rgb(231, 88, 81);
+}
+
+.home-page-image>img {
+    height: 350px;
+    width: 430px;
+    margin-top: 15px;
+    padding-right: 5px;
+}
+
+.not-found-page-content>a {
+    list-style: none;
+    background: rgb(255, 97, 88);
+    padding: 12px 18px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.not-found-page-content>a:hover {
+    background: rgb(231, 88, 81);
+}
