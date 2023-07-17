@@ -1,0 +1,103 @@
+#create-page,
+#edit-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 42px;
+}
+
+.create-page-container,
+.edit-page-container {
+    background-color: #fff;
+    width: 600px;
+    height: 529px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    line-height: 1.5;
+    left: 30%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+
+.create-page-container>.create-page-image>img,
+.edit-page-container>.edit-page-image>img {
+    width: 250px;
+    height: 405px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 2px 6px 4px #9dacf7;
+}
+
+.create-page-image,
+.edit-page-image {
+    margin-top: 0.4em;
+    margin-right: 0.8em;
+}
+
+.create-page-form>h2,
+.edit-page-form>h2 {
+    padding-top: 0.3em;
+    margin-bottom: 0.4em;
+}
+
+.create-page-form,
+.edit-page-form {
+    text-align: center;
+    padding-left: 30px;
+    margin-top: -1em;
+    padding-right: 30px;
+}
+
+.create-page-form>h2,
+.edit-page-form>h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #202F7C;
+}
+
+.create-page-form>input,
+.create-page-form>button,
+.edit-page-form>input,
+.edit-page-form>button {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.create-page-button,
+.edit-page-button {
+    margin-top: 1em;
+    margin-bottom: 10px;
+}
+
+.btn-create,
+.btn-edit-ads {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    padding: 7px;
+    background: rgb(252, 83, 74);
+    font-weight: 500;
+    font-size: 14.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-create:hover,
+.btn-edit-ads:hover {
+    background: rgb(241, 76, 68);
+    box-shadow: 0px 0px 5px 0px #9dacf7;
+    color: white;
+    width: 110px;
+}
+
+.create-page-form>input,
+.edit-page-form>input {
+    border: 2px solid #6787FF;
+    margin: 3px 0 7px;
+    font-size: 0.8rem;
+    color: #656880;
+}
