@@ -1,0 +1,270 @@
+#details-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 42px;
+}
+
+.details-gage-title {
+    text-align: center;
+    margin-top: -2.5em;
+}
+
+.details-gage-title>h1 {
+    color: #3c2064;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 40px;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.details-page-card {
+    position: relative;
+    left: 25%;
+    width: 680px;
+    height: 358px auto;
+    display: flex;
+    margin-left: 1.5em;
+    background-color: rgb(255, 111, 103);
+    margin-bottom: 1.5em;
+}
+
+.details-page-card-content {
+    padding-top: 15px;
+    padding-left: 18px;
+    padding-right: 5px;
+    word-wrap: break-word;
+}
+
+.details-page-card-content>h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    width: 350px;
+    font-size: 20.5px;
+    margin-top: 3em;
+    margin-left: 0.6em;
+    color: rgb(60, 32, 100);
+}
+
+.details-page-card-content>h3,
+.details-page-card-content>h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 13.8px;
+    font-weight: 500;
+    margin-bottom: -0.8em;
+    width: 368px;
+    color: rgb(44, 45, 65);
+    outline-style: none;
+    text-align: left;
+}
+
+.details-page-card-content>h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 13.8px;
+    font-weight: 500;
+    margin-bottom: -1.2em;
+    color: rgb(44, 45, 65);
+    outline-style: none;
+    text-align: left;
+    width: 368px;
+}
+
+.details-page-card-content>h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 13.8px;
+    margin-bottom: -0.9em;
+    font-weight: 600;
+    color: rgb(72, 75, 131);
+    outline-style: none;
+    text-align: left;
+}
+
+.details-page-card-image {
+    padding-right: 4px;
+}
+
+.details-page-card-image>img {
+    width: 285px;
+    height: 320px;
+}
+
+.details-page-card-buttons {
+    margin-top: 2em;
+    text-align: center;
+    margin-left: 6.3em;
+    display: inline-grid;
+}
+
+.details-page-card-buttons>a {
+    color: #fff;
+    border: none;
+    padding: 7px;
+    outline: none;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    font-weight: 600;
+    width: 130px;
+    border-radius: 12px;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 300ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+}
+
+.details-page-card-buttons>p {
+    color: #fff;
+    border: none;
+    padding: 7px;
+    outline: none;
+    margin-left: -4.5em;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 280px;
+    border-radius: 12px;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 300ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+}
+
+.btn-edit {
+    background-color: #8058b6;
+}
+
+.btn-edit:hover {
+    background-color: #9768d3;
+    box-shadow: 0px 0px 5px 0px #9dacf7;
+    color: white;
+    width: 135px;
+}
+
+.btn-delete {
+    background-color: #45a7a2;
+}
+
+.btn-delete:hover {
+    background-color: #55ccc6;
+    box-shadow: 0px 0px 5px 0px #9dacf7;
+    color: white;
+    width: 135px;
+}
+
+.btn-apply {
+    background-color: #a71e69;
+}
+
+.btn-apply:hover {
+    background-color: #ca2781;
+    box-shadow: 0px 0px 5px 0px #9dacf7;
+    color: white;
+    width: 135px;
+}
+
+.already-applied {
+    background-color: #3c2064;
+}
+
+.details-page-card-content>p {
+    float: right;
+    margin-top: -1.08em;
+    margin-right: -0.35em;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    padding: 7px;
+    background: #3c2064;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.applied-people {
+    background-color: #0385ac;
+}
+
+#info-about-candidates {
+    position: relative;
+    left: 25%;
+    width: 680px;
+    height: 408px auto;
+    display: inline-grid;
+    margin-left: 3.5em;
+    background-color: #3c2064;
+    margin-bottom: 3em;
+    margin-top: -1.2em;
+    padding: 20px;
+}
+
+#info-about-candidates>h2 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -0.2em;
+    margin-bottom: 10px;
+    line-height: 40px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-about-candidates-card {
+    background: rgb(255, 255, 255);
+    height: 164px auto;
+    width: 100%;
+    display: inline;
+    border-radius: 3px;
+    border: 1px solid #aaaa;
+    padding-top: 2px;
+    margin-bottom: 1.6em;
+    padding: 0px 20px;
+    box-shadow: 0 0px 10px 0px rgba(53, 68, 211, 0.931);
+}
+
+.info-about-candidates-card>h2,
+.info-about-candidates-card>h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+    width: 600px;
+    word-wrap: break-word;
+    color: rgb(44, 45, 65);
+    outline-style: none;
+}
+
+.info-about-candidates-card>a {
+    color: #fff;
+    border: none;
+    padding: 7px;
+    outline: none;
+    margin-top: -0.2em;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100px;
+    background-color: rgb(255, 111, 103);
+    border-radius: 12px;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    float: right;
+}
+
+.info-about-candidates-card>a:hover {
+    background-color: rgb(255, 127, 121);
+    box-shadow: 0px 0px 5px 0px #9dacf7;
+    color: white;
+    width: 105px;
+}
