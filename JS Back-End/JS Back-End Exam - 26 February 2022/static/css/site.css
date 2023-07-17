@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../img/banner.jpg");
+    background-position: 20% 82%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#box {
+    height: auto;
+    width: auto;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 1em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 10px;
+    background-color: #FFFFFF;
+    height: 100px;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    margin-top: 0;
+    margin: 0%;
+}
+
+.header-logo>img {
+    height: 85px;
+    width: 120px;
+}
+
+.header-nav {
+    margin-right: 2.5em;
+}
+
+.header-nav-list {
+    display: flex;
+    padding-right: 0px;
+}
+
+.header-nav-list-item {
+    list-style: none;
+    background: #ECECEC;
+    padding: 12px 20px;
+    margin: 0 1px;
+    margin-left: 4px;
+}
+
+.header-nav-list-item-link {
+    text-decoration: none;
+    font-family: 'Mukta', sans-serif;
+    font-size: 19px;
+    color: rgb(66, 66, 66);
+}
+
+.header-nav-list-item.active {
+    background: rgb(255, 97, 88);
+}
+
+.header-nav-list-item-link.active {
+    color: rgb(247, 247, 247);
+}
+
+.header-nav-list-item:hover {
+    background: #cecdcd;
+}
+
+.header-nav-list-item.active:hover {
+    background: rgb(230, 88, 80);
+}
+
+footer {
+    background-color: #3e295f;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    padding: 0rem 4rem 0 3rem;
+    margin: 0%;
+    position: absolute;
+    opacity: 0.7;
+    bottom: 0;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.01);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #4d6d72;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #4d6d72;
+}
+
+.error-box {
+    position: fixed;
+    display: block;
+    z-index: 11111;
+    left: 2%;
+    top: 15%;
+    margin-top: 1em;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: white;
+    height: auto;
+    width: 340px;
+    font-style: italic;
+    background-color: #3c2064;
+    box-shadow: 0px 0px 8px 7px white;
+}
+
+.error-box>p {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Barlow', sans-serif;
+    padding: 14px;
+    height: auto;
+}
+
+.error-box {
+    -moz-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 2s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+@-webkit-keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        padding: 0;
+    }
+}
