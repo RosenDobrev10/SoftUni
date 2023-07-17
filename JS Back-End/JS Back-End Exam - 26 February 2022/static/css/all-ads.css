@@ -1,0 +1,178 @@
+#all-ads-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 42px;
+}
+
+.all-ads-title {
+    text-align: center;
+    margin-top: -2.5em;
+}
+
+.all-ads-title>h1 {
+    color: #3c2064;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 40px;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.all-ads-card {
+    background: white;
+    width: 532px;
+    height: 164px auto;
+    position: relative;
+    display: inline-flex;
+    border-radius: 3px;
+    border: 1px solid #aaaa;
+    padding-top: 2px;
+    margin-left: 8.5em;
+    margin-bottom: 1.6em;
+}
+
+.all-ads-card-image {
+    padding: 36px 15px;
+}
+
+.all-ads-card-content {
+    padding: 14px;
+}
+
+.all-ads-card-content>h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    color: rgb(60, 32, 100);
+    font-weight: 500;
+    line-height: 26.4px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 19.5px;
+    word-wrap: break-word;
+    width: 250px;
+}
+
+.all-ads-card-content>h3 {
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(80, 61, 107);
+    font-family: "Poppins", sans-serif;
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 25.15px;
+    margin-top: 0px;
+    outline-color: rgb(60, 32, 100);
+    outline-style: none;
+    text-align: left;
+    text-decoration-color: rgb(60, 32, 100);
+    text-decoration-line: none;
+    word-wrap: break-word;
+    width: 250px;
+    text-decoration-style: solid;
+}
+
+.all-ads-card-content-item {
+    display: flex;
+    margin-left: 0em;
+    margin-top: -1.4em;
+}
+
+.all-ads-card-content-item>img {
+    padding-top: 17px;
+    padding-right: 5px;
+    width: 18px;
+    height: 33px;
+}
+
+.all-ads-card-content-item>p {
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: rgb(66, 35, 109);
+    font-family: "Poppins", sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    width: 200px;
+    line-height: 25.15px;
+    margin-top: 13px;
+    text-align: left;
+}
+
+.all-ads-card-buttons {
+    padding: 45px 0px;
+    margin-left: 17px;
+}
+
+.all-ads-card-buttons>a {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    margin-top: 1em;
+    padding: 7px;
+    background: rgb(252, 83, 74);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.all-ads-card-buttons>a:hover {
+    background: rgb(253, 95, 87);
+    box-shadow: 0px 0px 5px 0px #9dacf7;
+    color: white;
+}
+
+.btn-positions {
+    margin-top: 0.4em;
+}
+
+.all-ads-card-buttons>.btn-positions {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    padding: 7px;
+    background: rgb(60, 32, 100);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+
+.not-available-ads {
+    text-align: center;
+    width: 100%;
+    margin-top: -1em;
+}
+
+.not-available-ads>h1 {
+    color: rgb(255, 97, 88);
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 40px;
+    text-decoration: solid;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.not-available-ads>h2 {
+    color: rgb(255, 97, 88);
+    margin-top: -2em;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-decoration: solid;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
