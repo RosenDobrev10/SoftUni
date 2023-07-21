@@ -1,0 +1,16 @@
+<section id="all-ads-page">
+    <article class="all-ads-title">
+        <h1>All ads</h1>
+    </article>
+
+    {{#if ads}}
+            {{#each ads}}
+                {{>adCatalog}}
+            {{/each}}
+    {{else}}
+        <article class="not-available-ads">
+            <h1>No ads created yet.</h1>
+            <h2>Join and find your perfect workers.</h2>
+        </article>
+    {{/if}}
+</section>
