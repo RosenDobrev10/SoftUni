@@ -1,0 +1,36 @@
+<section id="home-page">
+    <article class="home-page-content">
+        <h1>Find The Job That Fits Your Life</h1>
+        <p>On this site, you can find hundreds of job offers, do not hesitate, and apply now.</p>
+        <a href="/catalog" class="view-all-ads">View all ads</a>
+    </article>
+    <article class="home-page-image">
+        <img src="/static/img/man.png" alt="man">
+    </article>
+</section>
+
+<section class="intro">
+    <article class="intro-left-side">
+        <article class="intro-left-side-image">
+            <img src="/static/img/people-group.png" alt="people">
+        </article>
+        <article class="intro-left-side-text">
+            <h1>You're Looking for Trending Jobs!</h1>
+            <h2>See the first three ads you applied for.</h2>
+        </article>
+    </article>
+
+    <article class="intro-symbol">
+        <img src="/static/img/strip-square.png" alt="strip-square">
+    </article>
+
+    <article class="intro-right-side">
+        {{#if ads}}
+            {{#each ads}}
+                {{>adHome}}
+            {{/each}}
+        {{else}}
+            <p class="no-ads-created">No ads created!</p>
+        {{/if}}
+    </article>
+</section>
