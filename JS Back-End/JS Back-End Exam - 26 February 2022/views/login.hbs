@@ -1,0 +1,29 @@
+<section id="login-page">
+
+    <article class="login-page-container">
+
+        <form method="POST" class="login-page-form">
+            <h2>Login</h2>
+            <p>Welcome, see the new ads!</p>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="petar@abv.bg" name="email" value="{{body.email}}">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="******" name="password">
+
+            <article class="login-page-button">
+                <button class="btn-login">Login</button>
+            </article>
+
+            <article class="no-account">
+                <p>Don't have an account? <a href="/auth/register">Sign up</a></p>
+            </article>
+        </form>
+
+        <article class="login-page-image">
+            <img src="/static/img/job.png" alt="job-image">
+        </article>
+    </article>
+
+</section>
