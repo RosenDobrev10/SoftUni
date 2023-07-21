@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+
+	<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+	<div class="box">
+
+		{{#if errors}}
+			<div class="error-box">
+				{{#each errors}}
+					<p>{{this}}</p>
+				{{/each}}
+			</div>
+		{{/if}}
+
+		<header class="header">
+			<article class="header-logo">
+				<img src="/static/img/logo.png">
+			</article>
+			<nav class="header-nav">
+				<ul class="header-nav-list">
+
+					<li class="header-nav-list-item active">
+						<a href="/" class="header-nav-list-item-link active">Home Page</a>
+					</li>
+					<li class="header-nav-list-item">
+						<a href="/catalog" class="header-nav-list-item-link">All ads</a>
+					</li>
+					{{#if email}}
+						<li class="header-nav-list-item">
+							<a href="/ads/create" class="header-nav-list-item-link">Create Ad</a>
+						</li>
+						<li class="header-nav-list-item">
+							<a href="/ads/search" class="header-nav-list-item-link">Search</a>
+						</li>
+						<li class="header-nav-list-item">
+							<a href="/auth/logout" class="header-nav-list-item-link">Logout</a>
+						</li>
+					{{else}}
+						<li class="header-nav-list-item">
+							<a href="/auth/register" class="header-nav-list-item-link">Register</a>
+						</li>
+						<li class="header-nav-list-item">
+							<a href="/auth/login" class="header-nav-list-item-link">Login</a>
+						</li>
+					{{/if}}
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			{{{body}}}
+		</main>
+
+		<footer>
+			<p>©JS Back-End Final Exam 2022</p>
+		</footer>
+	</div>
+</body>
+
+</html>
