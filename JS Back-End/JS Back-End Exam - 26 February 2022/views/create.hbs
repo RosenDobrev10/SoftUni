@@ -1,0 +1,29 @@
+<section id="create-page">
+
+    <article class="create-page-container">
+        <form method="post" class="create-page-form">
+            <h2>Create an ad</h2>
+
+            <label for="headline">Headline:</label>
+            <input type="text" id="headline" placeholder="Front-End Developer with React" name="headline" value="{{body.headline}}">
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Ruse, Bulgaria" name="location" value="{{body.location}}">
+
+            <label for="company-name">Company name:</label>
+            <input type="text" id="company-name" placeholder="Digital Solutions" name="name" value="{{body.name}}">
+
+            <label for="company-description">Company description:</label>
+            <input type="text" id="company-description" placeholder="We are developing a web application" name="description" value="{{body.description}}">
+
+            <article class="create-page-button">
+                <button class="btn-create">Create</button>
+            </article>
+        </form>
+
+        <article class="create-page-image">
+            <img src="/static/img/job.png" alt="image">
+        </article>
+    </article>
+
+</section>
