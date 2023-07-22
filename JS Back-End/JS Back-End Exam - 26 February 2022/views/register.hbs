@@ -1,0 +1,35 @@
+<section id="register-page">
+
+    <article class="register-page-container">
+        <form method="POST" class="register-page-form">
+            <h2>Register</h2>
+            <p>Join us and find the perfect job.</p>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="petar@abv.bg" name="email" value="{{body.email}}">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="******" name="password">
+
+            <label for="repeat-password">Repeat Password:</label>
+            <input type="password" id="repeat-password" placeholder="******" name="repass">
+
+            <label for="description">Briefly describe your skills:</label>
+            <input type="text" id="description" placeholder="Experience with HTML 5, CSS 3, Node.js" name="skills" value="{{body.skills}}">
+
+            <article class="register-page-button">
+                <button class="btn-register">Register</button>
+            </article>
+
+            <article class="account">
+                <p>Already have an account? <a href="/auth/login">Sign in</a></p>
+            </article>
+
+        </form>
+
+        <article class="register-page-image">
+            <img src="/static/img/job.png" alt="image">
+        </article>
+    </article>
+
+</section>
