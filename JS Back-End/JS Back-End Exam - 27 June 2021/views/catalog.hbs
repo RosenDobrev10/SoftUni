@@ -1,0 +1,19 @@
+<section class="container" id="shared-trips-page">
+    <header class="trip">
+        <h1>Welcome Sharetripers!</h1>
+        <p class="lead">Sharedtrip is the best way to road across the country.</p>
+        <p class="lead">Find yours Sharedtrip's buddies, when you share with us yours trip plans and let the exploration begin!</p>
+    </header>
+    <div class="row text-center">
+        {{#if trips}}
+            {{#each trips}}
+                {{>trip}}
+            {{/each}}
+        {{else}}
+            <div class="no-trips">
+                <img src="https://www.stagweb.co.uk/img/activities/big/sexyhitchhiker1.jpg" />
+                <p class="lead">Hitchhiker time...</p>
+            </div>
+        {{/if}}
+    </div>
+</section>
