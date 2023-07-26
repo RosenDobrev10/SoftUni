@@ -1,0 +1,55 @@
+<section class="py-5" id="offer-trip-page">
+    <div class="container offer-trip">
+        <h1>Offer trip</h1>
+        <div>
+            <form method="POST">
+                <div class="offer-label">
+                    <label for="startPoint"> <i class="fas fa-map-marker-alt"></i> Starting Point </label>
+                    <label for="endPoint"> <i class="fas fa-map-marker-alt"></i> End Point</label>
+                </div>
+
+                <div class="form-group offer-input">
+                    <input type="text" class="form-control-2" id="startPoint" placeholder="Studentski grad" name="start" value="{{body.start}}">
+                    <input type="text" class="form-control-2" id="endPoint" placeholder="Pamporovo" name="end" value="{{body.end}}">
+                </div>
+
+                <div class="offer-label">
+                    <label for="date"> <i class="far fa-calendar-alt"></i> Date</label>
+                    <label for="time"> <i class="far fa-clock"></i> Time</label>
+                </div>
+
+                <div class="form-group offer-input">
+                    <input type="date" class="form-control-2" id="date" placeholder="18 May 2021" name="date" value="{{body.date}}">
+                    <input type="time" class="form-control-2" id="time" placeholder="19:00 PM" name="time" value="{{body.time}}">
+                </div>
+
+                <div class="offer-label">
+                    <label for="carImage">Car Image</label>
+                    <label for="carBrand">Car Brand</label>
+                </div>
+
+                <div class="form-group offer-input">
+                    <input type="text" class="form-control-2" id="carImage" placeholder="https://..." name="image" value="{{body.image}}">
+                    <input type="text" class="form-control-2" id="carBrand" placeholder="Audi" name="brand" value="{{body.brand}}">
+                </div>
+
+                <div class="offer-label">
+                    <label for="seats">Available Seats</label>
+                    <label for="price">Price</label>
+                </div>
+
+                <div class="form-group offer-input">
+                    <input type="text" class="form-control-2" id="seats" placeholder="4" name="seats" value="{{body.seats}}">
+                    <input type="text" class="form-control-2" id="price" placeholder="25" name="price" value="{{body.price}}">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" placeholder="Information about the trip" name="description">{{body.description}}</textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
