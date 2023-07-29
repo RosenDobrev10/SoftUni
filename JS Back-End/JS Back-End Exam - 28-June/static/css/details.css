@@ -1,0 +1,24 @@
+section.details {
+    width: 60em;
+    margin: 3em auto;
+}
+
+.buttons {
+    display: block;
+    margin: 1em 2em 0 auto;
+}
+
+.btn.delete:hover {
+    background-color: red;
+}
+
+.btn.edit:hover {
+    background-color: blue;
+}
+
+.btn.like:hover {
+    background-color: green;
+}
+
+
+
