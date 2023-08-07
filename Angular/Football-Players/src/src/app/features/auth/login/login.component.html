@@ -1,0 +1,89 @@
+<section class="bg-cover bg-[url('/assets/field.jpg')]">
+  <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+    <div class="w-full rounded-xl md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 opacity-90">
+      <div class="md:space-y-6 sm:p-8">
+
+        <!-- HEADER -->
+        <h1 class="text-center text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">Sign in</h1>
+
+        <!-- FORM -->
+        <form
+          class="md:space-y-6"
+          #loginForm="ngForm"
+          (ngSubmit)="onLoginHandler(loginForm)">
+
+          <!-- EMAIL -->
+          <div>
+            <label for="email" class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Email address</label>
+            <input
+              ngModel
+              #email="ngModel"
+              name="email"
+              id="email"
+              autofocus
+              class="bg-gray-50 border-2 border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white"
+              placeholder="username@domain.tld"
+              required
+              pattern="^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$"/>
+
+            <!-- EMAIL ERRORS -->
+            <ng-container *ngIf="email.invalid && email.touched">
+              <div class="block text-sm font-medium text-gray-900 dark:text-white"
+                *ngIf="email.errors?.['required']">Email is required <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="block text-sm font-medium text-gray-900 dark:text-white"
+                *ngIf="email.errors?.['pattern']">Email must be in format username@domain.tld <i class="fa-solid fa-xmark"></i>
+              </div>
+            </ng-container>
+          </div>
+
+          <!-- PASSWORD -->
+          <div>
+            <label for="password" class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Password</label>
+            <input
+              ngModel
+              #password="ngModel"
+              type="password"
+              name="password"
+              id="password"
+              class="bg-gray-50 border-2 border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white"
+              placeholder="******"
+              required
+              minlength="6"/>
+            
+            <!-- PASSWORD ERRORS -->
+            <ng-container *ngIf="password.invalid && password.touched">
+              <div class="block text-sm font-medium text-gray-900 dark:text-white"
+                *ngIf="password.errors?.['required']">Password is required <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="block text-sm font-medium text-gray-900 dark:text-white" 
+                *ngIf="password.errors?.['minlength']">Password must be at least {{ password.errors?.['minlength']?.['requiredLength'] }} characters long <i class="fa-solid fa-xmark"></i>
+              </div>
+            </ng-container>
+          </div>
+          
+          <!-- BUTTONS -->
+          <button
+            [disabled]="loginForm.invalid"
+            type="submit"
+            class="cursor-pointer hover:bg-green-600 border-2 border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:text-white"
+          >Sign in
+          </button>
+
+          <!-- SERVER ERROR -->
+          <div class="text-center block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            *ngIf="errorMessage">{{ errorMessage }} <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <!-- REGISTER REDIRECT -->
+          <p class="text-sm font-light text-gray-500 dark:text-gray-400">Don't have an account yet?
+            <a routerLink="/auth/register"
+              class="font-medium text-gray-900 dark:text-white hover:underline hover:text-green-600"
+              >Sign up</a>
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
