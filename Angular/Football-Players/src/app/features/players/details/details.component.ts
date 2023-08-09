@@ -10,7 +10,7 @@ import { Modal, initTE } from 'tw-elements';
 
 @Component({
   selector: 'app-details',
-  templateUrl: './details.component copy.html',
+  templateUrl: './details.component.html',
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent implements OnInit, OnDestroy {

@@ -57,7 +57,7 @@
                 *ngIf="password.errors?.['required']">Password is required <i class="fa-solid fa-xmark"></i>
               </div>
               <div class="block text-sm font-medium text-gray-900 dark:text-white"
-                *ngIf="password.errors?.['minlength']">Password must be at least 6 characters long <i class="fa-solid fa-xmark"></i>
+                *ngIf="password.errors?.['minlength']">Password must be at least {{password.errors?.['minlength']?.['requiredLength']}} characters long <i class="fa-solid fa-xmark"></i>
               </div>
             </ng-container>
           </div>
@@ -82,7 +82,7 @@
                 *ngIf="repassword.errors?.['required']">Confirm password is required <i class="fa-solid fa-xmark"></i>
               </div>
               <div class="block text-sm font-medium text-gray-900 dark:text-white"
-                *ngIf="repassword.errors?.['minlength']">Confirm password must be at least 6 characters long <i class="fa-solid fa-xmark"></i>
+                *ngIf="repassword.errors?.['minlength']">Confirm password must be at least {{repassword.errors?.['minlength']?.['requiredLength']}} characters long <i class="fa-solid fa-xmark"></i>
               </div>
               <div class="block text-sm font-medium text-gray-900 dark:text-white"
                 *ngIf="password.value != repassword.value">Passwords don't match <i class="fa-solid fa-xmark"></i>
@@ -105,7 +105,7 @@
 
           <!-- LOGIN REDIRECT -->
           <p class="text-sm font-light text-gray-500 dark:text-gray-400">Already have an account?
-            <a routerLink="/login"
+            <a routerLink="/auth/login"
               class="font-medium text-gray-900 dark:text-white hover:underline hover:text-green-600"
               >Sign in</a>
           </p>

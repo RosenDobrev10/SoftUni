@@ -1,0 +1,17 @@
+<div class="duration-500 hover:animate-[pulse_1s_ease-in-out] max-w-lg shadow-2xl hover:scale-105 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+    <div class="relative overflow-hidden bg-cover bg-no-repeat">
+        <img class="object-cover object-center rounded-t-lg h-96 w-96" src="{{ player.image }}" alt="{{ player.name }}"/>
+    </div>
+    <div class="p-6">
+        <h5 class="mb-6 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+        Name: {{ player.name }}
+        </h5>
+        <p class="mb-10 text-base text-neutral-600 dark:text-neutral-200">
+        Age: {{ player.age }}
+        </p>
+        <a [routerLink]="['/players', 'details', player._id]"
+        class="cursor-pointer dark:md:hover:bg-green-600 border-2 border-neutral-50 rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-sm font-medium uppercase leading-tight dark:bg-neutral-700 dark:text-white">
+        More info
+        </a>
+    </div>
+</div>
