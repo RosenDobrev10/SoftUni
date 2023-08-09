@@ -1,0 +1,29 @@
+@media (max-height:800px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        margin-top: 0.5em;
+    }
+    section {
+        margin: 1rem 3em;
+    }
+    /*footer {
+        display: none;
+    }*/
+}
+
+@media (max-width: 980x) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        margin-top: 0.5em;
+    }
+    section {
+        margin: 1rem 3em;
+    }
+    /*footer {
+        display: none;
+    }*/
+}
