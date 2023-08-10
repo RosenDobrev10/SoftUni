@@ -38,7 +38,7 @@ The main objective of Football Player application is to provide users with an ea
 
 ## Demo
 
-Check out the live demo of Football Players at [https://main--football-players-rd.netlify.app/](https://main--football-players-rd.netlify.app/)
+Check out the live demo of Football Players at [https://football-players-rd.netlify.app/](https://football-players-rd.netlify.app/)
 
 **Demo Users:**
 
