@@ -10,6 +10,6 @@ export const ENDPOINTS = {
   delete: (playerId: string) => `data/players/${playerId}`,
   canLike: (playerId: string, userId: string) => `data/likes?where=playerId%3D%22${playerId}%22%20and%20_ownerId%3D%22${userId}%22&count`,
 	likesForPlayer: (playerId: string) => `data/likes?where=playerId%3D%22${playerId}%22&distinct=_ownerId&count`,
-  search: (query: string) => `data/players?where=name%20LIKE%20%22${query}%22`,
+  search: (query: string) => `data/players?where=name%20LIKE%20%22${query}%22&sortBy=age`,
 	getMyPlayers: (userId: string) => `data/players?where=_ownerId%3D%22${userId}%22&sortBy=age`,
 };
