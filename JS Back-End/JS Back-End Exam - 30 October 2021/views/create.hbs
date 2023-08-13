@@ -1,0 +1,42 @@
+<section id="create-page">
+                <div class="createSection">
+                    <div class="info">
+                        <h2>Create your post, share information about wildlife.</h2>
+                    </div>
+
+                    <form method="POST" class="createForm">
+                        <h2>Create Post</h2>
+                        <ul class="noBullet">
+                            <li>
+                                <label for="title">Title:</label>
+                                <input type="text" class="inputFields" id="title" placeholder="Two golden snub-nosed monkeys" name="title" value="{{body.title}}" />
+                            </li>
+                            <li>
+                                <label for="key-word">Keyword:</label>
+                                <input type="text" class="inputFields" id="keyword" placeholder="Animal" name="keyword" value="{{body.keyword}}" />
+                            </li>
+                            <li>
+                                <label for="location">Location:</label>
+                                <input type="text" class="inputFields" id="location" placeholder="North America" name="location" value="{{body.location}}" />
+                            </li>
+                            <li>
+                                <label for="date">Date of creation:</label>
+                                <input type="text" class="inputFields" id="date" placeholder="18.02.2021" name="date" value="{{body.date}}" />
+                            </li>
+                            <li>
+                                <label for="image">Wildlife image:</label>
+                                <input type="text" class="inputFields" id="image" placeholder="http:/..." name="image" value="{{body.image}}" />
+                            </li>
+                            <li>
+                                <label for="description">Description:</label>
+                                <textarea id="description" class="inputFields" name="description" placeholder="Monkey is...">{{body.description}}</textarea>
+                            </li>
+                            <li id="center-btn">
+                                <button id="create-btn">Create</button>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+            </section>
+
