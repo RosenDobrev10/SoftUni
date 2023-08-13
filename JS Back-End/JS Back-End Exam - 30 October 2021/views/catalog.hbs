@@ -1,0 +1,17 @@
+<section id="catalog">
+    <h1>All posts</h1>
+    <div class="band">
+        {{#if posts}}
+            {{#each posts}}
+                {{>post}}
+            {{/each}}
+        {{else}}
+            <div class="no-posts">
+                <div class="no-posts-img">
+                    <img src="/static/img/animal.jpg" alt="image_nature_3">
+                </div>
+                <p class="no-offer">There are no posts yet...</p>
+            </div>
+        {{/if}}
+    </div>
+</section>
