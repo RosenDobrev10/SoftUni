@@ -1,0 +1,48 @@
+<section id="edit-page">
+    <div class="editSection">
+        <div class="info">
+            <h2>Edit your own post!</h2>
+        </div>
+
+        <form method="POST" class="editForm">
+            <h2>Edit Post</h2>
+            <ul class="noBullet">
+                
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" class="inputFields" id="title" name="title" value="{{post.title}}" />
+                </li>
+
+                <li>
+                    <label for="key-word">Keyword:</label>
+                    <input type="text" class="inputFields" id="keyword" name="keyword" value="{{post.keyword}}" />
+                </li>
+
+                <li>
+                    <label for="location">Location:</label>
+                    <input type="text" class="inputFields" id="location" name="location" value="{{post.location}}" />
+                </li>
+
+                <li>
+                    <label for="date">Date of creation:</label>
+                    <input type="text" class="inputFields" id="date" name="date" value="{{post.date}}" />
+                </li>
+
+                <li>
+                    <label for="image">Wildlife image:</label>
+                    <input type="text" class="inputFields" id="image" name="image" value="{{post.image}}" />
+                </li>
+
+                <li>
+                    <label for="description">Description:</label>
+                    <textarea id="description" class="inputFields" name="description">{{post.description}}</textarea>
+                </li>
+
+                <li id="center-btn">
+                    <button id="edit-btn">Edit</button>
+                </li>
+            </ul>
+        </form>
+
+    </div>
+</section>
