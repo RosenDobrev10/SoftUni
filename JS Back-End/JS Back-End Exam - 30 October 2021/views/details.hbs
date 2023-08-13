@@ -1,0 +1,59 @@
+<section id="details-page">
+
+    <div class="main_card">
+        <div class="card_left">
+            <div class="card_datails">
+
+                <h1>Title: {{post.title}}</h1>
+                <h3>Created by an author: {{post.owner.firstName}} {{post.owner.lastName}}</h3>
+                <div class="card_animal">
+                    <p class="card-keyword">Keyword: {{post.keyword}}</p>
+                    <p class="card-location">Location: {{post.location}}</p>
+                    <p class="card-date">Date: {{post.date}}</p>
+                </div>
+
+                <p class="disc">Description: {{post.description}}.</p>
+
+                {{#if email}}
+                    <div class="social-btn">
+                        {{#if post.isOwner}}
+                            <a href="/posts/{{post._id}}/edit" class="edit-btn">Edit</a>
+                            <a href="/posts/{{post._id}}/delete" class="del-btn">Delete</a>
+                        {{else}}
+                            {{#if post.hasVoted}}
+                                <p class="thanks-for-vote">Thanks For Voting</p>
+                            {{else}}
+                                <a href="/posts/{{post._id}}/upvote" class="vote-up">UpVote +1</a>
+                                <a href="/posts/{{post._id}}/downvote" class="vote-down">DownVote -1</a>
+                                {{!-- <a href="/posts/{{post._id}}/vote?vote=1" class="vote-up">UpVote +1</a>
+                                <a href="/posts/{{post._id}}/vote?vote=-1" class="vote-down">DownVote -1</a> --}}
+                            {{/if}}
+                        {{/if}}
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+        <div class="card_right">
+            <img src="{{post.image}}" alt="image">
+        </div>
+    </div>
+
+</section>
+
+<section id="votes">
+    <div class="vote-info">
+        <div class="card_left">
+            <div class="card_datails">
+                <h1>Votes</h1>
+                <div class="card_vote">
+                    <p class="PV">Total rating of votes: {{post.ratings}}</p>
+                </div>
+                {{#if post.hasVoters}}
+                    <p class="disc">People who voted for the post - {{post.votersEmails}}</p>
+                {{else}}        
+                    <p class="disc">People who voted for the post - No one has voted yet.</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</section>
