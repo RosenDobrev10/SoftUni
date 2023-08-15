@@ -1,0 +1,35 @@
+<section id="register-page">
+    <div class="signupSection">
+        <div class="info">
+            <h2>To discover and share knowledge about the environment in order to preserve and enrich life.</h2>
+        </div>
+        <form method="POST" class="signupForm">
+            <h2>Sign Up</h2>
+            <ul class="noBullet">
+                <li>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" class="inputFields" id="first-name" name="firstName" value="{{body.firstName}}" placeholder="Alex" />
+                </li>
+                <li>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" class="inputFields" id="last-name" name="lastName" value="{{body.lastName}}" placeholder="Petkov" />
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" class="inputFields" id="email" name="email" value="{{body.email}}" placeholder="alex@gmail.com" />
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" class="inputFields" id="password" name="password" placeholder="******" />
+                </li>
+                <li>
+                    <label for="repeat-password">Repeat-Password:</label>
+                    <input type="password" class="inputFields" id="repeat-password" name="repass" placeholder="******" />
+                </li>
+                <li id="center-btn">
+                    <button id="join-btn">Join</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</section>
