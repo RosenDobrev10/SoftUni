@@ -1,0 +1,37 @@
+<section id="my-posts">
+    <h1>My post.</h1>
+
+    <div class="my-container">
+        {{#if posts}}
+            {{#each posts}}
+                <div class="my-card">
+                    <div class="card-header">
+                        <img src="{{image}}" alt="water_fall" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-teal">Keyword: {{keyword}}</span>
+                        <h4>
+                            Title: {{title}}
+                        </h4>
+                        <div class="user">
+                            <img src="https://snworksceo.imgix.net/dtc/3f23c937-0065-4e17-8daa-46449777caed.sized-1000x1000.jpg?w=1000"
+                                alt="vote" />
+                            <div class="user-info">
+                                <h5>Author: {{owner.firstName}} {{owner.lastName}}</h5>
+                                {{!-- <h5>Author: {{../firstName}} {{../lastName}}</h5> --}}
+                                <small>Rating of votes: {{ratings}}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        {{else}}
+            <div class="no-posts">
+                <div class="no-posts-img">
+                    <img src="/static/img/bear.jpg" alt="image_nature_3">
+                </div>
+                <p class="no-offer">There are no own posts yet...</p>
+            </div>
+        {{/if}}
+    </div>
+</section>
