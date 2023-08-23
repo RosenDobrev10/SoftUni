@@ -1,0 +1,48 @@
+<main class="details">
+    <section id="details">
+        <div id="details-wrapper">
+            <p id="details-title">Name: {{animal.name}}</p>
+            <div id="img-wrapper">
+                <img src="{{animal.image}}" />
+            </div>
+            <div id="info-wrapper">
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                Years: <span id="details-years">{{animal.years}}</span>
+                            </p>
+                        </td>
+                        <td>
+                            <p>Kind: <span id="details-kind">{{animal.kind}}</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Need of: <span id="details-need">{{animal.need}}</span></p>
+                        </td>
+                        <td>
+                            <p>Location: <span id="details-location">{{animal.location}}</span></p>
+                        </td>
+                    </tr>
+                </table>
+                <p>Description: <span id="details-description">{{animal.description}}</span></p>
+            </div>
+
+            {{#if email}}
+                <div id="action-buttons">
+                    {{#if animal.isOwner}}
+                        <a href="/animals/{{animal._id}}/edit" id="edit-btn">Edit</a>
+                        <a href="/animals/{{animal._id}}/delete" id="delete-btn">Delete</a>
+                    {{else}}
+                        {{#if animal.hasDonated}}
+                            <p id="already-donated">You already donated!</p>
+                        {{else}}
+                            <a href="/animals/{{animal._id}}/donate" id="donation-btn">Donation</a>
+                        {{/if}}
+                    {{/if}}
+                </div>
+            {{/if}}
+        </div>
+    </section>
+</main>
