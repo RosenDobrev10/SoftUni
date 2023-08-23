@@ -1,0 +1,22 @@
+<main class="home">
+	<section id="home">
+		<h1>Welcome to Friendly World</h1>
+		<h2>Let's help together</h2>
+		<h3>
+			We are global animal welfare organisation for animals under direct
+			human influence, which reveals suffering, rescues animals in need
+			and protects them. Our vision is a world where humans treat animals
+			with respect, empathy and understanding.
+		</h3>
+	</section>
+
+	<section id="last-added">
+        {{#if animals}}
+			{{#each animals}}
+				{{>animalHome}}
+			{{/each}}
+        {{else}}
+		    <p class="no-post">There are no animals in need!</p>
+        {{/if}}
+	</section>
+</main>
