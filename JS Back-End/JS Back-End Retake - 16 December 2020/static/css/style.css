@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Courgette');
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Amaranth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+input[type=submit]:hover, ul>li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.log-out:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+li, .log-out {
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid lightsteelblue;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+nav {
+    background: cornflowerblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.right-container {
+    text-align: center;
+    margin: 0 5px;
+    color: white;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+label {
+    color: gray;
+    font-size: 25px;
+}
+
+section {
+    text-align: center;
+    margin-top: 5px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    border: 2px solid lightsteelblue;
+    padding: 5px;
+}
+
+.create, .save-changes, .login, .register {
+    background: cornflowerblue;
+    color: white;
+    border: 2px solid lightsteelblue;
+    padding: 15px;
+    width: 100px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background: cornflowerblue;
+    padding: 20px 0;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.background-img {
+    background: url("../../static/img/hotel.jpg") no-repeat;
+    background-size: cover;
+    margin: auto;
+    min-height: 500px;
+}
+
+.guest {
+    text-align: center;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 40px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.hotel-parameters {
+    text-align: left;
+}
+
+.hotel-parameters span {
+    margin-left: 35px;
+    font-size: 35px;
+}
+
+.single-ticket {
+    display: flex;
+    margin: auto;
+    background: cornflowerblue;
+    padding-bottom: 30px;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.hotel-img {
+    width: 100%;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.left-ticket-container {
+    width: 49%;
+}
+
+.right-ticket-container {
+    text-align: left;
+    margin-left: 50px;
+    width: 45%;
+}
+
+.number-of-tickets {
+    margin-top: 5px;
+    font-size: 35px;
+}
+
+.right-ticket-container p {
+    font-size: 25px;
+}
+
+.remove {
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid lightsteelblue;
+    padding: 10px;
+    margin: 10px;
+    width: 140px;
+    text-align: center;
+    color: red;
+    background: none;
+}
+.remove:hover {
+    transform: scale(1.1);
+}
+
+.edit {
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid lightsteelblue;
+    padding: 10px;
+    margin: 10px;
+    width: 140px;
+    text-align: center;
+    color: black;
+    background: none;
+}
+
+.edit:hover {
+    transform: scale(1.1);
+}
+.book {
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid lightsteelblue;
+    padding: 10px;
+    margin: 10px;
+    width: 140px;
+    text-align: center;
+    color: blue;
+    background: none;
+}
+
+.book:hover {
+    transform: scale(1.1);
+}
+
+.green{
+    color: green;
+}
+
+.right-ticket-container div {
+    display: flex;
+    margin-top: 40px;
+}
+
+.right-ticket-container .remove {
+    margin-left: 260px;
+}
+
+.ticket-checkout {
+    font-size: 25px;
+    height: 150px;
+    padding: 15px;
+}
+
+.total {
+    margin: 10px;
+}
+
+.checkout {
+    border: 2px solid lightskyblue;
+    padding: 14px;
+    margin: 10px;
+    width: 160px;
+    text-align: center;
+    color: white;
+    background: lightsteelblue;
+    font-size: 20px;
+}
+
+.search {
+    background: cornflowerblue;
+    color: white;
+    border: 2px solid lightsteelblue;
+    padding: 15px;
+    width: 120px;
+    font-size: 20px;
+    display: block;
+}
+
+.added-hotel {
+    color: black;
+    cursor: pointer;
+    width: 400px;
+    border: 2px solid blue;
+    text-align: center;
+    background: cornflowerblue;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 250px;
+    flex-basis: 25%;
+}
+
+.picture-added-hotel {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.picture-added-hotel:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.added-hotels {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.save-changes {
+    width: 140px;
+}
+
+.edit-hotel-detail {
+    background: url("../../static/img/pencil.png") center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.edit-hotel-detail:hover {
+    transform: scale(1.1);
+}
+
+.hotel-area-left img {
+    width: 100%;
+    height: 90%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.hotel-area {
+    display: flex;
+    justify-content: center;
+    background: cornflowerblue;
+    width: 60%;
+    margin: auto;
+    height: 235px;
+    color: white;
+}
+
+.hotel-area-right {
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.details {
+    margin: 0;
+}
+.seat-form {
+    display: inline-flex;
+}
+
+.seat-form input, button {
+    margin: 20px;
+}
+
+.seat-form span {
+    margin: 20px;
+}
+
+.delete {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid blue;
+    color: red;
+    margin: 20px;
+}
+
+.navigation {
+    margin: auto;
+}
+
+.hotel-ticket {
+    text-align: left;
+    font-size: 15px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hotel-left img {
+    width: 400px;
+    height: 70%;
+    padding: 0 0 0 15px;
+}
+
+.hotel-right {
+    padding-left: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.nav-register {
+    text-align: center;
+}
+
+.notification {
+    position: fixed;
+    z-index: 10;
+    top: 6rem;
+    right: 5rem;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-decoration: underline;
+    box-shadow: 0 5px 10px rgb(204, 204, 204);
+}
+
+.loadingBox {
+    background: #7CB3E9;
+}
+
+.infoBox {
+    background: #393;
+}
+
+.errorBox {
+    background: #F50;
+}
+
+.profile {
+    width: 100%;
+    max-width: 500px;
+    margin: 2em auto 1rem;
+    padding: .5em;
+    border: .3em solid cornflowerblue;
+    border-radius: .5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    background-color: hsla(0, 0%, 94.1%, .8);
+    box-shadow: 0 0 1em 0 #000;
+    text-align: center;
+}
+
+.profile h3 {
+    text-decoration: underline;
+}
+
+.profile img {
+    width: 7em;
+    height: 7em;
+    margin: auto;
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex p:first-child {
+    width: 35%;
+    text-align: right;
+    margin: .5em;
+}
+
+.flex p:last-child {
+    width: 55%;
+    text-align: left;
+    margin: .5em;
+    font-weight: bold;
+}
+
+.profile button {
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.6em 1.2em;
+    outline: none;
+}
+
+.flex > input, .flex > div {
+    width: 55%;
+    text-align: left;
+    margin: .5em;
+}
+
+.flex > div > input {
+    width: 77%;
+}
+
+.flex select {
+    padding: 0.17em 0;
+}
+
+.red-button {
+    background-color: red;
+}
+
+.green-button {
+    background-color: green;
+}
