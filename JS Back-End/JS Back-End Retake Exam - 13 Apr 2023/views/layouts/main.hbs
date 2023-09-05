@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+	<header class="header">
+		<nav>
+			<img src="/static/images/logo.jpg" class="logo">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/game/catalog">All Games Code</a></li>
+				{{#if email}}
+					<li><a href="/game/search">Search</a></li>
+					<li><a href="/game/create">Create Game Offer</a></li>
+					<li><a href="/auth/logout">Logout</a></li>
+				{{else}}
+					<li><a href="/auth/login">Login</a></li>
+					<li><a href="/auth/register">Register</a></li>
+				{{/if}}
+			</ul>
+			
+			{{#if email}}
+				<p>Welcome, {{email}}</p>
+			{{else}}
+				<p>Welcome, guest</p>
+			{{/if}}
+		</nav>
+	</header>
+
+	{{#if errors}}	
+		<div>
+			<div class="errorContainer">
+				{{#each errors}}
+					<p>{{this}}</p>
+				{{/each}}
+			</div>
+		</div>
+	{{/if}}
+
+	{{{body}}}
+
+	<footer>
+		<p>Back-End 2023</p>
+	</footer>
+
+</body>
+
+</html>
