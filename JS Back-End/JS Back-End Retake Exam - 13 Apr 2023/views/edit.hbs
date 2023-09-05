@@ -1,0 +1,38 @@
+<main id="edit">
+        
+        <section id="edit-container">
+            <div class="edit-container-info">
+                <h1>Edit Game Code Offer</h1>
+                <form method="post">
+                    <label>Platform:</label>
+                    <select id="platform" name="platform">
+                        {{#select game.platform}}
+                            <option value="">-------</option>
+                            <option value="PC">PC</option>
+                            <option value="Nintendo">Nintendo</option>
+                            <option value="PS4">PS4</option>
+                            <option value="PS5">PS5</option>
+                            <option value="XBOX">XBOX</option>
+                        {{/select}}
+                    </select>
+
+                    <label>Name:</label>
+                    <input type="text" id="name" name="name" value="{{game.name}}">
+
+                    <label>Image:</label>
+                    <input type="text" id="image" name="imageUrl" value="{{game.imageUrl}}">
+
+                    <label>Price:</label>
+                    <input type="number" id="price" name="price" value="{{game.price}}">
+
+                    <label>Genre:</label>
+                    <input type="text" id="genre" name="genre" value="{{game.genre}}">
+
+                    <label>Description:</label>
+                    <textarea id="description" name="description">{{game.description}}</textarea>
+                    
+                    <input type="submit" id="btn" value="EDIT"></input>
+                </form>
+            </div>
+        </section>
+    </main>
