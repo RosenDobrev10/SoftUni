@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#details-page {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 10px 2px rgb(111, 44, 122);
+}
+
+#details-page>h1 {
+    font-size: 44px;
+    text-align: center;
+    color: white;
+    margin-top: -1em;
+    margin-bottom: 0.1em;
+    padding: 5px;
+    font-family: 'EB Garamond', serif;
+}
+
+.details-card {
+    width: 1200px;
+    position: relative;
+    left: 25%;
+    width: 680px;
+    height: 360px;
+    display: flex;
+    margin-left: 1.5em;
+    background-color: #db4a86;
+    margin-bottom: 1.5em;
+}
+
+.details-card-image>img {
+    width: 390px;
+    height: 360px;
+}
+
+.details-card-text {
+    width: 290px;
+    position: relative;
+    height: auto;
+}
+
+.detail-card-text-content {
+    position: relative;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    margin-left: 15px;
+    padding-left: 10px;
+    box-shadow: 0px 0px 20px 0px #e0e3e4;
+}
+
+.details-card-text>h2 {
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.6em;
+    word-wrap: break-word;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: 'EB Garamond', serif;
+    color: white;
+}
+
+.details-card-text>h3 {
+    font-size: 14.5px;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    padding-left: 10px;
+    margin-top: 0.2em;
+    color: rgb(233, 232, 225);
+    font-family: 'EB Garamond', serif;
+}
+
+.details-btn {
+    text-align: center;
+    width: 100px;
+    padding: 3px 3px 3px 3px;
+    background-image: linear-gradient(to right, violet, rgb(41, 151, 151));
+    display: block;
+    color: rgb(22, 6, 6);
+    font-weight: bold;
+    margin-left: 3.2em;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0px 8px #6814a094;
+}
+
+.details-btn:hover {
+    box-shadow: none;
+    background-image: linear-gradient(to left, violet, rgb(41, 151, 151));
+}
+
+.buttons {
+    margin-top: 5em;
+    position: relative;
+    text-align: center;
+}
+
+.buttons>.shared-pub {
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 15.3px;
+    width: 250px;
+    margin-left: 1.4em;
+    font-weight: 600;
+    margin-top: 1.3em;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 300ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    border-color: #ffffff;
+    border-style: outset;
+    border-width: 3px;
+    background-color: rgb(113, 81, 155);
+}
+
+.btn-edit,
+.btn-delete,
+.btn-share {
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    border: none;
+    padding: 9px;
+    outline: none;
+    font-size: 15.3px;
+    font-weight: 600;
+    margin-top: 40px;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 300ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    border-color: #ffffff;
+    border-style: outset;
+    border-width: 3px;
+}
+
+.btn-edit:hover,
+.btn-delete:hover,
+.vote-up:hover,
+.vote-down:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btn-edit {
+    background-color: #428aa0;
+}
+
+.btn-edit:hover {
+    background-color: #387183;
+}
+
+.btn-delete {
+    background-color: #f15505;
+}
+
+.btn-delete:hover {
+    background-color: #da4c06;
+}
+
+.btn-share {
+    background-color: #595c61;
+}
+
+.btn-share:hover {
+    background-color: #4b4d50;
+}
