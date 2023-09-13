@@ -1,0 +1,46 @@
+#create-container,
+#edit-container {
+    box-shadow: 0px 0px 10px 2px rgb(111, 44, 122);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.create-container-info,
+.edit-container-info {
+    background-color: #fff;
+    width: 600px;
+    height: 500px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    line-height: 1.5;
+    left: 28%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+
+.create-container-info>img,
+.edit-container-info>img {
+    width: 250px;
+    height: 460px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-text>.create-btn,
+.container-text>.edit-btn {
+    background-image: linear-gradient(to right, #F3CEA4, #422263);
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.6em;
+    box-shadow: 0 5px 15px #6814a094;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.create-btn:hover,
+.edit-btn:hover {
+    background-image: linear-gradient(to right, #F3CEA4, #251338);
+    box-shadow: none;
+}
