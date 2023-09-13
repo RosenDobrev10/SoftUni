@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#profile-page {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 10px 2px rgb(111, 44, 122);
+}
+
+#profile-page>h1 {
+    font-size: 44px;
+    text-align: center;
+    color: white;
+    margin-top: -1em;
+    margin-bottom: 0.3em;
+    padding: 5px;
+    font-family: 'EB Garamond', serif;
+}
+
+.profile-card {
+    width: 1200px;
+    position: relative;
+    left: 28%;
+    width: 620px;
+    height: 350px;
+    display: flex;
+    margin-left: 1.5em;
+    /*background-color: #db4a86;*/
+    margin-bottom: 1.5em;
+    box-shadow: 0px 0px 20px 4px rgb(122, 44, 63);
+}
+
+.profile-card-icon>img {
+    width: 330px;
+    padding: 30px;
+    margin-top: -1em;
+    margin-left: 0.2em;
+    height: 350px;
+}
+
+.profile-card-info {
+    width: 290px;
+    position: relative;
+    height: auto;
+}
+
+.profile-card-info>h2 {
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.6em;
+    word-wrap: break-word;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: 'EB Garamond', serif;
+    color: white;
+}
+
+.profile-card-info>h3 {
+    font-size: 15.5px;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    padding-left: 10px;
+    margin-left: 1em;
+    color: rgb(233, 232, 225);
+    font-family: 'EB Garamond', serif;
+}
+
+.profile-card-info>h4 {
+    font-size: 14.5px;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    padding-left: 10px;
+    margin-top: 0.2em;
+    color: rgb(233, 232, 225);
+    margin-left: 1em;
+    margin-top: 3em;
+    font-family: 'EB Garamond', serif;
+}
+
+.details-btn {
+    text-align: center;
+    width: 100px;
+    padding: 3px 3px 3px 3px;
+    background-image: linear-gradient(to right, violet, rgb(41, 151, 151));
+    display: block;
+    color: rgb(22, 6, 6);
+    font-weight: bold;
+    margin-left: 3.2em;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0px 8px #6814a094;
+}
+
+.details-btn:hover {
+    box-shadow: none;
+    background-image: linear-gradient(to left, violet, rgb(41, 151, 151));
+}
+
+.buttons {
+    margin-top: 5em;
+    position: relative;
+    text-align: center;
+}
+
+.buttons>p {
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    border: none;
+    padding: 7px;
+    outline: none;
+    font-size: 15px;
+    width: 160px;
+    margin-left: 3.7em;
+    font-weight: 600;
+    margin-top: 1.3em;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 300ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    border-color: #ffffff;
+    border-style: outset;
+    border-width: 3px;
+    background-color: rgb(113, 81, 155);
+}
+
+.btn-edit,
+.btn-delete,
+.btn-add-to-blog {
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    border: none;
+    padding: 9px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 40px;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 300ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    border-color: #ffffff;
+    border-style: outset;
+    border-width: 3px;
+}
