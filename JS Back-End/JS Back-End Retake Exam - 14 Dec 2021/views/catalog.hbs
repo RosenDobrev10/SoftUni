@@ -1,0 +1,15 @@
+<section id="gallery">
+    <h1>Gallery</h1>
+    <article class="gallery-container">
+        {{#if publications}}
+            {{#each publications}}
+                {{>catalogPublication}}
+            {{/each}}
+        {{else}}
+            <article class="no-available-publications">
+                <h1>No publications created yet.</h1>
+                <a href="/publications/create" class="create-pub">Create publication</a>
+            </article>
+        {{/if}}
+    </article>
+</section>
