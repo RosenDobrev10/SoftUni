@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+
+	<link rel="stylesheet" href="/static/style/css/style.css">
+</head>
+
+<body>
+
+	<div id="box">
+		{{#if errors}}
+			<div class="error-box">
+				{{#each errors}}
+					<p>{{this}}</p>
+				{{/each}}
+			</div>
+		{{/if}}
+
+		<nav>
+
+			<img src="/static/style/img/art-logo.png" alt="logo">
+			<a href="/">ArtGallery</a>
+
+			<ul class="menu">
+				<li><a href="/catalog">Gallery</a></li>
+				{{#if username}}
+					<li><a href="/publications/create">Create Publication</a></li>
+					<li><a href="/publications/profile">Profile</a></li>
+					<li><a href="/auth/logout">Logout</a></li>
+				{{else}}
+					<li><a href="/auth/login">Login</a></li>
+					<li><a href="/auth/register">Register</a></li>
+				{{/if}}
+			</ul>
+
+		</nav>
+
+		<main>
+			{{{body}}}
+		</main>
+
+		<footer>
+			© Js Back-End Retake Exam 2021
+		</footer>
+	</div>
+</body>
+
+</html>
