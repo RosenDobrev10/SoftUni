@@ -1,0 +1,24 @@
+<section id="home-page">
+    <article class="auto-content">
+        <h1>NEWS OF OUR</h1>
+        <h2>ART GALLERY</h2>
+    </article>
+</section>
+
+<section id="home-page-content">
+    <h1>Statistics of shared publication</h1>
+    <article class="home-page-content-publications">
+
+        {{#if publications}}
+            {{#each publications}}
+                {{>homePublication}}
+            {{/each}}
+        {{else}}
+            <article class="no-publication">
+                <h1>There are no publications yet.</h1>
+                <a href="/catalog" class="view-gallery">View Gallery</a>
+            </article>
+        {{/if}}
+    </article>
+
+</section>
