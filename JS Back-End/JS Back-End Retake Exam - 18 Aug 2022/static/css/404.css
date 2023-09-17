@@ -1,0 +1,11 @@
+.not-found-page-container h1 {
+  font-size: 200px;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.not-found-page-container h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 1%;
+}
