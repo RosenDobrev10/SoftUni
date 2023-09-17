@@ -1,0 +1,161 @@
+.details-page {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.details-page > h1 {
+  font-size: 44px;
+  text-align: center;
+  color: black;
+  margin-top: -1em;
+  margin-bottom: 0.1em;
+  padding: 5px;
+}
+
+.details-card {
+  display: flex;
+  width: 680px;
+  min-height: 400px;
+  height: auto;
+  background-color: #27ae60;
+  margin-bottom: 1.5em;
+  border-radius: 30px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #00000070;
+}
+
+.details-card-image {
+  position: relative;
+}
+
+.details-card-image > img {
+  width: 260px;
+  height: 360px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+}
+
+.details-card-text {
+  width: 400px;
+  position: relative;
+  height: auto;
+}
+
+.detail-card-text-content {
+  position: relative;
+  width: 250px;
+  height: auto;
+  text-align: center;
+  margin-left: 15px;
+  padding-left: 10px;
+  box-shadow: 0px 0px 20px 0px black;
+}
+
+.details-card-text > h2 {
+  font-size: 23px;
+  text-align: center;
+  line-height: 1.6em;
+  word-wrap: break-word;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: black;
+}
+
+.details-card-text > h3 {
+  font-size: 14.5px;
+  line-height: 2em;
+  word-wrap: break-word;
+  padding-left: 10px;
+  margin-top: 0.2em;
+  color: black;
+}
+
+.details-btn:hover {
+  box-shadow: none;
+  background-image: linear-gradient(to left, violet, rgb(41, 151, 151));
+}
+
+.buttons {
+  margin-top: 10%;
+  position: relative;
+  text-align: center;
+  bottom: 2%;
+}
+
+.buttons > .wish-pub {
+  color: #fff;
+  border: none;
+  padding: 5px;
+  outline: none;
+  font-size: 15.3px;
+  width: 250px;
+  margin-left: 5em;
+  font-weight: 600;
+  margin-top: 1.3em;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border-color: gray;
+  border-style: outset;
+  border-width: 3px;
+  background-color: rgb(113, 81, 155);
+}
+
+.btn-edit,
+.btn-delete,
+.btn-wish {
+  color: #fff;
+  border: none;
+  padding: 9px;
+  outline: none;
+  font-size: 15.3px;
+  font-weight: 600;
+  margin-top: 40px;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border-color: gray;
+  border-style: outset;
+  border-width: 3px;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.btn-edit {
+  background-color: #428aa0;
+}
+
+.btn-edit:hover {
+  background-color: #387183;
+}
+
+.btn-delete {
+  background-color: #f15505;
+}
+
+.btn-delete:hover {
+  background-color: #da4c06;
+}
+
+.btn-wish {
+  background-color: #595c61;
+}
+
+.btn-wish:hover {
+  background-color: #4b4d50;
+}
