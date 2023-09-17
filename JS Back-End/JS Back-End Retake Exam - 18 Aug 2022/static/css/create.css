@@ -1,0 +1,80 @@
+.create-form-container {
+  background: url(../image/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.create-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.create-form-container.active {
+  right: 0;
+}
+
+.create-form-container form {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  width: 40rem;
+  height: auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px #00000070;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;;
+}
+
+.create-form-container form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #444;
+  text-align: center;
+}
+
+.create-form-container form label {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.create-form-container form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  font-size: 1.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  color: #444;
+  text-transform: none;
+}
+
+.create-form-container form .btn {
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.create-form-container form p {
+  padding-top: 0.8rem;
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.create-form-container form p a {
+  color: #27ae60;
+  text-decoration: underline;
+}
+
+.create-form-container form textarea {
+    resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
