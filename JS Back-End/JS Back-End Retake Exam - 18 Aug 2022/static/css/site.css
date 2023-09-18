@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+.home {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.01rem;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.heading span {
+  font-size: 3rem;
+  padding: 0.5rem 2rem;
+  color: #444;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: #27ae60;
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #219150;
+}
+
+.header .header {
+  background: #27ae60;
+}
+
+.header .header .navbar {
+  text-align: center;
+}
+
+.header .header .navbar a {
+  color: #fff;
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 1.7rem;
+}
+
+.header .header .navbar a:hover {
+  background: #219150;
+}
+
+.header .header .active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.home {
+  background: url(../image/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  flex: 1 1 42rem;
+}
+
+.home .row .books-slider {
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home .row .books-slider img {
+  height: 25rem;
+}
+
+.home .row .books-slider a:hover img {
+  transform: scale(0.9);
+}
+
+.home .row .books-slider .stand {
+  width: 100%;
+  margin-top: -2rem;
+}
+
+.home .row .content h3 {
+  color: #444;
+  font-size: 5.5rem;
+}
+
+.home .row .content p {
+  color: #666;
+  font-size: 1.6rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.errorContainer {
+  position: fixed;
+  right: 100px;
+  min-width: 100px;
+  display: block;
+  z-index: 11111;
+  top: 55px;
+  text-align: center;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  height: auto;
+  width: 320px;
+  box-shadow: 0 5px 10px black;
+}
+
+.errorContainer>p {
+  background: #219150;
+  font-size: 20px;
+  padding: 20px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.errorContainer {
+  -moz-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  to {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  to {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      padding: 0;
+  }
+}
