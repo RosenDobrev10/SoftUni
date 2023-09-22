@@ -1,0 +1,12 @@
+<section class="catalog" id="catalog">
+    <h2>Book Reviews</h2>
+    <div class="container">
+        {{#if books}}
+            {{#each books}}
+                {{>book}}
+            {{/each}}
+        {{else}}
+            <h2 class="no-record">There are no book reviews found yet...</h2>
+        {{/if}}
+    </div>
+</section>
