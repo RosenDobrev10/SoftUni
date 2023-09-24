@@ -1,0 +1,33 @@
+<section class="profile-page">
+    <div class="profile-card">
+        <div class="top-section">
+            <i class="message fas fa-envelope"></i>
+            <i class="notif fas fa-bell"></i>
+            <div class="pic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPnjeYyAvdnoC_gdZYcJJK_f9f8jZoieK1-JG4YLc3SES_JeHlBbhDEtlyiA2atnl2W0&usqp=CAU">
+            </div>
+            <div class="email">{{email}}</div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fas fa-link"></i>
+            </div>
+            <h2>Wishing List</h2>
+        </div>
+
+    </div>
+
+    <div class="wish-books">
+        {{#if books}}
+            {{#each books}}
+                {{>profileBook}}
+            {{/each}}
+        {{else}}
+            <h2 class="no-record-in-profile">There are no book reviews found yet...</h2>
+        {{/if}}
+    </div>
+</section>
