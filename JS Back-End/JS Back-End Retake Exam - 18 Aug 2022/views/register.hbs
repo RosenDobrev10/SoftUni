@@ -1,0 +1,22 @@
+<section class="register-form-container">
+
+    <form method="POST">
+        <h3>Register</h3>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" class="box" id="email" value="{{body.email}}">
+
+        <label for="username">Username</label>
+        <input type="text" name="username" class="box" id="username" value="{{body.username}}">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" class="box" id="password">
+
+        <label for="repass">Confirm Password</label>
+        <input type="password" name="repass" class="box" id="repass">
+
+        <input type="submit" value="Register" class="btn">
+
+        <p>Have an account ? <a href="/auth/login">Click here</a></p>
+    </form>
+</section>
