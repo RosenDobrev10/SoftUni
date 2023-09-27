@@ -1,0 +1,33 @@
+@media (max-height:800px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        margin-top: 0.5em;
+    }
+    section {
+        margin: 1rem 3em;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .theaters-container {
+        flex-wrap: wrap;
+        overflow-x: initial;
+    }
+    html {
+        font-size: 12px;
+    }
+    header {
+        margin-top: 0.5em;
+    }
+    section {
+        margin: 1rem 3em;
+    }
+    footer {
+        display: none;
+    }
+}
