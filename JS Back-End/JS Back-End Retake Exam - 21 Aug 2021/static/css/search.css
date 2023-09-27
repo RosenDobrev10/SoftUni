@@ -1,0 +1,62 @@
+.search {
+    width: 540px;
+    height: 60px;
+    margin: 100px auto;
+    background: rgba(31, 30, 30, 0.938);
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px 10px rgba(86, 124, 194, 0.911);
+    background-color: #fff;
+}
+
+#find-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#find-section>.card {
+    margin-left: 6em;
+}
+
+.search>input {
+    width: 340px;
+    padding: 10px 5px;
+    float: left;
+    color: rgb(3, 3, 3);
+    border: 0;
+    height: 60px;
+    font-size: 1.3em;
+    background: transparent;
+    border-radius: 3px 0 0 3px;
+}
+
+.search>input:focus {
+    outline: 0;
+    height: 60px;
+    background: transparent;
+}
+
+button {
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 60px;
+    width: 120px;
+    font-size: 1.2em;
+    color: rgb(53, 49, 49);
+    background: rgb(207, 207, 214);
+    border-left: 1px solid rgb(180, 166, 166);
+    border-radius: 0 3px 3px 0;
+}
+
+button:hover {
+    background: rgb(184, 184, 194);
+    color: rgb(238, 234, 234);
+    height: 60px;
+}
+
+button:active {
+    box-shadow: 0px 0px 12px 0px rgb(105, 93, 93);
+    height: 60px;
+}
