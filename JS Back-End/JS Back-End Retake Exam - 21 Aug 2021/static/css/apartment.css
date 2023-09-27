@@ -1,0 +1,153 @@
+#all-listings {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#all-listings>.card {
+    margin-left: 6em;
+}
+
+#all-listings>h1 {
+    font-size: 53px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(249, 249, 250, 0.85);
+}
+
+.card {
+    background-color: #fff;
+    bottom: 0;
+    box-shadow: 0px 0px 40px 4px rgba(77, 77, 240, 0.315);
+    height: 440px;
+    margin-top: 20px;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 500px;
+    margin-left: -1em;
+    text-align: center;
+}
+
+.card:hover {
+    height: 460px;
+    width: 500px;
+}
+
+.card:hover .cta-container {
+    display: inline;
+    margin-top: 410px;
+}
+
+.card:hover .card_circle {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: -130px;
+}
+
+.card:hover h3 {
+    background: #3487f7;
+    color: #fff;
+    margin-top: 120px;
+    padding: 5px;
+}
+
+.card:hover p {
+    margin-top: 325px;
+}
+
+.card>h4 {
+    color: rgba(0, 0, 0, .6);
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 340px;
+    position: absolute;
+    padding-left: 5px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.card:hover h4 {
+    margin-top: 350px;
+}
+
+.card_circle {
+    background-color: #eef2f7;
+    background-size: cover;
+    height: 440px;
+    margin-left: -55px;
+    margin-top: -170px;
+    position: absolute;
+    width: 560px;
+}
+
+.card_circle>img {
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    color: #0c0c41;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    margin-top: 280px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+.card>p {
+    color: rgba(0, 0, 0, .6);
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 315px;
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.cta-container {
+    display: none;
+    margin-top: 334px;
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+    margin-left: -10%;
+}
+
+.det-link {
+    background-clip: padding-box;
+    border: 2px solid #3487f7;
+    border-radius: 2px;
+    color: #3487f7;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-left: -1em;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s ease-out;
+}
+
+.det-link:hover {
+    background-color: #3487f7;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+}
