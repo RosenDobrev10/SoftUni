@@ -1,0 +1,157 @@
+.wrapper {
+    height: 680px;
+    width: 1100px;
+    margin: 140px auto;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0px 0px 3px 10px rgba(86, 124, 194, 0.911);
+}
+
+.product-img {
+    float: left;
+    height: 100%;
+    width: 570px;
+}
+
+.product-img img {
+    border-radius: 12px 0 0 7px;
+    height: 100%;
+}
+
+.product-info {
+    float: left;
+    height: 680px;
+    width: 530px;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
+}
+
+.product-text {
+    height: 300px;
+    width: 327px;
+}
+
+.product-text h1 {
+    margin: 0 0 0 17px;
+    padding-top: 52px;
+    font-size: 28px;
+    color: #474747;
+}
+
+.product-text h1,
+.product-btn p {
+    font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+    margin: 8px 0 47px 18px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #aaa9a9;
+    letter-spacing: 0.2em;
+    margin-bottom: 0;
+}
+
+.product-text h4 {
+    margin: 8px 0 10px 18px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #aaa9a9;
+    letter-spacing: 0.2em;
+}
+
+.product-text h4 {
+    margin: 8px 0 10px 18px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #aaa9a9;
+    letter-spacing: 0.2em;
+}
+
+.product-text h5 {
+    margin: 8px 0 10px 18px;
+    font-size: 15px;
+    color: #474747;
+    font-family: 'Bentham', serif;
+}
+
+.product-text>p {
+    height: auto;
+    margin: 40px 0 0 58px;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    color: #5f5a5a;
+    line-height: 1.6em;
+    margin-bottom: auto;
+    font-size: 21px;
+    font-weight: lighter;
+    overflow: hidden;
+}
+
+.product-btn {
+    text-align: center;
+    margin-top: 8.5em;
+    position: relative;
+}
+
+span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+}
+
+.product-btn a,
+.product-btn p {
+    height: auto;
+    width: auto;
+    align-items: center;
+    padding: 10px;
+    border-radius: 60px;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: white;
+    display: block;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.edit {
+    background-color: rgba(86, 124, 194, 0.911);
+}
+
+.edit:hover {
+    background-color: rgba(65, 92, 143, 0.911);
+}
+
+.rentHome {
+    background-color: rgba(86, 124, 194, 0.911);
+}
+
+.rentHome:hover {
+    background-color: rgba(65, 92, 143, 0.911);
+}
+
+.remove {
+    background-color: rgb(199, 136, 109);
+}
+
+.remove:hover {
+    background-color: rgb(177, 119, 95);
+}
+
+.no-housing {
+    background-color: rgb(199, 136, 109);
+}
+
+.alRentHome {
+    background-color: rgba(135, 167, 98, 0.911);
+    text-align: center;
+}
