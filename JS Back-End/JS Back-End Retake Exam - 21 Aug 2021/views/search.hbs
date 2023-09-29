@@ -1,0 +1,18 @@
+<form class="search">
+    <input type="search" name="search" placeholder="Search here..." value="{{query}}">
+    <button type="submit">Search</button>
+</form>
+{{#if query}}
+    <section id="find-section">
+
+        {{#if estates}}
+            {{#each estates}}
+                {{>catalogEstate}}
+            {{/each}}
+        {{else}}
+            <div class="no-data-listing">
+                <p class="no-offer">No match was found for the submitted type...</p>
+            </div>
+        {{/if}}
+    </section>
+{{/if}}
