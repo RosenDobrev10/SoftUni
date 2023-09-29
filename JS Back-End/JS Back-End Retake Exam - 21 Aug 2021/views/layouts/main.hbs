@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link href="/static/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+	<div id="box">
+
+		{{#if errors}}
+			<div>
+				<div class="errorContainer">
+					{{#each errors}}
+					<p>{{this}}</p>
+					{{/each}}
+				</div>
+			</div>
+		{{/if}}
+
+		<nav>
+			<a href="/">Home</a>
+			<ul>
+				<li><a href="/catalog">Housing for rent</a></li>
+				{{#if username}}
+					<li><a href="/estates/create">Create offer</a></li>
+					<li><a href="/estates/search">Search</a></li>
+					<li><a href="/auth/logout">Logout</a></li>
+				{{else}}
+					<li><a href="/auth/login">Login</a></li>
+					<li><a href="/auth/register">Register</a></li>
+				{{/if}}
+				
+			</ul>
+		</nav>
+
+		<main>
+			{{{body}}}
+		</main>
+
+		<footer>
+			© 2021
+
+		</footer>
+	</div>
+
+</body>
+
+</html>
