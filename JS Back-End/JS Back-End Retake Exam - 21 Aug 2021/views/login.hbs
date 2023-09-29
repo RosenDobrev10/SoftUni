@@ -1,0 +1,31 @@
+<section id="login-page">
+    <div class="boxs">
+        <div class="card-image">
+            <h2 class="card-heading">
+                Login
+            </h2>
+        </div>
+        <form class="card-form" method="POST">
+
+            <div class="input">
+                <input type="text" class="input-field" placeholder="alexander" id="username" name="username" value="{{body.username}}" />
+                <label class="username">Username</label>
+            </div>
+
+            <div class="input">
+                <input type="password" class="input-field" id="password" name="password" placeholder="******" />
+                <label class="password">Password</label>
+            </div>
+
+            <div class="action">
+                <button class="action-button">Login</button>
+            </div>
+
+        </form>
+        <div class="card-info">
+            <p>Dont have an account?
+                <a href="/auth/register">Sign up</a>.
+            </p>
+        </div>
+    </div>
+</section>
