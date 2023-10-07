@@ -1,0 +1,37 @@
+<div class="profile">
+
+    <div class="profile-data">
+        <div class="profile_img">
+            <div class="image">
+                <img src="/static/images/person.png" alt="img8">
+            </div>
+        </div>
+        <div class="personal">
+            <div class="edit">
+                <p>{{userInfo.username}}</p>
+            </div>
+            <div class="data">
+
+                <span>{{photos.length}}</span>
+                <p>photos</p>
+
+            </div>
+            <p class="email">{{userInfo.email}}</p>
+        </div>
+    </div>
+
+    <div class="pet-photos">
+        {{#if photos}}
+            {{#each photos}}
+                <a href="/photos/{{_id}}/details">
+                    <img src="{{image}}" alt="{{name}}">
+                </a>
+            {{/each}}
+        {{else}}
+            <article class="not-available-photo">
+                <h1>You haven't uploaded photos yet…</h1>
+            </article>
+        {{/if}}
+    </div>
+
+</div>
