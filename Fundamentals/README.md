@@ -1,4 +1,4 @@
-# 💻 Programming Fundamentals with JavaScript - September 2022 
+# 💻 Programming Fundamentals with JavaScript 
 
 With "Programming Fundamentals," students will begin to learn SoftUni's in-house curriculum for the comprehensive training of software engineers. The course addresses fundamental concepts in programming that are the basis for effective and quality learning in the professional modules. Students build on the knowledge gained in the Programming Basics course and begin to use more complex programming techniques and structures such as: lists, dictionaries, objects and classes.
 
