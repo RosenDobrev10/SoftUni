@@ -1,0 +1,56 @@
+body {
+    background-color: #b7d7e8;
+}
+
+header {
+    padding: 8px 10px;
+}
+
+header, footer {
+    border-radius: 3px;
+    background-color: #dceaf4;
+    border: 1px solid #bfcacb;
+}
+
+header * {
+    display: inline;
+    vertical-align: middle;
+}
+
+nav ul {
+    padding: 10px;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+
+section h2 {
+    margin: 15px 10px;
+}
+
+article {
+    display: table-cell;
+    width: 315px;
+    padding: 10px 15px;
+    background-color: #e5f0f7;
+    border: 10px solid #b7d7e8;
+}
+
+article a {
+    display: block;
+}
+
+footer {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+footer p {
+    margin: 5px;
+}
