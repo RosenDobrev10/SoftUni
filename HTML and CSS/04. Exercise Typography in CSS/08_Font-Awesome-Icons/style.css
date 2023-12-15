@@ -1,0 +1,52 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+nav {
+    width: 200px;
+    border: 1px solid #e3e3e3;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #f5f5f5;
+}
+
+li {
+    list-style-type: none;
+    line-height: 25px;
+    margin-left: -15px;
+}
+
+a {
+    text-decoration: none;
+    color: #c83025
+}
+
+svg {
+    width: 1.14em;
+    padding-right: 0.28em;
+    fill: #c83025;
+}
+
+p svg {
+    fill: #fff;
+}
+
+button {
+    padding: 4px 12px;
+    line-height: 20px;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.shopping {
+    background-color: #83a94c;
+}
+
+.info {
+    background-color: #008ed0;
+}
+
+.delete {
+    background-color: #cc4036;
+}

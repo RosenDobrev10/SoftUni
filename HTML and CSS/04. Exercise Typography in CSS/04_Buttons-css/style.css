@@ -1,0 +1,38 @@
+body {
+    background-color: #eee;
+}
+
+a {
+    display: inline-block;
+}
+
+.button {
+    border: 2px solid #000;
+    border-radius: 1rem;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fill {
+    color: rgb(251, 251, 251);
+    background-color: rgb(51, 51, 51);
+    border: none;
+}
+
+.hover:hover {
+    background-color: rgb(0, 102, 0);
+    outline: none;
+}
+
+.button:nth-child(4):hover {
+    color: rgb(0, 102, 0);
+    background-color: #fcfcfc;
+    border-color: rgb(0, 102, 0);
+}
+
+svg {
+    fill: white;
+    margin-right: 5px;
+    vertical-align: top;
+}

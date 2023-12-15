@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, serif;
+    font-size: 18px;
+    line-height: 3;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5.40px;
+    padding: 12.6px 27px;
+}
+
+a:hover {
+    color: #eee;
+}
+
+svg {
+    padding-right: 5.40px;
+    fill: #fff;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}

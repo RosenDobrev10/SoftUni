@@ -1,0 +1,27 @@
+body {
+    font: 18px/1.5 Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none;  
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+ul.check li > svg {
+    fill: #2fcc71;
+}
+
+ul.star li > svg {
+    fill: coral;
+}
+
+ul.contact li > svg {
+    fill: #3498da;
+}
+
