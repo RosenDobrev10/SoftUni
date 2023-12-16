@@ -1,0 +1,15 @@
+div {
+  width: 160px;
+  height: 80px;
+  padding: 20px;
+  border: 8px solid blue;
+  background: coral;
+}
+
+div.content-box {
+  box-sizing: content-box;
+}
+
+div.border-box {
+  box-sizing: border-box;
+}

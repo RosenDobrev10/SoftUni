@@ -1,0 +1,32 @@
+.wrapper {
+  position: relative;
+}
+
+.dashed-box {
+  position: relative;
+  border: dashed;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  z-index: 2;
+}
+
+.gold-box {
+  position: absolute;
+  background: gold;
+  width: 80%;
+  left: 60px;
+  top: 3em;
+  z-index: 3;
+}
+
+.green-box {
+  position: absolute;
+  background: lightgreen;
+  width: 20%;
+  left: 65%;
+  top: -25px;
+  height: 7em;
+  opacity: 0.9;
+  z-index: 1;
+}
