@@ -1,0 +1,43 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid #000;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-right: 45px;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header h1,
+header nav,
+header li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #009900;
+}
+
+main h1 {
+    font-size: 1.9rem;
+    margin-top: 2rem;
+}
+
+main p {
+    line-height: 25px;
+    font-size: 15px;
+}

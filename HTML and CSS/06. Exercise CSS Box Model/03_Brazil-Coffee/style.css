@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Work+Sans:wght@600&display=swap');
+
+section {
+    border: 8px solid #e6e6e6;
+    padding: 16px;
+    width: 451px;
+    height: 540px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    margin: 1.2rem 0;
+    color: rgb(51, 51, 51)
+}
+
+div {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+button {
+    width: 250px;
+    font: 18px 'Work Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #d5384d;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 8px 16px;
+    margin-block: 20px;
+}
+
+p {
+    font: 18px Georgia, Cambria, 'Times New Roman', Times, serif;
+    line-height: 30px;
+    margin-top: 0;
+}

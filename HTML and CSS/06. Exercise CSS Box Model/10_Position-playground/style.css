@@ -1,0 +1,42 @@
+div {
+    position: relative;
+    height: 50vh;
+}
+
+div:nth-child(1) {
+    background: linear-gradient(90deg, rgba(24,90,157,1) 0%, rgba(46,148,160,1) 50%, rgba(66,205,162,1) 100%);
+}
+
+div:nth-child(2) {
+    background: linear-gradient(90deg, rgba(169,52,119,1) 0%, rgba(188,89,70,1) 50%, rgba(211,130,20,1) 100%);
+}
+
+img {
+    width: 382px;
+    border-radius: 4px;
+    filter: brightness(90%);
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    fill: #fff;
+}
+
+.landscape {
+    aspect-ratio: 16/9;
+}
+
+.portrait {
+    height: 576px;
+}

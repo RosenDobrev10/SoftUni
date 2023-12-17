@@ -1,0 +1,21 @@
+article {
+    width: 560px;
+    height: 200px;
+    background-color: lightgray;
+    padding: 10px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-indent: 30px;
+}

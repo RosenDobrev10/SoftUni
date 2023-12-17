@@ -1,0 +1,56 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51)
+}
+
+.container {
+    margin: 1rem 3rem;
+}
+
+article,
+aside {
+    display: inline-block;
+}
+
+article {
+    width: 64%;
+}
+
+article header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.3rem;
+    list-style-type: square;
+    list-style-position: inside;
+    text-indent: 0.05rem;
+}
+
+p {
+    line-height: 20px;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    width: 37rem;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+aside {
+    width: 25%;
+    vertical-align: top;
+}

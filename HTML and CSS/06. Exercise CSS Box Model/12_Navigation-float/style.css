@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 3rem 8rem;
+}
+
+.header {
+    border-bottom: 2px solid #000;
+}
+
+header p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-block: 0.8rem;
+}
+
+header nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 37rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+main {
+    display: inline-block;
+    width: 72%;
+    margin-right: 2rem;
+}
+
+aside {
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.25);
+    padding: 0.5rem;
+    border: 3px solid #000;
+}
+
+.left {
+    float: left;
+    margin-right: 0.6rem;
+}
+
+.right {
+    float: right;
+    margin-left: 0.4rem;
+    width: 180px;
+    height: 260px;
+}
+
+.second {
+    display: flex;
+}
+
+.second > p {
+    flex-basis: 48.7%;
+    margin-right: 2rem;
+}
+
+.second blockquote {
+    font-size: 15px;
+    flex-basis: 43%;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+    border-left: 3px solid #dddddd;
+    padding-left: 2rem;
+    margin: 0;
+    color: #383636;
+}
+
+blockquote .author {
+    margin-top: 3rem;
+    text-align: right;
+}
+
+
+h1,
+h2 {
+    font-family: 1em/1.2 Georgia, serif;
+}
+
+li {
+    list-style: square;
+}
+
+li a {
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.4;
+}
