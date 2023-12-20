@@ -1,0 +1,25 @@
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  width: 350px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  flex-basis: 120px;
+}
+
+#box1 {
+  flex-shrink: 0;
+}
+
+#box2 {
+  flex-shrink: 1;
+}
+
+#box3 {
+  flex-shrink: 2;
+}

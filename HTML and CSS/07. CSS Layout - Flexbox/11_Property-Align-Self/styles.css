@@ -1,0 +1,19 @@
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  width: 235px;
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+#box2 {
+  background-color: pink;
+  align-self: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}

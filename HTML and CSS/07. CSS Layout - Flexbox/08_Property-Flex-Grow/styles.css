@@ -1,0 +1,25 @@
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  width:350px;
+  height: 260px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#one {
+  flex-grow: 1;
+}
+
+#two {
+  flex-grow: 2;
+}
+
+#three {
+  flex-grow: 3;
+}
