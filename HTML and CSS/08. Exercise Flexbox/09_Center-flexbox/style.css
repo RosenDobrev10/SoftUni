@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem 2rem 1rem;
+    width: 23rem;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    line-height: 1.5;
+}

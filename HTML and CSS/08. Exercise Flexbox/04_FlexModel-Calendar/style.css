@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+div {
+    max-width: 65vw;
+}
+
+div,
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.heading {
+    flex-basis: 100%;
+    height: 120px;
+}
+
+.workdays,
+.weekend {
+    height: 120px;
+    flex-grow: 1;
+}
+
+.week span {
+    padding-top: 1rem;
+}
+
+section.notes {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.notes span {
+    height: 240px;
+    padding-top: 0.5rem;
+}

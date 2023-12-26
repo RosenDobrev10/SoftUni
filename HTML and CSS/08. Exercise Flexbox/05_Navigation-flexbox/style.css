@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 3rem 2.8rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+header p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-block: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    padding-right: 1rem;
+    gap: 2rem;
+}
+
+header nav ul li {
+    display: flex;
+}
+
+header nav ul li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.2;
+    font-size: 15px;
+}

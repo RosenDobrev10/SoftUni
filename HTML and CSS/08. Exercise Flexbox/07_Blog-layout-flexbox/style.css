@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 2rem 7.7rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+}
+
+div.page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+header {
+    border-bottom: 2px solid #000;
+}
+
+header p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border: 3px solid #000
+}
+
+.right {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1.3rem;
+    margin-top: 1.6rem;
+}
+
+main {
+    flex: 1 0 50%;
+}
+
+main p {
+    line-height: 1.7;
+}
+
+.split {
+    display: flex;
+}
+
+.split p {
+    flex-basis: 57.5%;
+}
+
+.split blockquote {
+    flex-basis: 45%;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    border-left: 5px solid #ddd;
+    padding-left: 1.8rem;
+    font-style: italic;
+    color: #50544b;
+    margin-top: 0;
+}
+
+.split blockquote .author {
+    text-align: right;
+}
+
+aside {
+    flex: 1 0 20%;
+}
+
+aside li {
+    list-style-type: square;
+    margin-bottom: 0.4rem;
+}
+
+aside h2 {
+    font-weight: 500;
+}
+
+
+aside a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}

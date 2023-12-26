@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    width: 100%;
+}
+
+.card-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 50rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 32%;
+    color: #4a4242;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 1px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+article img {
+    width: 100%;
+}
+
+article header {
+    padding: 1rem;
+}
+
+article h3 {
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0.3rem;
+}
+
+article p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+article section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+footer p {
+    margin: 1rem;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #d1d1d1;
+}
+
+div::after {
+    content: "";
+    display: block;
+    width: 32%;
+}
