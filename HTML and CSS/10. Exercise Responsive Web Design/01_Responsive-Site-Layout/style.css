@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+body * {
+    background-color: #b5d8ff;
+}
+
+header,
+footer,
+aside,
+main {
+    padding: 1rem;
+}
+
+header,
+footer {
+    flex-basis: 100%;
+}
+
+main ul {
+    padding-left: 40px;
+}
+
+main h2 {
+    padding-bottom: 1rem;
+}
+
+aside ul li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+aside ul li a {
+    text-decoration: none;
+}
+
+aside {
+    flex-basis: 10%;
+}
+
+main {
+    flex-basis: 85%;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+}
