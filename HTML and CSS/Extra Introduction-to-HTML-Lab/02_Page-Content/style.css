@@ -1,0 +1,13 @@
+section {
+    max-width: 57rem;
+    margin: 5rem auto;
+}
+
+section > h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h3 + p {
+    font-style: italic;
+}

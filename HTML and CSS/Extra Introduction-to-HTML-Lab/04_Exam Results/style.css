@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    width: 38rem;
+    margin: 2rem auto;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+tbody tr:first-child > td {
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #234467;
+    padding-block: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+li {
+    display: block;
+}
+
+li a {
+    text-decoration: none;
+    color: #f7f8fb;
+}
+
+li a:hover {
+    background-color: #f7f8fb;
+    color: #234467;
+    border-radius: 4px;
+    padding-block: 4px;
+}

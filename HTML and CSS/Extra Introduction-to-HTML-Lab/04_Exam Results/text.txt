@@ -1,0 +1,34 @@
+Exam Result
+
+Web fundamentals exam result
+№
+First name
+Last name
+Score
+
+01
+Gosho
+Goshev
+500
+
+02
+Tosho
+Toshev
+500
+
+03
+Gencho
+Genchev
+500
+
+04
+Draga
+Draganova
+500
+
+05
+Gosho
+Goshev
+500
+
+Average score from 05 participants:500
