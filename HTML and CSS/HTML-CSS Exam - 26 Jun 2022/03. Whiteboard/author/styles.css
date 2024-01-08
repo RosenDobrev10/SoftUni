@@ -1,0 +1,197 @@
+:root {
+    --bkg-color: #ffffff;
+    --green-btn: #00d08e;
+    --green-bkg: #b2f1dd;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 400px;
+}
+
+.left,
+.right {
+    flex-basis: 50%;
+}
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+li > i {
+    color: var(--green-btn);
+    margin-right: 10px;
+}
+
+.third .left {
+    /* margin: auto 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.third .left h2 {
+    font-size: 2rem;
+}
+
+.grid {
+    padding: 10%;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.card-second > div {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+}
+
+.card-second img {
+    object-fit: fill;
+}
+
+.card-second > p {
+    color: var(--green-btn);
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 5px;
+    font-size: 1.3rem;
+}
+
+.fourth {
+    background-color: var(--green-bkg);
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+.fourth .grid {
+    padding: 8%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.fourth .card h3 {
+    padding-bottom: 10px;
+}
+.fourth .card {
+    justify-content: flex-start;
+}
+
+.second,
+.third {
+    max-height: 300px;
+}
+
+.second .right {
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.second .right > * {
+    padding: 10px;
+}
+
+.second .right h2 {
+    font-size: xx-large;
+}
+
+.second .right p {
+    font-size: larger;
+}
+
+.first {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+        url("03. Whiteboard_Ресурси/image/computer-main.jpg"); /* W3C */
+    background-repeat: no-repeat;
+    /* background-size:100% 100%; */
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.first h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 0px 3px 3px black;
+}
+
+.first p {
+    text-align: center;
+    width: 50%;
+    font-size: 1.3rem;
+    text-shadow: 0px 3px 3px black;
+}
+
+.first button {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: var(--green-btn);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.first button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px solid white;
+    cursor: pointer;
+    margin: 1px;
+}
+
+nav {
+    /* height: 200px; */
+    flex-basis: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav p:first-of-type {
+    /* background-color: aqua; */
+}
+
+nav p:last-of-type {
+    /* background-color: red; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

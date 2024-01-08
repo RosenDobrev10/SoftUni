@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+svg {
+    fill: #fff;
+}
+
+.wrapper {
+    width: 90%;
+    height: 800px;
+    margin: 0 auto;
+    background: url('./image/computer-main.jpg') center no-repeat;
+    background-size: 100% 172%;
+    position: relative;
+}
+
+/* HERO */
+
+
+.hero {
+    padding: 3rem 15rem 8rem;
+    color: #fff;
+    text-shadow: 0 3px 5px #000;
+}
+
+.hero::after {
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+    position: absolute;
+    inset: 0;
+}
+
+.hero .text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero svg {
+    filter: drop-shadow(3px 5px 2px rgb(0, 0, 0, 0.4));
+}
+
+.hero .links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-bottom: 6.5rem;
+    margin-inline: 1rem;
+}
+
+.hero .links svg {
+    margin-right: 0.5rem;
+    vertical-align: top;
+}
+
+.hero h1 {
+    font-size: 4.85rem;
+    font-weight: 700;
+    margin-bottom: 3.25rem;
+}
+
+.hero .text > p {
+    font-size: 2rem;
+    line-height: 1.3;
+    padding-inline: 17rem;
+    margin-bottom: 6.5rem;
+}
+
+.hero .text > a {
+    font-size: 1.75rem;
+    font-weight: 700;
+    display: inline-block;
+    background-color: #00d08e;
+    padding: 1rem 2rem;
+    margin-bottom: 5rem;
+    border-radius: 0.25rem;
+    text-shadow: none;
+}
+
+.hero .text > a:hover {
+    background-color: transparent;
+    outline: 5px solid #fff;
+}
+
+.hero .text .action {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero .text .action p {
+    font-size: 1.85rem;
+}
+
+.hero .text .action svg {
+    font-size: 1.75rem;
+}
+
+/* LEFT IMAGE */
+
+.image {
+    display: flex;
+}
+
+.image .image-container {
+    width: 50%;
+}
+
+.image .image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.image .text,
+.image .text2 {
+    padding: 3rem 3rem 3rem 5rem;
+    width: 50%;
+}
+
+.image .text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.image .text p {
+    font-size: 1.95rem;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+}
+
+.image .text li {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.image .text li svg {
+    fill: #00d08e;
+    margin-right: 2rem;
+    vertical-align: top;
+}
+
+.image .text li span {
+    font-size: 1.75rem;
+}
+
+
+/* RIGHT IMAGE */
+
+.image .text2 {
+    padding: 3rem 6rem;
+}
+
+.image .text2 h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.image .text2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 4rem;
+}
+
+.image .text2 ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 15%;
+}
+
+.image .text2 ul li img {
+    width: 70%;
+}
+
+.image .text2 ul li p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00d08e
+}
+
+/* QUESTIONS */
+
+.questions {
+    background-color: #b2f1dd;
+    text-align: center;
+    padding: 3rem 5rem;
+}
+
+.questions h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.questions ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 8rem;
+}
+
+.questions ul li {
+    flex: 1 1 25%;
+    margin-bottom: 4rem;
+}
+
+.questions ul li h3 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.questions ul li p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.questions ul li:nth-child(5) p {
+    padding: 0 0.75rem;
+}
+
+.questions > p {
+    font-size: 1.5rem;
+}
+
+.questions > p span {
+    font-weight: 700;
+}
