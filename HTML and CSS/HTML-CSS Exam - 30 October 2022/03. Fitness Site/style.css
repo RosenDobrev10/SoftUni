@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
+
+body {
+    font-family: 'PT Sans', 'PT Serif', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    color: #d01919;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+svg {
+    fill: #fff;
+}
+
+/* HEADER */
+
+header {
+    background-color: #d01919;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+header ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.phone,
+.address {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* GET STARTED */
+
+.get-started {
+    background: url('./image/fitness-main.jpg') center center no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    opacity: 0.95;
+    color: #fff;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.get-started .links {
+    align-self: flex-end;
+    padding: 2.5rem 4rem;
+}
+
+.get-started .links ul {
+    display: flex;
+    gap: 5.5rem;
+    font-size: 1.2rem;
+}
+
+.get-started .text {
+    text-align: center;
+}
+
+.get-started .text h1 {
+    font-size: 4.5rem;
+    letter-spacing: 7px;
+    margin-bottom: 3rem;
+}
+
+.get-started .text p {
+    font-size: 1.3rem;
+    margin: 0 auto;
+    width: 31%;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+}
+
+.get-started .text a {
+    background-color: #d01919;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* BOTH WELCOME AND COACHES */
+
+.welcome,
+.coaches {
+    text-align: center;
+}
+
+.welcome > h2::after,
+.coaches > h2::after {
+    display: block;
+    content: '';
+    background-color: #d01919;
+    height: 2px;
+    width: 3%;
+    margin: 2rem auto;
+}
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo article {
+    width: 33%;
+}
+
+.promo article p {
+    width: 49%;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+
+/* WELCOME */
+
+.welcome {
+    padding: 2rem 6rem 5rem 6rem;
+}
+
+.welcome .promo article img {
+    width: 10%;
+    margin-bottom: 1rem;
+}
+
+/* COACHES */
+
+.coaches {
+    background-color: #efefef;
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+.coaches .promo article img {
+    width: 50%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.coaches .promo article h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.coaches .promo article p {
+    color: #bfbfc7;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #d01919;
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 700;
+}

@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  width: 70%;
+  margin: 4rem auto;
+  border: 1px solid gray;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.left {
+  background: url("./image/calcolatot.png") no-repeat center center;
+  filter: brightness(70%);
+  background-size: cover;
+  width: 60%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.left:after {
+  display: block;
+  content: "";
+  padding-top: 100%;
+}
+
+.right {
+  width: 60%;
+  background: #f6f7f8;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 10%;
+}
+
+.unit-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.units {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.us {
+  background: #62ce33c2;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.metric {
+  background: #e0e0df;
+  padding: 0.5rem 2.2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.gender-container {
+  display: flexbox;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#genre {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.input {
+  border-radius: 5px;
+  background: white;
+  color: rgb(88, 88, 88);
+  border: 1px solid rgb(156, 156, 156);
+}
+
+.input > input {
+  border: none;
+  background: white;
+  margin: 1px;
+  width: 40%;
+  color: rgb(97, 97, 97);
+  padding-left: 5px;
+}
+
+#weight {
+  margin-left: 10%;
+  padding: 0.3rem;
+}
+
+.input > i {
+  padding-right: 0.5rem;
+}
+
+p {
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+form > div:nth-child(2) > span > input[type="text"] {
+  width: 80%;
+}
+
+form > div {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.height-container {
+  display: flexbox;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+body > main > section.right > form > div.container > div > span:nth-child(1) {
+  width: 40%;
+  margin-right: 1rem;
+}
+
+button {
+  width: 87%;
+  margin-top: 10%;
+  color: white;
+  background: #05a2d3;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14pt;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}

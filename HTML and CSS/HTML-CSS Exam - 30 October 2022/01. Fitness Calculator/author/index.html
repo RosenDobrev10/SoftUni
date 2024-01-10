@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calorie Calculator</title>
+</head>
+
+<body>
+    <main>
+        <section class="left"></section>
+        <section class="right">
+            <h1>FITNESS CALCULATOR</h1>
+            <div class="unit-container">
+                <a href='#' class="us units">Standart units (US)</a>
+                <a href='#' class="metric units">Metric units</a>
+            </div>
+            <form>
+                <div class="gender-container">
+                    <div>
+                        <p>Gender</p>
+                        <select id="genre">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Other">Other</option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <p>Age</p>
+                        <span class="input">
+                            <input type="text" placeholder="Years...">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <p>Weight</p>
+                    <span class="weight">
+                        <input type="text" id="weight" placeholder="Pounds...">
+                    </span>
+                </div>
+                <div class="container">
+                    <p>Height</p>
+                    <div class="height-container">
+                        <span class="input">
+                            <input type="text" placeholder="Feet...">
+                        </span>
+                        <span class="input">
+                            <input type="text" placeholder="Inches...">
+                        </span>
+                    </div>
+                </div>
+                <button>Calculate</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
