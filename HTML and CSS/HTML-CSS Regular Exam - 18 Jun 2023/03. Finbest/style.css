@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+/* HEADER */
+
+header {
+    padding: 3rem 14rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+header .buttons .signup {
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    margin-left: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #ade2df;
+}
+
+/* DOWNLOAD */
+
+.download {
+    background-color: #ade2df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 7rem;
+}
+
+.download h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.download p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.download-buttons a {
+    background-color: #000;
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.download-buttons a svg {
+    fill: #fff;
+    padding-right: 0.5rem;
+}
+
+/* STATS */
+
+.stats {
+    padding: 6rem 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.stats article {
+    width: 28%;
+    text-align: center;
+    border-inline: 1px solid #dbdbdb;
+    padding: 0 1rem 3rem;
+}
+
+.stats article h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.stats article p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+/* MOBILE */
+
+.mobile {
+    background-color: #ade2df;
+    display: flex;
+    padding-inline: 20rem;
+}
+
+.mobile .image-container {
+    border: 1px dashed #98b8b6;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.mobile .info {
+    padding: 6rem 2rem 6rem 6rem;
+}
+
+.mobile .info h2 {
+    font-size: 3.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.mobile .info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.mobile .info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+.mobile .info a {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.3rem;
+}
+
+.mobile .info svg {
+    font-size: 1.1rem;
+    filter: brightness(10%);
+}
+
+/* PRICING PLANS */
+
+.pricing-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 3rem 5rem;
+    background-color: #f3f5fa;
+}
+
+.pricing-plans a {
+    font-size: 1.1rem;
+    background-color: #ade2df;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.pricing-plans h3 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* PRICING */
+
+.pricing {
+    padding-bottom: 4rem;
+    background-color: #f3f5fa;
+}
+
+.wrapper {
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+.fees {
+    display: flex;
+    width: 58%;
+    margin: 2rem 0;
+}
+
+.fees article,
+.expand {
+    padding: 0 1.5rem;
+}
+
+.fees article h3,
+.expand h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.fees article p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.fees article h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.fees article h2 span {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.fees article ul {
+    border-top: 1px solid #dbdbdb;
+    padding-top: 2rem;
+}
+
+.fees article ul li {
+    margin-bottom: 1rem;
+}
+
+.fees article a {
+    background-color: #ade2df;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.fees article a,
+.expand a {
+    display: block;
+}
+
+.fees article h3,
+.fees article a,
+.expand h3,
+.expand a {
+    text-align: center;
+}
+
+.expand {
+    padding: 2rem;
+    width: 42%;
+    background-color: #ade2df;
+}
+
+.expand p {
+    font-size: 1.85rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.expand ul li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.expand a {
+    margin-top: 11rem;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 6rem;
+    border-radius: 0.5rem;
+}
+
+.plus {
+    border-inline: 1px solid #dbdbdb;
+}
+
+/* GET STARTED */
+
+.get-started {
+    background-color: #ade2df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 35rem;
+    text-align: center;
+}
+
+.get-started h2 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.get-started p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+}

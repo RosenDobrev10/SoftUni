@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #d9d9d9;
+}
+
+section.container {
+    max-width: 1920px;
+    padding: 5rem 8rem 5rem 4rem;
+    display: flex;
+    gap: 3rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 700px;
+    background-color: #d9d9d9;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    height: 40%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 2.5rem;
+    height: 60%;
+}
+
+.info header p {
+    color: #595959;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.info header h1 {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.info > p {
+    color: #595959;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+}
+
+/* FOOTER */
+
+.info footer {
+    border-top: 1px solid black;
+    padding: 1rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-image-container img {
+    object-fit: cover;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+footer .author {
+    font-size: 1.1rem;
+}
+
+footer .time {
+    font-size: 1.5rem;
+    color: #999eaa;
+}
