@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "PT Serif", serif;
+}
+
+article {
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    width: 1100px;
+    height: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-image: url("./image/image1.png");
+    background-repeat: repeat-y;              
+}
+
+section {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 30px;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px dashed #118933;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.overview h3 {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.recipies {
+    margin-top: 30px;
+}
+
+.recipies p {
+    margin: 5px;
+    word-spacing: 2px;
+}
+
+.recipies strong {
+    color: #118933;
+}
+
+.steps {
+    margin-top: 50px;
+    line-height: 1.4;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+table td, table th {
+    border: 1px solid #118933;
+}

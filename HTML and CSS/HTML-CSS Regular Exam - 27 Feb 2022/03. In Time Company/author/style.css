@@ -1,0 +1,286 @@
+@import url("https://use.fontawesome.com/releases/v6.0.0/css/all.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+header nav ul li:first-child {
+    border-bottom: 2px solid #008CBA;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: gray;
+}
+
+.color-word {
+    color: #008CBA;
+}
+
+main .greating {
+    width: 100vw;
+    background-image: url("./images/slide2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.greating div.info {
+    position: relative;
+    display: inline-block;
+    margin: 100px 0px 60px 100px;
+
+
+}
+
+#filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.greating .info h1 {
+    position: relative;
+    color: white;
+    font-size: 1.3rem;
+    z-index: 1;
+    margin: 5px;
+}
+
+.greating .info p {
+    position: relative;
+    display: inline-block;
+    background-color: #008CBA;
+    color: white;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    border-radius: 50px;
+    z-index: 1;
+    margin: 5px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 100px;
+}
+
+.welcome h2 {
+    color: grey;
+    font-size: 1rem;
+}
+
+.welcome p {
+    color: grey;
+    text-align: center;
+}
+
+.welcome a {
+    text-decoration: none;
+    background-color: #454545;
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.welcome h2::after {
+    content: '';
+    border-bottom: 3px solid #008CBA;
+    width: 55px;
+    display: block;
+    margin: 0 auto;
+}
+
+.serveces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #EEF0F1;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.serveces h2 {
+    flex-basis: 100%;
+    text-align: center;
+    color: grey;
+}
+
+.serveces h2:after {
+    content: '';
+    border-bottom: 3px solid grey;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.serveces article {
+    flex-basis: 25%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serveces article img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.serveces article h4 {
+    color: grey;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.serveces article p {
+    color: grey;
+    text-align: center;
+    margin: 5px;
+    font-size: 0.7rem;
+}
+
+.serveces article a {
+    text-decoration: none;
+    background-color: #454545;
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: max-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.subscribe {
+    background-color: #5b6063;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.subscribe h3 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subscribe h3::after{
+    content: '';
+    border-bottom: 3px solid #FFFFFF;
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+.subscribe p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+form {
+    position: relative;
+    left:30%
+    
+}
+input {
+    display: inline-block;
+    background-color: rgb(148, 152, 156);
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 12px;
+    padding: 5px;
+
+}
+
+button {
+    background-color: #6BBFFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer nav {
+    background-color: #393F43;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+footer p {
+    background-color: #262B2F;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+i {
+    color: white;
+}
+
+.space li:nth-child(3){
+    margin-top: 20px;
+}
