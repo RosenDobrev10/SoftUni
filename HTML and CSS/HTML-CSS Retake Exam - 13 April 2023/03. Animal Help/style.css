@@ -1,0 +1,342 @@
+body {
+    font-family: Arial, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #c2d5dd;
+    box-shadow: 0px 8px 10px 1px #c2d5dd;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+/* MAIN */
+
+/* DONATE */
+
+.donate {
+    background-color: #85dcff;
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: -1;
+}
+
+.info {
+    padding: 14rem 10rem 0 0;
+    width: 60%;
+}
+
+.info h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.info p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+}
+
+.info .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .buttons a {
+    border-radius: 0.5rem;
+    padding: 1.5rem 7.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.info .buttons .donate {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.info .buttons .join {
+    background-color: #000;
+    color: #fff;
+}
+
+.image-container {
+    width: 40%
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CAUSES */
+
+.causes {
+    padding: 2rem 6rem;
+}
+
+.causes .text > h2,
+.causes .text > p {
+    text-align: center;
+}
+
+.causes .text {
+    text-align: center;
+    width: 42%;
+    margin: 0 auto;
+}
+
+.causes .text > h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.causes .text > p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    line-height: 1.3;
+}
+
+.causes .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.causes .wrapper article {
+    text-align: center;
+    width: 27%
+}
+
+.causes .wrapper svg {
+    fill: #85dcff;
+    font-size: 10rem;
+    margin-bottom: 2rem;
+}
+
+.causes .wrapper h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.causes .wrapper p {
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+/* MISSION */
+
+.mission {
+    background-color: #85dcff;
+    padding: 7rem;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.mission .lists {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 4rem;
+}
+
+.mission ul {
+    width: 27%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mission ul li {
+    display: flex;
+    font-size: 1.55rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    font-weight: 500;
+    gap: 0.5rem;
+}
+
+.mission ul li svg path {
+    width: 24px;
+    height: 24px;
+}
+
+
+.mission a {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 7rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* ANIMALS */
+
+.animals {
+    padding: 3rem 6rem;
+}
+
+.animals h2,
+.animals p {
+    text-align: center;
+}
+
+.animals h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+
+.animals p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.animals ul.animals-picture {
+    display: flex;
+    gap: 4rem;
+}
+
+.animals .animals-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* WORK */
+
+.work {
+    padding: 3rem 14rem;
+}
+
+.work h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.work .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.work .wrapper article {
+    border: 1px solid #dcdcdc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.work .wrapper article h3 {
+    background-color: #85dcff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.work .wrapper article p {
+    padding: 2rem;
+    font-size: 1.42rem;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 2rem 0;
+    display: flex;
+}
+
+.contact .image-container {
+    width: 50%;
+}
+
+.contact .form {
+    width: 50%;
+    padding: 8rem 5rem;
+}
+
+.contact .form h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.contact .form p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+}
+
+.contact .form p.email {
+    border: 1px solid #dbdbdb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50%;
+    color: #757575;
+}
+
+.contact .form a {
+    color: #fff;
+    background-color: #000;
+    border-radius: 0.5rem;
+    padding: 1.5rem 7rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer ul svg {
+    font-size: 2.5rem;
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 1.25rem;
+}

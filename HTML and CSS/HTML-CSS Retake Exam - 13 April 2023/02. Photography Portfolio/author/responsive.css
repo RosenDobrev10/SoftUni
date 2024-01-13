@@ -1,0 +1,165 @@
+@media (max-width: 600px) {
+  .button-primary {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+  }
+
+  .button-outline {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .button-md-border {
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .mobile-menu {
+    padding: 16px;
+  }
+
+  .home-tab-selector-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-max-width1 {
+    flex-direction: column;
+  }
+
+  .home-text-container1 {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+
+  .home-tab-selector-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-text29 {
+    margin-right: var(--dl-space-space-fourunits);
+  }
+
+  .home-text32 {
+    margin-right: var(--dl-space-space-fourunits);
+  }
+
+  .home-text35 {
+    margin-right: var(--dl-space-space-fourunits);
+  }
+
+  .home-top-part {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .home-links-container {
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    flex-direction: row;
+  }
+
+  .home-subscribe-container {
+    width: 100%;
+  }
+
+  .navigation-max-width {
+    padding: 16px;
+  }
+
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navigation-links-text {
+    margin-bottom: 16px;
+  }
+
+  .navigation-links-text1 {
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+
+  .navigation-links-text2 {
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+
+  .navigation-links-text3 {
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+
+  .navigation-nav {
+    display: none;
+  }
+
+  .navigation-burger-menu {
+    display: flex;
+  }
+
+  .section-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .slide {
+    min-width: 80%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .button-md {
+    text-align: center;
+  }
+
+  .button-secondary,
+  .button-secondary-white {
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+
+  .navigation-max-width {
+    padding: 16px;
+  }
+
+  .home-text13 {
+    align-self: flex-start;
+    text-align: center;
+  }
+
+  .home-image {
+    display: none;
+  }
+
+  .home-process {
+    background-color: #914332ff;
+  }
+
+  .home-text10 {
+    margin-right: 32px;
+  }
+
+  .home-text12 {
+    margin-right: 32px;
+  }
+
+  .home-links-container {
+    gap: 32px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home-contact-container {
+    align-items: center;
+    margin-bottom: 0px;
+  }
+}

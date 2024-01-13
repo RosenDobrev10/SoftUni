@@ -1,0 +1,34 @@
+Basic
+$
+4.99
+/ monthly
+Billed annualy or $8 month-to-month.
+Watch on 1 supported device at a time
+Unlimited movies, TV shows, and mobile games
+Download on 1 supported device at a time
+Watch in HD
+Subscribe
+
+Standard
+$
+7.99
+/ monthly
+Billed annualy or $12 month-to-month.
+Watch on 2 supported devices at a time
+Unlimited movies, TV shows, and mobile games
+Ad-free TV shows and movies
+Download on 2 supported devices at a time
+Watch in Full HD
+Subscribe
+
+Premium
+$
+9.99
+/ monthly
+Billed annualy or $22 month-to-month.
+Watch on 4 supported devices at a time
+Unlimited movies, TV shows, and mobile games
+Ad-free TV shows and movies
+Download on 6 supported devices at a time
+Watch in Ultra HD
+Subscribe

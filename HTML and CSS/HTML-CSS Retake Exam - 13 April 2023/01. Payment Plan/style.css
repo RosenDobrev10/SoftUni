@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url(./image/background.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 8rem 6rem;
+    gap: 4rem;
+}
+
+.container article {
+    background-color: #fff;
+    padding: 2.5rem;
+}
+
+.container article.scale {
+    transform: scale(1.1);
+}
+
+.container article h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.container article p.price {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.container article p.price span {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.container article p:not(.price) {
+    color: #83837f;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.container article ul li svg {
+    margin-right: 0.5rem;
+}
+
+.container article ul li {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.container article ul {
+    margin-bottom: 6rem;
+}
+
+.container article:last-child ul {
+    margin-bottom: 2.5rem;
+}
+
+.container article a {
+    font-size: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.5rem;
+}
