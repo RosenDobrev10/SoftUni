@@ -1,0 +1,136 @@
+@media (max-width: 600px) {
+
+    .tm-site-title {
+        font-size: 3.4rem;
+    }
+
+    .tm-site-description {
+        font-size: 1.7rem;
+    }
+
+    .tm-site-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tm-header-inner {
+        padding: 40px 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tm-nav-ul {
+        font-size: 1.4rem;
+    }
+
+    .tm-section-title {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+    .row.tm-welcome-section p.col-12.text-center {
+        font-size: 1.6rem;
+        padding-inline: 10px;
+    }
+
+    .tm-paging-links ul .tm-paging-item .tm-paging-link {
+        padding: 10px 50px;
+        font-size: 1.6rem;
+    }
+
+    .tm-gallery-page {
+        margin: 0 120px;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .tm-gallery-item {
+        max-width: 345px;
+    }
+
+    .img-fluid.tm-gallery-img {
+        width: 100%
+    }
+
+    .tm-gallery-price {
+        font-size: 1.75rem;
+        font-weight: 500;
+    }
+
+    .col-lg-3.col-md-4.col-sm-6.col-12.tm-gallery-item:last-of-type figure::after {
+        display: block;
+        content: "";
+        background: url('../img/gallery/08.jpg');
+        background-size: 100%;
+        position: absolute;
+        width: 100%;
+        height: 28%;
+        top: 23px;
+    }
+
+    .col-lg-3.col-md-4.col-sm-6.col-12.tm-gallery-item {
+        padding: 0;
+    }
+
+    .tm-gallery {
+        margin-left: 0px;
+    }
+
+    .tm-gallery-title {
+        font-size: 1.8rem;
+    }
+
+    .tm-gallery-description {
+        font-size: 1.3rem;
+        position: relative;
+    }
+
+    .tm-cta-section {
+        width: 600px;
+    }
+
+    .tm-cta-section.tm-section.tm-container-inner .row {
+        margin-left: auto;
+    }
+
+    .tm-cta-section.tm-section.tm-container-inner .row .col-md-6 {
+        padding: 0;
+    }
+
+    .tm-cta-section.tm-section.tm-container-inner .row .col-md-6 .img-fluid {
+        width: 38rem;
+    }
+
+    .tm-description-box {
+        max-width: 600px;
+    }
+
+    .col-md-6 .tm-description-box .tm-mb-45 {
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+
+    .tm-btn.tm-btn-default.tm-right {
+        font-size: 1.6rem;
+        margin-right: 1rem;
+    }
+
+    .tm-footer.text-center > p {
+        font-size: 1.75rem;
+    }
+
+    .tm-cta-section.tm-section.tm-container-inner .row .col-md-6 .tm-description-figure::after {
+        display: block;
+        content: "";
+        background: url('../img/img-01.jpg');
+        position: absolute;
+        width: 100%;
+        height: 6.6rem;
+        top: 9%;
+        left: 5%;
+    }
+}

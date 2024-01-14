@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.padding {
+    padding-inline: 22rem;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 3.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    background: url('./images/header-bg.png') bottom center no-repeat;
+    height: 785px;
+}
+
+.hero .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%;
+    color: #fff;
+}
+
+.hero .text h1 {
+    font-size: 5.1rem;
+    font-weight: 200;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero .text h1 span {
+    font-weight: 700;
+}
+
+.hero .text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+}
+
+.hero .text a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #ff3503;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.25rem 3rem;
+    border-radius: 2rem;
+}
+
+.hero .header-dog {
+    position: absolute;
+    right: 19%;
+    top: 22%;
+}
+
+/* SERVICES */
+.services {
+    padding-block: 15rem;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 3.1rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.services > p {
+    width: 51%;
+    margin: 0 auto;
+    line-height: 2;
+    color: #7b7b7b;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+
+.services ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.services ul li {
+    border: 1px solid #ff3503;
+    width: 33%;
+    border-radius: 0.5rem;
+    padding: 4rem 2.5rem;
+}
+
+.services ul li img {
+    background: url('./images/service-bg.png') center center no-repeat;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services ul li h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.services ul li p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 600;
+    color: #7b7b7b;
+}
+
+/* CARE */
+.care {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.care h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+.care h2 span {
+    font-weight: 800;
+}
+
+.care p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    font-weight: 600;
+    color: #7b7b7b;
+    margin-bottom: 5rem;
+}
+
+.care a {
+    text-decoration: none;
+    background: linear-gradient(90deg, rgba(241, 66, 51, 1) 0%, rgba(238, 90, 4, 1) 100%);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.25rem 4rem;
+    border-radius: 2rem;
+}
+
+/* WHY */
+.why {
+    background: url('./images/cats-bg.png');
+    height: 609px;
+    text-align: center;
+    color: #fff;
+    padding-block: 11rem;
+}
+
+.why h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.why > p {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+}
+
+.why .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.why a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #ff3503;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.25rem 3rem;
+    border-radius: 2rem;
+}
+
+.why .contacts p {
+    font-size: 1.25rem;
+}
+
+.why .contacts p span {
+    margin-left: 0.5rem;
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 7rem;
+}
+
+footer ul li h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+footer ul li p {
+    font-size: 1.25;
+    color: #7b7b7b;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+footer ul li img {
+    margin-bottom: 2rem;
+}
+
+footer ul li img + p span {
+    margin-top: 0.5rem;
+    display: block;
+}
