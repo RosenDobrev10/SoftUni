@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background: url('./images/background.png') top;
+    height: 100vh;
+    background-size: 100% 112%;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    color: #666a6f;
+}
+
+input:not([type='checkbox']) {
+    border-radius: 3rem;
+    padding: 0.75rem;
+    border: 1px solid #e3e3e3;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./images/form-background.png') center center no-repeat;
+    background-size: 117% 100%;
+    height: 66%;
+    width: 855px;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 10px 0px rgb(0, 0, 0, 0.4);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 7rem 0 0 4rem;
+}
+
+.form h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form .names {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form .terms {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.form .terms p {
+    color: #666a6f;
+    font-size: 0.85rem;
+}
+
+.form .terms p span {
+    margin-right: 0.5rem;
+}
+
+.form a {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ae3c33;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+}
+  
+.form .terms input::before {
+    content: "";
+    display: block;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(128, 128, 128, 0.2);
+  }

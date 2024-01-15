@@ -1,0 +1,8 @@
+Registration Form
+First Name
+Last Name
+Email
+Password
+Confirm Password
+I accept the Terms of Use & Privacy Policy.
+Register Now

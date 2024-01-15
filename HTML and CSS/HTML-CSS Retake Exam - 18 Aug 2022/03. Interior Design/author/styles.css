@@ -1,0 +1,141 @@
+:root {
+    --dark-brown: #9b9189;
+    --light-brown: #f2f0f3;
+    --med-brown: #bab1ad;
+    --green-brown: #67784d;
+    --headings: #333333;
+    --shadow: #929090;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Abril Fatface", cursive;
+}
+
+.top {
+    background-image: url(image/image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    padding: 30px;
+}
+
+.transparent,
+.gradient {
+    padding: 20px 10px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 0 10px 1px var(--headings);
+}
+
+.gradient {
+    float: right;
+    width: 350px;
+    height: unset;
+    background-image: linear-gradient(to right, var(--dark-brown), #c9c7c6);
+    color: white;
+    text-align: right;
+}
+
+.transparent .container {
+    width: 60%;
+}
+
+.gradient .big {
+    margin-top: -50px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: normal;
+    color: #8d8581;
+}
+
+.bottom {
+    background-color: var(--light-brown);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.right {
+    background-color: var(--med-brown);
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left {
+    /* flex-basis: 70%; */
+    padding: 50px;
+}
+
+.service span {
+    font-weight: bold;
+}
+
+.service {
+    margin: 20px 0px;
+}
+
+.num {
+    color: white;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.rightItem {
+    text-transform: uppercase;
+}
+
+.first2 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.item {
+    padding: 10px;
+}
+
+.btns input,
+.btns button {
+    background-color: var(--dark-brown);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.btns input::placeholder {
+    color: white;
+}
+
+.btns button {
+    background-color: var(--green-brown);
+}
