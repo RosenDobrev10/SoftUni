@@ -1,0 +1,266 @@
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Helvetica";
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.nav-logo-img {
+    position: relative;
+}
+
+.nav-logo-img img {
+  background-color: #c09a2f;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, 20%);
+  z-index: 1;
+}
+
+.nav-upper{
+    padding-top: 30px;
+}
+
+.nav-upper-nav ul,
+.nav-lower-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.nav-upper-nav li:hover {
+  background-color: #BA8F2A;
+
+}
+
+.nav-upper-nav-items {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-upper-nav-items a {
+  text-decoration: none;
+  color: #4f5774;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1em;
+}
+.nav-upper-nav-items a:hover{
+  color:white;
+}
+.nav-upper-nav-items i {
+  padding-bottom: 15px;
+  font-size: 1.7em;
+}
+
+.nav-lower-wrapper {
+  margin-top: 35px;
+}
+
+.nav-lower-nav-items {
+  color: #4f5774;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.nav-lower-nav-items:hover{
+  color:white;
+  background-color: #BA8F2A;
+  padding-left: 35px;
+  padding-right: 35px;
+  cursor: pointer;
+}
+
+.nav-slider {
+  margin: 0;
+  background: url("image/slider.jpg");
+  background-position: center;
+  object-fit: contain;
+  height: 75vh;
+  position: relative;
+}
+
+.nav-slider-info {
+  background: rgba(0, 0, 0, 0.5);
+  width: 40%;
+  height: 60%;
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-117%, -30%);
+}
+
+.nav-slider-info h2 {
+  margin: 0;
+}
+
+.nav-slider-info button {
+  border: 5px solid white;
+  background: none;
+  color: #ffa207;
+  padding: 10px 25px;
+  width: 50%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav-slider-info button:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+.main-card {
+  background: rgb(150, 103, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(150, 103, 11, 1) 0%,
+    rgba(208, 172, 60, 1) 100%
+  );
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  padding: 25px 35%;
+}
+
+.main-card h2 {
+  margin: 0;
+}
+
+.main-card p {
+  text-align: left;
+}
+
+.main-card i {
+  font-size: 25px;
+}
+
+.main-card button {
+  font-size: 1.1em;
+  color: white;
+  background: none;
+  border: 5px solid white;
+  padding: 10px 25px;
+  margin: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main-card-info {
+  color: #4f5775;
+  text-align: center;
+}
+
+.main-card-info h3 {
+  font-size: 1.7em;
+  letter-spacing: 5px;
+  font-weight: 300;
+  padding: 15px 20% 5px;
+}
+
+.main-card-info-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 70px;
+}
+
+.main-card-info-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+.main-card-info-item-content-text{
+    text-align: center;
+}
+
+
+.main-info-item-img {
+    border: 3px solid grey;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.main-info-item-img img{
+    width: 100%;
+    border-radius: 50%;
+    padding: 0px;
+    padding: 5px 5px 2px 5px;
+}
+
+.footer-upper{
+    background-color: #B58E0F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter{
+    padding-top: 15px;
+    margin-left: 25px;;
+}
+
+.newsletter p:nth-child(1){
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.newsletter p:nth-child(2){
+    margin-top: 10px;
+}
+
+.subscribe button{
+    border: 5px solid white;
+    padding: 10px 25px;
+    margin-right: 25px;;
+    background: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.footer-lower {
+    padding: 25px;
+    text-align: center;
+}

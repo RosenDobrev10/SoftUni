@@ -1,0 +1,124 @@
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    background: #DCDCDC;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem auto;
+    width: 50%;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 4px 8px 7px -4px rgba(0,0,0,0.5);
+    background-color: white;
+}
+
+.first-section{
+    background: linear-gradient(90deg, rgba(0,0,0,0.6615780101102942) 100%, rgba(0,0,0,0.7960317916228992) 100%), url('image/cover.jpg');
+    background-position: center center;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.first-section img {
+    object-fit: fill;
+}
+
+.first-section .trademark {
+    align-self: flex-start;
+    margin: 25px;
+    font-weight: 900;
+}
+
+h2, h3{
+    margin: 0px;
+    font-weight: 100;
+    margin-left: 25px;
+    margin-right: 25px;;
+}
+
+h2{
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.icons{
+    margin-bottom: 30px;
+}
+
+i {
+    padding: 10px;
+}
+
+.second-section {
+    padding: 40px;
+}
+
+.second-section label{
+    text-transform: uppercase;
+    color: #D0D5E0;
+    font-size: 0.9em;
+    padding-bottom: 0.9em;
+    width: 100%;
+    display: inline-block;
+
+}
+
+.second-section input{
+    color:  #767373;
+    border: none;
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 0.9rem;
+    font-size: 17px;
+    width: 100%;
+    padding-bottom: 0.3em;
+    padding-left: 10px;
+}
+
+#password, #rep-password {
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-transform: uppercase;
+    width: 40%;
+    font-weight: 500;
+}
+
+.second-section>div:nth-child(5) {
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.second-section>div:nth-child(5)>p {
+    display: inline;
+    padding: 10px;
+}
+.second-section>div:nth-child(5)>p>a {
+    color: #9AA8C5;
+    font-weight: 600;
+}

@@ -1,0 +1,217 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: 3px solid #fff;
+    border-radius: 0.25rem;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8.5rem;
+}
+
+header .logo {
+    background: linear-gradient(180deg, rgba(204, 170, 64, 1) 0%, rgba(148, 101, 14, 1) 100%);
+    position: relative;
+    top: 3.5rem;
+}
+
+header .logo img {
+    padding: 2rem;
+    width: 250px;
+}
+
+header .navigations {
+    color: #4e5774;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+header .navigations .top-navigation ul,
+header .navigations .bottom-navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header .navigations .top-navigation ul li,
+header .navigations .bottom-navigation ul li {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+header .navigations .top-navigation ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+header .navigations .top-navigation ul li svg {
+    height: 30px;
+}
+
+header .navigations .top-navigation ul li:hover,
+header .navigations .bottom-navigation ul li:hover {
+    background-color: #b58e10;
+    color: #fff;
+    fill: #fff;
+    cursor: pointer;
+}
+
+/* SHUTTLE */
+.shuttle {
+    background: url('./image/slider.jpg') center center no-repeat;
+    height: 700px;
+    background-size: 125% 180%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shuttle .text {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 38%;
+    margin-left: 8rem;
+    margin-top: 8rem;
+    color: #fff;
+    padding: 3rem 3rem 3rem 2rem;
+}
+
+.shuttle h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.shuttle p {
+    font-size: 1.66rem;
+    line-height: 1.1;
+    margin-bottom: 2.5rem;
+}
+
+.shuttle .text a {
+    color: #e9960f;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+}
+
+.shuttle .text a:hover {
+    background-color: #fff;
+    color: #e9960f
+}
+
+/* LIST */
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(270deg, rgba(204, 170, 64, 1) 0%, rgba(148, 101, 14, 1) 100%);
+    color: #fff;
+    fill: #fff;
+    padding-block: 1.5rem;
+}
+
+.list h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.list ul {
+    width: 44%;
+    margin-left: 2rem;
+}
+
+.list ul li {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.75rem;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.list a {
+    padding: 1rem 1.5rem;
+}
+
+/* MORE */
+.more {
+    color: #4e5774;
+    padding: 1.5rem 11rem;
+    text-align: center;
+}
+
+.more h2 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.more p {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.more ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.more ul li {
+    width: 16%;
+}
+
+.more ul li img {
+    width: 100%;
+    padding: 0.25rem;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+}
+
+.more ul li p {
+    font-size: 1.1rem;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #b58e0f;
+    color: #fff;
+    padding: 0.75rem 2rem;
+}
+
+.newsletter h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.newsletter p {
+    font-size: 1.25rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+footer p {
+    font-size: 1.25rem;
+}

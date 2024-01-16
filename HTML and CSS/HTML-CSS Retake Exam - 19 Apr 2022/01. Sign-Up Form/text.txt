@@ -1,0 +1,19 @@
+SoftUni
+
+Welcome to SoftUni.
+
+Are you ready to become a dev?
+  
+USERNAME 
+antoniyaat
+
+EMAIL 
+a.atanasova@softuni.bg
+
+PASSWORD 
+********
+
+REPEAT PASSWORD 
+********
+
+I am already a ninja
