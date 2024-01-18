@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    margin: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .img-wrapper{
+    width: 120px;
+}
+
+.list-items{
+    display: flex;
+    padding: 0;
+}
+
+.list-items li{
+    list-style: none;
+    padding: 0 10px;
+    color: #54546D
+}
+
+main .img-wrapper{
+    width: 100%;
+    height: 300px;
+    background-color: #54546D;
+    position: relative;
+}
+
+main .img-wrapper img{
+    position: relative;
+    top: 50px;
+    left: -70px;
+}
+
+main > h2{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -280px;
+    margin: 30px 0;
+}
+
+.taxes{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto -220px auto;
+    position: relative;
+    top: -280px;
+}
+
+.taxes-card{
+    flex-basis: 30%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+.taxes-card h2{
+    margin: 20px 0;
+    color: #54546D;
+}
+
+.taxes-card p{
+    padding: 20px;
+    color: #54546D;
+}
+
+.taxes-card footer{
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.taxes-card footer div:first-child{
+    border-right: 1px solid white;
+}
+
+.taxes-card footer p{
+    color: white;
+}
+
+.basics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.basics > p{
+    position: relative;
+    top: -50px;
+}
+
+.basics button{
+    background-color: #9A5DC6;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 50%;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.basics footer{
+    background-image: linear-gradient(to right, #079e41, #1eab50, #2eb95f, #3bc66f, #48d47e);
+}
+
+.fundamentals footer{
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #4d6e8c, #52799c, #5783ac, #5c8ebc, #6199cd);
+}
+
+.professional footer{
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #4f3caa, #5e4bb7, #6d5bc5, #7b6bd2, #8a7be0);
+}
+
+.taxes-card footer .main-description{
+    font-size: 20px;
+    padding: 8px;
+}
+
+.taxes-card footer .secondary-description{
+    font-size: 14px;
+    padding: 8px;
+}
+
+.study-form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.study-form h3{
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.study-form p{
+    margin: 30px 0;
+}
+
+.study-form ul{
+    padding: 0;
+}
+
+.study-form ul li{
+    list-style: none;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.study-form ul li span{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.study-form ul li:nth-child(even){
+    background-color: #F8F8F8;
+}
+
+.study-form ul li:nth-child(odd){
+    background-color: #E6E6E6;
+}
+
+.study-form ul li:first-child{
+    border-radius: 5px 5px 0 0;
+}
+
+.study-form ul li:last-child{
+    border-radius: 0 0 5px 5px;
+}
+
+.finance{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 80px auto;
+}
+
+.finance .content h3{
+    font-weight: 500;
+}
+
+.finance .content p{
+    margin-top: 20px;
+}
+
+.finance .content p:last-child{
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    background-color: #54546D;
+    color: #8C89A2;
+    padding: 30px 0;
+}

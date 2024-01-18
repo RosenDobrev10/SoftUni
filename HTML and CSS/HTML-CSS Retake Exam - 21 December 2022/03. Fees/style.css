@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #54546d
+}
+
+/* HEADER */
+
+header {
+    padding: 1.25rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 7%;
+}
+
+header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+/* MAIN */
+
+/* ТАКСИ  */
+
+.taxes {
+    background: url(./images/calculator-icon.svg) center center no-repeat;
+    background-color: #54546d;
+    background-position-x: -4%;
+    padding-block: 12.5rem;
+    position: relative;
+}
+
+.taxes h1 {
+    position: relative;
+    top: -5rem;
+    text-align: center;
+    font-size: 1.75rem;
+    color: #fff;
+}
+
+.taxes .tax-cards {
+    padding: 3rem 5.5rem;
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top: 9rem;
+}
+
+.taxes .tax-cards article,
+.taxes .tax-cards article header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taxes .tax-cards article {
+    background-color: #fff;
+    width: 33%;
+    border-radius: 0.75rem;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.taxes .tax-cards article header {
+    width: 100%;
+    height: 60%;
+    padding: 2rem;
+}
+
+.taxes .tax-cards article h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #54546d;
+    margin-bottom: 2rem;
+}
+
+.taxes .tax-cards article.green header h2 {
+    margin-bottom: 0.75rem;
+}
+
+.taxes .tax-cards article header p {
+    font-size: 1.45rem;
+    color: #54546d;
+    margin-bottom: 2rem;
+}
+
+.taxes .tax-cards article.green header p {
+    font-size: 1.55rem;
+    margin-bottom: 4rem;
+}
+
+.taxes .tax-cards article.green a {
+    background-color: #9a5dc6;
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.taxes .tax-cards article footer {
+    height: 30%;
+    padding: 1rem;
+}
+
+.taxes .tax-cards article footer * {
+    color: #fff;
+}
+
+.taxes .tax-cards article.green footer {
+    display: flex;
+    width: 100%;
+}
+
+.taxes .tax-cards article.green footer {
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(5, 156, 62, 1) 0%, rgba(39, 184, 94, 1) 50%, rgba(75, 214, 128, 1) 100%);
+}
+
+.taxes .tax-cards article.green footer h3 {
+    font-size: 1.75rem;
+    margin-block: 1rem;
+}
+
+.taxes .tax-cards article.green footer p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.taxes .tax-cards article.blue footer .left,
+.taxes .tax-cards article.purple footer .left {
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+
+.taxes .tax-cards article.blue footer .left,
+.taxes .tax-cards article.purple footer .left {
+    padding: 1rem;
+}
+
+.taxes .tax-cards article.blue footer .right,
+.taxes .tax-cards article.purple footer .right {
+    display: inline-block;
+    padding: 1rem 3rem;
+}
+
+.taxes .tax-cards article.blue footer {
+    width: 100%;
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, rgba(76, 108, 136, 1) 0%, rgba(87, 131, 172, 1) 50%, rgba(98, 155, 207, 1) 100%);
+}
+
+.taxes .tax-cards article.blue footer h3,
+.taxes .tax-cards article.purple footer h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.taxes .tax-cards article.purple footer {
+    width: 100%;
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, rgba(75, 56, 166, 1) 0%, rgba(106, 89, 195, 1) 50%, rgba(140, 125, 225, 1) 100%);
+}
+
+/* TABLE */
+
+.table-container {
+    padding: 20rem 16rem 5rem 16rem;
+    color: #54546d;
+}
+
+.table-container h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.table-container > p {
+    font-size: 1.37rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.table {
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    border-top-right-radius: unset;
+}
+
+.row {
+    display: flex;
+    padding: 1.5rem 6rem 1.5rem 1.5rem;
+}
+
+.row:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.row p {
+    font-size: 1.5rem;
+}
+
+.row .row-symbols {
+    display: flex;
+    gap: 13rem;
+    align-content: end;
+}
+
+/* FINANCE */
+
+.finance {
+    color: #54546d;
+    padding: 2rem 10rem 10rem 5.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.finance h2 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.finance p {
+    margin-bottom: 1.5rem;
+    font-size: 1.43rem;
+}
+
+.finance .info p:nth-child(3) {
+    margin-bottom: 0;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #54546d;
+    padding-block: 2rem;
+}
+
+.footer p {
+    font-size: 1.4rem;
+    color: #8d89a0;
+    text-align: center;
+}
