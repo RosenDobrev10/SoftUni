@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url(./images/background.jpg);
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+section {
+    background-color: white;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1700px;
+    padding: 2rem 4rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    gap: 3rem;
+}
+
+section .info p {
+    padding-right: 5rem;
+    font-size: 1.5rem;
+    color: #665d61;
+    margin-bottom: 2rem;
+}
+
+section svg {
+    font-size: 5rem;
+}
+
+section h2 {
+    font-size: 1.9rem;
+}
+
+.second-container {
+    max-width: 33%;
+}
+
+.second-container .alone {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.second-container .alone svg {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+section.alone .after {
+    font-size: 1.49rem;
+    color: #665d61;
+}
+
+section.alone .after::after {
+    content: "";
+    display: block;
+    margin-top: 10rem;
+    border-top: 0.1px solid #d9d9d9;
+}
+
+section.alone footer {
+    display: flex;
+    gap: 1rem;
+}
+
+section.alone footer img {
+    width: 7rem;
+    height: 7rem;
+    filter: grayscale(1);
+}
+
+section.alone footer h2 {
+    margin-bottom: 0.4rem;
+    font-size: 2.1rem;
+}
+
+section.alone footer p {
+    margin-top: 0.2rem;
+    color: #595959;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
