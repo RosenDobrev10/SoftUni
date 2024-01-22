@@ -1,0 +1,92 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #000;
+}
+
+.wrapper {
+    max-width: 1400px;
+    background-color: #fff;
+    margin: 15rem auto;
+    padding: 1.5rem 1rem 2rem 2rem;
+    border: 1px solid black;
+    position: relative;
+}
+
+.wrapper::before {
+    position: absolute;
+    display: block;
+    content: '';
+    inset: 0;
+    border: 1px solid #000;
+    margin: 0.25rem;
+}
+
+.chillhop {
+    background-color: #1881b6;
+    display: flex;
+    gap: 2rem;
+    padding: 2.5rem;
+    border: 5px solid #000;
+    border-radius: 1rem;
+}
+
+.chillhop .text {
+    width: 65%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.chillhop .text h2 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 3.5rem;
+}
+
+.chillhop .text h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.chillhop .text p {
+    font-size: 1.3rem;
+    text-indent: 3.75rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.chillhop .text .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    margin-right: 5rem;
+}
+
+.chillhop .text .buttons a {
+    text-decoration: none;
+    font-weight: 800;
+    padding: 0.75rem 1rem;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+}
+
+.chillhop .text .buttons a.primary {
+    background-color: #b6416d;
+    color: #fff;
+}
+
+.chillhop .text .buttons a.secondary {
+    color: #000;
+}
+
+.chillhop .image {
+    width: 40%;
+}
+
+.chillhop .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

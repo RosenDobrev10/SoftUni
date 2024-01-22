@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PT Serif', serif;
+}
+
+.padding {
+    padding-inline: 14rem;
+}
+
+.background {
+    background: url('./images/background.jpg') top center no-repeat;
+    background-size: cover;
+    height: 935px;
+}
+
+/* HEADER */
+header {
+    padding: 2rem 4rem 4rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 8%;
+}
+
+header nav ul {
+    display: flex;
+    text-transform: uppercase;
+    gap: 3rem;
+    color: #fff;
+}
+
+/* ABOUT */
+.about {
+    color: #fff;
+    width: 66%;
+}
+
+.about h1 {
+    font-size: 4.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.about h1 span {
+    display: block;
+}
+
+.about p {
+    font-size: 1.55rem;
+    line-height: 1.5;
+}
+
+/* BUSINESS */
+.business {
+    display: flex;
+    gap: 3.5rem;
+    padding-block: 10rem;
+}
+
+.business h2 {
+    font-size: 3.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.business p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+}
+
+.business a {
+    text-decoration: none;
+    color: #b0825c;
+    font-size: 1.1rem;
+    border: 2px solid #b0825c;
+    padding: 1rem 2rem;
+    font-weight: 700;
+}
+
+/* SPONSORS AND PARTNERS */
+.sponsors-partners {
+    border-top: 2px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 14.5rem;
+    text-align: center;
+}
+
+.sponsors-partners h2 {
+    color: #b0825c;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.sponsors-partners p {
+    font-size: 1.25rem;
+    color: #737186;
+    line-height: 1.7;
+    margin-bottom: 5rem;
+}
+
+.sponsors-partners ul {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-bottom: 4rem;
+}
+
+.sponsors-partners ul li {
+    background-color: #dddddd;
+    border-radius: 50%;
+    padding: 2rem;
+    width: 13%;
+}
+
+.sponsors-partners ul li img {
+    width: 100%;
+}
+
+.sponsors-partners p:last-child {
+    margin-bottom: 1rem;
+}
+
+/* LINKS */
+.links {
+    background-color: #171720;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 22.5rem 3.5rem 14rem;
+}
+
+.links h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.links ul li {
+    text-transform: uppercase;
+    margin-bottom: 1.75rem;
+    color: #8e8487;
+}
+
+.left {
+    display: flex;
+}
+
+.left .address {
+    padding-right: 6rem;
+}
+
+.left .policies {
+    padding-right: 3rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #171720;
+    border-top: 2px solid #393940;
+    padding-block: 2rem;
+}
+
+footer p {
+    color: #8e8487;
+}
