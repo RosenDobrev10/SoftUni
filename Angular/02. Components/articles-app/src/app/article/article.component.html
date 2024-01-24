@@ -1,0 +1,8 @@
+<li>
+  <div id="title">{{ article.title }}</div>
+  <button *ngIf="showReadMoreBtn" (click)="readMore()">Read More</button>
+  <button *ngIf="showHideBtn" (click)="hideDesc()">Hide Desc</button>
+  <button (click)="toggleImage()">{{ imageButtonTitle }}</button>
+  <div class="desc" *ngIf="articleDescLen > 0">{{ descToShow }}</div>
+  <img *ngIf="imageIsShown" src="{{ article.imageUrl }}" alt="article image" />
+</li>
